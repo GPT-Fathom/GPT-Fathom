@@ -1,0 +1,41 @@
+triviaqa-0shot:
+  id: triviaqa.val.ab-v1
+  metrics: [accuracy]
+triviaqa.val.ab-v1:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: triviaqa/samples.jsonl
+    few_shot_jsonl: triviaqa/fewshot.jsonl
+    num_few_shot: 0
+
+triviaqa-1shot:
+  id: triviaqa.val.ab-v2
+  metrics: [accuracy]
+triviaqa.val.ab-v2:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: triviaqa/samples.jsonl
+    few_shot_jsonl: triviaqa/fewshot.jsonl
+    num_few_shot: 1
+
+
+triviaqa-64shot:
+  id: triviaqa.val.ab-v3
+  metrics: [accuracy]
+triviaqa.val.ab-v3:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: triviaqa/samples.jsonl
+    few_shot_jsonl: triviaqa/fewshot.jsonl
+    num_few_shot: 64
+
+
+triviaqa-5shot:
+  id: triviaqa.val.ab-v4
+  metrics: [accuracy]
+triviaqa.val.ab-v4:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: triviaqa/samples.jsonl
+    few_shot_jsonl: triviaqa/fewshot.jsonl
+    num_few_shot: 5

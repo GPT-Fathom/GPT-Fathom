@@ -1,0 +1,567 @@
+
+bbh-boolean_expressions-3shot:
+  id: bbh-boolean_expressions.val.ab-v1
+  metrics: [accuracy]
+bbh-boolean_expressions.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: boolean_expressions
+    samples_jsonl: bbh/samples_boolean_expressions.jsonl
+    CoT: False
+
+bbh-boolean_expressions-3shot-CoT:
+  id: bbh-boolean_expressions.val.ab-v2
+  metrics: [accuracy]
+bbh-boolean_expressions.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: boolean_expressions
+    samples_jsonl: bbh/samples_boolean_expressions.jsonl
+    CoT: True
+
+
+bbh-causal_judgement-3shot:
+  id: bbh-causal_judgement.val.ab-v1
+  metrics: [accuracy]
+bbh-causal_judgement.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: causal_judgement
+    samples_jsonl: bbh/samples_causal_judgement.jsonl
+    CoT: False
+
+bbh-causal_judgement-3shot-CoT:
+  id: bbh-causal_judgement.val.ab-v2
+  metrics: [accuracy]
+bbh-causal_judgement.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: causal_judgement
+    samples_jsonl: bbh/samples_causal_judgement.jsonl
+    CoT: True
+
+
+bbh-date_understanding-3shot:
+  id: bbh-date_understanding.val.ab-v1
+  metrics: [accuracy]
+bbh-date_understanding.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: date_understanding
+    samples_jsonl: bbh/samples_date_understanding.jsonl
+    CoT: False
+
+bbh-date_understanding-3shot-CoT:
+  id: bbh-date_understanding.val.ab-v2
+  metrics: [accuracy]
+bbh-date_understanding.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: date_understanding
+    samples_jsonl: bbh/samples_date_understanding.jsonl
+    CoT: True
+
+
+bbh-disambiguation_qa-3shot:
+  id: bbh-disambiguation_qa.val.ab-v1
+  metrics: [accuracy]
+bbh-disambiguation_qa.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: disambiguation_qa
+    samples_jsonl: bbh/samples_disambiguation_qa.jsonl
+    CoT: False
+
+bbh-disambiguation_qa-3shot-CoT:
+  id: bbh-disambiguation_qa.val.ab-v2
+  metrics: [accuracy]
+bbh-disambiguation_qa.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: disambiguation_qa
+    samples_jsonl: bbh/samples_disambiguation_qa.jsonl
+    CoT: True
+
+
+bbh-dyck_languages-3shot:
+  id: bbh-dyck_languages.val.ab-v1
+  metrics: [accuracy]
+bbh-dyck_languages.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: dyck_languages
+    samples_jsonl: bbh/samples_dyck_languages.jsonl
+    CoT: False
+
+bbh-dyck_languages-3shot-CoT:
+  id: bbh-dyck_languages.val.ab-v2
+  metrics: [accuracy]
+bbh-dyck_languages.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: dyck_languages
+    samples_jsonl: bbh/samples_dyck_languages.jsonl
+    CoT: True
+
+
+bbh-formal_fallacies-3shot:
+  id: bbh-formal_fallacies.val.ab-v1
+  metrics: [accuracy]
+bbh-formal_fallacies.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: formal_fallacies
+    samples_jsonl: bbh/samples_formal_fallacies.jsonl
+    CoT: False
+
+bbh-formal_fallacies-3shot-CoT:
+  id: bbh-formal_fallacies.val.ab-v2
+  metrics: [accuracy]
+bbh-formal_fallacies.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: formal_fallacies
+    samples_jsonl: bbh/samples_formal_fallacies.jsonl
+    CoT: True
+
+
+bbh-geometric_shapes-3shot:
+  id: bbh-geometric_shapes.val.ab-v1
+  metrics: [accuracy]
+bbh-geometric_shapes.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: geometric_shapes
+    samples_jsonl: bbh/samples_geometric_shapes.jsonl
+    CoT: False
+
+bbh-geometric_shapes-3shot-CoT:
+  id: bbh-geometric_shapes.val.ab-v2
+  metrics: [accuracy]
+bbh-geometric_shapes.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: geometric_shapes
+    samples_jsonl: bbh/samples_geometric_shapes.jsonl
+    CoT: True
+
+
+bbh-hyperbaton-3shot:
+  id: bbh-hyperbaton.val.ab-v1
+  metrics: [accuracy]
+bbh-hyperbaton.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: hyperbaton
+    samples_jsonl: bbh/samples_hyperbaton.jsonl
+    CoT: False
+
+bbh-hyperbaton-3shot-CoT:
+  id: bbh-hyperbaton.val.ab-v2
+  metrics: [accuracy]
+bbh-hyperbaton.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: hyperbaton
+    samples_jsonl: bbh/samples_hyperbaton.jsonl
+    CoT: True
+
+
+bbh-logical_deduction_five_objects-3shot:
+  id: bbh-logical_deduction_five_objects.val.ab-v1
+  metrics: [accuracy]
+bbh-logical_deduction_five_objects.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: logical_deduction_five_objects
+    samples_jsonl: bbh/samples_logical_deduction_five_objects.jsonl
+    CoT: False
+
+bbh-logical_deduction_five_objects-3shot-CoT:
+  id: bbh-logical_deduction_five_objects.val.ab-v2
+  metrics: [accuracy]
+bbh-logical_deduction_five_objects.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: logical_deduction_five_objects
+    samples_jsonl: bbh/samples_logical_deduction_five_objects.jsonl
+    CoT: True
+
+
+bbh-logical_deduction_seven_objects-3shot:
+  id: bbh-logical_deduction_seven_objects.val.ab-v1
+  metrics: [accuracy]
+bbh-logical_deduction_seven_objects.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: logical_deduction_seven_objects
+    samples_jsonl: bbh/samples_logical_deduction_seven_objects.jsonl
+    CoT: False
+
+bbh-logical_deduction_seven_objects-3shot-CoT:
+  id: bbh-logical_deduction_seven_objects.val.ab-v2
+  metrics: [accuracy]
+bbh-logical_deduction_seven_objects.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: logical_deduction_seven_objects
+    samples_jsonl: bbh/samples_logical_deduction_seven_objects.jsonl
+    CoT: True
+
+
+bbh-logical_deduction_three_objects-3shot:
+  id: bbh-logical_deduction_three_objects.val.ab-v1
+  metrics: [accuracy]
+bbh-logical_deduction_three_objects.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: logical_deduction_three_objects
+    samples_jsonl: bbh/samples_logical_deduction_three_objects.jsonl
+    CoT: False
+
+bbh-logical_deduction_three_objects-3shot-CoT:
+  id: bbh-logical_deduction_three_objects.val.ab-v2
+  metrics: [accuracy]
+bbh-logical_deduction_three_objects.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: logical_deduction_three_objects
+    samples_jsonl: bbh/samples_logical_deduction_three_objects.jsonl
+    CoT: True
+
+
+bbh-movie_recommendation-3shot:
+  id: bbh-movie_recommendation.val.ab-v1
+  metrics: [accuracy]
+bbh-movie_recommendation.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: movie_recommendation
+    samples_jsonl: bbh/samples_movie_recommendation.jsonl
+    CoT: False
+
+bbh-movie_recommendation-3shot-CoT:
+  id: bbh-movie_recommendation.val.ab-v2
+  metrics: [accuracy]
+bbh-movie_recommendation.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: movie_recommendation
+    samples_jsonl: bbh/samples_movie_recommendation.jsonl
+    CoT: True
+
+
+bbh-multistep_arithmetic_two-3shot:
+  id: bbh-multistep_arithmetic_two.val.ab-v1
+  metrics: [accuracy]
+bbh-multistep_arithmetic_two.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: multistep_arithmetic_two
+    samples_jsonl: bbh/samples_multistep_arithmetic_two.jsonl
+    CoT: False
+
+bbh-multistep_arithmetic_two-3shot-CoT:
+  id: bbh-multistep_arithmetic_two.val.ab-v2
+  metrics: [accuracy]
+bbh-multistep_arithmetic_two.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: multistep_arithmetic_two
+    samples_jsonl: bbh/samples_multistep_arithmetic_two.jsonl
+    CoT: True
+
+
+bbh-navigate-3shot:
+  id: bbh-navigate.val.ab-v1
+  metrics: [accuracy]
+bbh-navigate.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: navigate
+    samples_jsonl: bbh/samples_navigate.jsonl
+    CoT: False
+
+bbh-navigate-3shot-CoT:
+  id: bbh-navigate.val.ab-v2
+  metrics: [accuracy]
+bbh-navigate.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: navigate
+    samples_jsonl: bbh/samples_navigate.jsonl
+    CoT: True
+
+
+bbh-object_counting-3shot:
+  id: bbh-object_counting.val.ab-v1
+  metrics: [accuracy]
+bbh-object_counting.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: object_counting
+    samples_jsonl: bbh/samples_object_counting.jsonl
+    CoT: False
+
+bbh-object_counting-3shot-CoT:
+  id: bbh-object_counting.val.ab-v2
+  metrics: [accuracy]
+bbh-object_counting.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: object_counting
+    samples_jsonl: bbh/samples_object_counting.jsonl
+    CoT: True
+
+
+bbh-penguins_in_a_table-3shot:
+  id: bbh-penguins_in_a_table.val.ab-v1
+  metrics: [accuracy]
+bbh-penguins_in_a_table.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: penguins_in_a_table
+    samples_jsonl: bbh/samples_penguins_in_a_table.jsonl
+    CoT: False
+
+bbh-penguins_in_a_table-3shot-CoT:
+  id: bbh-penguins_in_a_table.val.ab-v2
+  metrics: [accuracy]
+bbh-penguins_in_a_table.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: penguins_in_a_table
+    samples_jsonl: bbh/samples_penguins_in_a_table.jsonl
+    CoT: True
+
+
+bbh-reasoning_about_colored_objects-3shot:
+  id: bbh-reasoning_about_colored_objects.val.ab-v1
+  metrics: [accuracy]
+bbh-reasoning_about_colored_objects.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: reasoning_about_colored_objects
+    samples_jsonl: bbh/samples_reasoning_about_colored_objects.jsonl
+    CoT: False
+
+bbh-reasoning_about_colored_objects-3shot-CoT:
+  id: bbh-reasoning_about_colored_objects.val.ab-v2
+  metrics: [accuracy]
+bbh-reasoning_about_colored_objects.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: reasoning_about_colored_objects
+    samples_jsonl: bbh/samples_reasoning_about_colored_objects.jsonl
+    CoT: True
+
+
+bbh-ruin_names-3shot:
+  id: bbh-ruin_names.val.ab-v1
+  metrics: [accuracy]
+bbh-ruin_names.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: ruin_names
+    samples_jsonl: bbh/samples_ruin_names.jsonl
+    CoT: False
+
+bbh-ruin_names-3shot-CoT:
+  id: bbh-ruin_names.val.ab-v2
+  metrics: [accuracy]
+bbh-ruin_names.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: ruin_names
+    samples_jsonl: bbh/samples_ruin_names.jsonl
+    CoT: True
+
+
+bbh-salient_translation_error_detection-3shot:
+  id: bbh-salient_translation_error_detection.val.ab-v1
+  metrics: [accuracy]
+bbh-salient_translation_error_detection.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: salient_translation_error_detection
+    samples_jsonl: bbh/samples_salient_translation_error_detection.jsonl
+    CoT: False
+
+bbh-salient_translation_error_detection-3shot-CoT:
+  id: bbh-salient_translation_error_detection.val.ab-v2
+  metrics: [accuracy]
+bbh-salient_translation_error_detection.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: salient_translation_error_detection
+    samples_jsonl: bbh/samples_salient_translation_error_detection.jsonl
+    CoT: True
+
+
+bbh-snarks-3shot:
+  id: bbh-snarks.val.ab-v1
+  metrics: [accuracy]
+bbh-snarks.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: snarks
+    samples_jsonl: bbh/samples_snarks.jsonl
+    CoT: False
+
+bbh-snarks-3shot-CoT:
+  id: bbh-snarks.val.ab-v2
+  metrics: [accuracy]
+bbh-snarks.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: snarks
+    samples_jsonl: bbh/samples_snarks.jsonl
+    CoT: True
+
+
+bbh-sports_understanding-3shot:
+  id: bbh-sports_understanding.val.ab-v1
+  metrics: [accuracy]
+bbh-sports_understanding.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: sports_understanding
+    samples_jsonl: bbh/samples_sports_understanding.jsonl
+    CoT: False
+
+bbh-sports_understanding-3shot-CoT:
+  id: bbh-sports_understanding.val.ab-v2
+  metrics: [accuracy]
+bbh-sports_understanding.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: sports_understanding
+    samples_jsonl: bbh/samples_sports_understanding.jsonl
+    CoT: True
+
+
+bbh-temporal_sequences-3shot:
+  id: bbh-temporal_sequences.val.ab-v1
+  metrics: [accuracy]
+bbh-temporal_sequences.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: temporal_sequences
+    samples_jsonl: bbh/samples_temporal_sequences.jsonl
+    CoT: False
+
+bbh-temporal_sequences-3shot-CoT:
+  id: bbh-temporal_sequences.val.ab-v2
+  metrics: [accuracy]
+bbh-temporal_sequences.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: temporal_sequences
+    samples_jsonl: bbh/samples_temporal_sequences.jsonl
+    CoT: True
+
+
+bbh-tracking_shuffled_objects_five_objects-3shot:
+  id: bbh-tracking_shuffled_objects_five_objects.val.ab-v1
+  metrics: [accuracy]
+bbh-tracking_shuffled_objects_five_objects.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: tracking_shuffled_objects_five_objects
+    samples_jsonl: bbh/samples_tracking_shuffled_objects_five_objects.jsonl
+    CoT: False
+
+bbh-tracking_shuffled_objects_five_objects-3shot-CoT:
+  id: bbh-tracking_shuffled_objects_five_objects.val.ab-v2
+  metrics: [accuracy]
+bbh-tracking_shuffled_objects_five_objects.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: tracking_shuffled_objects_five_objects
+    samples_jsonl: bbh/samples_tracking_shuffled_objects_five_objects.jsonl
+    CoT: True
+
+
+bbh-tracking_shuffled_objects_seven_objects-3shot:
+  id: bbh-tracking_shuffled_objects_seven_objects.val.ab-v1
+  metrics: [accuracy]
+bbh-tracking_shuffled_objects_seven_objects.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: tracking_shuffled_objects_seven_objects
+    samples_jsonl: bbh/samples_tracking_shuffled_objects_seven_objects.jsonl
+    CoT: False
+
+bbh-tracking_shuffled_objects_seven_objects-3shot-CoT:
+  id: bbh-tracking_shuffled_objects_seven_objects.val.ab-v2
+  metrics: [accuracy]
+bbh-tracking_shuffled_objects_seven_objects.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: tracking_shuffled_objects_seven_objects
+    samples_jsonl: bbh/samples_tracking_shuffled_objects_seven_objects.jsonl
+    CoT: True
+
+
+bbh-tracking_shuffled_objects_three_objects-3shot:
+  id: bbh-tracking_shuffled_objects_three_objects.val.ab-v1
+  metrics: [accuracy]
+bbh-tracking_shuffled_objects_three_objects.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: tracking_shuffled_objects_three_objects
+    samples_jsonl: bbh/samples_tracking_shuffled_objects_three_objects.jsonl
+    CoT: False
+
+bbh-tracking_shuffled_objects_three_objects-3shot-CoT:
+  id: bbh-tracking_shuffled_objects_three_objects.val.ab-v2
+  metrics: [accuracy]
+bbh-tracking_shuffled_objects_three_objects.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: tracking_shuffled_objects_three_objects
+    samples_jsonl: bbh/samples_tracking_shuffled_objects_three_objects.jsonl
+    CoT: True
+
+
+bbh-web_of_lies-3shot:
+  id: bbh-web_of_lies.val.ab-v1
+  metrics: [accuracy]
+bbh-web_of_lies.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: web_of_lies
+    samples_jsonl: bbh/samples_web_of_lies.jsonl
+    CoT: False
+
+bbh-web_of_lies-3shot-CoT:
+  id: bbh-web_of_lies.val.ab-v2
+  metrics: [accuracy]
+bbh-web_of_lies.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: web_of_lies
+    samples_jsonl: bbh/samples_web_of_lies.jsonl
+    CoT: True
+
+
+bbh-word_sorting-3shot:
+  id: bbh-word_sorting.val.ab-v1
+  metrics: [accuracy]
+bbh-word_sorting.val.ab-v1:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: word_sorting
+    samples_jsonl: bbh/samples_word_sorting.jsonl
+    CoT: False
+
+bbh-word_sorting-3shot-CoT:
+  id: bbh-word_sorting.val.ab-v2
+  metrics: [accuracy]
+bbh-word_sorting.val.ab-v2:
+  class: evals.elsuite.dataset_specific.bbh:BBH
+  args:
+    task_name: word_sorting
+    samples_jsonl: bbh/samples_word_sorting.jsonl
+    CoT: True
+

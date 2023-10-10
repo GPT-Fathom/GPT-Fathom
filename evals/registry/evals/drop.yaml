@@ -1,0 +1,30 @@
+drop-0shot:
+  id: drop.val.ab-v1
+  metrics: [accuracy]
+drop.val.ab-v1:
+  class: evals.elsuite.basic.reading_comprehension:READ_COMPRE
+  args:
+    samples_jsonl: drop/samples.jsonl
+    few_shot_jsonl: drop/fewshot.jsonl
+    num_few_shot: 0
+
+drop-1shot:
+  id: drop.val.ab-v2
+  metrics: [accuracy]
+drop.val.ab-v2:
+  class: evals.elsuite.basic.reading_comprehension:READ_COMPRE
+  args:
+    samples_jsonl: drop/samples.jsonl
+    few_shot_jsonl: drop/fewshot.jsonl
+    num_few_shot: 1
+
+
+drop-3shot:
+  id: drop.val.ab-v3
+  metrics: [accuracy]
+drop.val.ab-v3:
+  class: evals.elsuite.basic.reading_comprehension:READ_COMPRE
+  args:
+    samples_jsonl: drop/samples.jsonl
+    few_shot_jsonl: drop/fewshot.jsonl
+    num_few_shot: 3

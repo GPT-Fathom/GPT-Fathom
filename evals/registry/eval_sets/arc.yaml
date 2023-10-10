@@ -1,0 +1,10 @@
+arc-set:
+  evals:
+    - arc_e_0shot
+    - arc_e_1shot
+    - arc_e_5shot
+    - arc_e_25shot
+    - arc_c_0shot
+    - arc_c_1shot
+    - arc_c_5shot
+    - arc_c_25shot

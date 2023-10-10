@@ -1,0 +1,64 @@
+{"sample": [{"role": "system", "name": "example_user", "content": "what is the name of justin bieber brother?"}, {"role": "system", "name": "example_assistant", "content": "Jazmyn Bieber"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what character did natalie portman play in star wars?"}, {"role": "system", "name": "example_assistant", "content": "Padm\u00e9 Amidala"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what state does selena gomez?"}, {"role": "system", "name": "example_assistant", "content": "New York City"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what country is the grand bahama island in?"}, {"role": "system", "name": "example_assistant", "content": "Bahamas"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what kind of money to take to bahamas?"}, {"role": "system", "name": "example_assistant", "content": "Bahamian dollar"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what character did john noble play in lord of the rings?"}, {"role": "system", "name": "example_assistant", "content": "Denethor II"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "who does joakim noah play for?"}, {"role": "system", "name": "example_assistant", "content": "Chicago Bulls"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "where are the nfl redskins from?"}, {"role": "system", "name": "example_assistant", "content": "Washington Redskins"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "where did saki live?"}, {"role": "system", "name": "example_assistant", "content": "United Kingdom"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "how old is sacha baron cohen?"}, {"role": "system", "name": "example_assistant", "content": "http://justjared.buzznet.com/2009/01/12/sacha-baron-cohen-insults-madonna-at-golden-globes/"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what two countries invaded poland in the beginning of ww2?"}, {"role": "system", "name": "example_assistant", "content": "Germany"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what time zone am i in cleveland ohio?"}, {"role": "system", "name": "example_assistant", "content": "North American Eastern Time Zone"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "who did draco malloy end up marrying?"}, {"role": "system", "name": "example_assistant", "content": "Astoria Greengrass"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "which countries border the us?"}, {"role": "system", "name": "example_assistant", "content": "Canada"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "where is rome italy located on a map?"}, {"role": "system", "name": "example_assistant", "content": "Rome"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what is nina dobrev nationality?"}, {"role": "system", "name": "example_assistant", "content": "Bulgaria"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what country does iceland belong to?"}, {"role": "system", "name": "example_assistant", "content": "Iceland"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "which kennedy died first?"}, {"role": "system", "name": "example_assistant", "content": "John F. Kennedy"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what books did beverly cleary right?"}, {"role": "system", "name": "example_assistant", "content": "Ramona's World"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "who did the philippines gain independence from?"}, {"role": "system", "name": "example_assistant", "content": "United States of America"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "where to fly into bali?"}, {"role": "system", "name": "example_assistant", "content": "Ngurah Rai Airport"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "who is the prime minister of ethiopia?"}, {"role": "system", "name": "example_assistant", "content": "Hailemariam Desalegn"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what to see near sedona arizona?"}, {"role": "system", "name": "example_assistant", "content": "Sedona Airport"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what high school did president bill clinton attend?"}, {"role": "system", "name": "example_assistant", "content": "Hot Springs High School"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what form of government does russia have today?"}, {"role": "system", "name": "example_assistant", "content": "Constitutional republic"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what movies does taylor lautner play in?"}, {"role": "system", "name": "example_assistant", "content": "Abduction"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what year lebron james came to the nba?"}, {"role": "system", "name": "example_assistant", "content": "2003\u201304 NBA season"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what did the german revolution lead to?"}, {"role": "system", "name": "example_assistant", "content": "German Democratic Republic"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "how much did adriana lima gain during pregnancy?"}, {"role": "system", "name": "example_assistant", "content": "Spike Guys' Choice Awards"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what does thai mean?"}, {"role": "system", "name": "example_assistant", "content": "Language"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "which wife did king henry behead?"}, {"role": "system", "name": "example_assistant", "content": "Anne of the Thousand Days"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "who was ishmael's mom?"}, {"role": "system", "name": "example_assistant", "content": "Hagar"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what was malcolm x trying to accomplish?"}, {"role": "system", "name": "example_assistant", "content": "African Americans' rights"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "where are the netherlands on a world map?"}, {"role": "system", "name": "example_assistant", "content": "Kingdom of the Netherlands"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what is the president of brazil?"}, {"role": "system", "name": "example_assistant", "content": "Dilma Rousseff"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what are the major cities in france?"}, {"role": "system", "name": "example_assistant", "content": "Paris"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what city did esther live in?"}, {"role": "system", "name": "example_assistant", "content": "Susa"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what sport do the toronto maple leafs play?"}, {"role": "system", "name": "example_assistant", "content": "Ice Hockey"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what is saint nicholas known for?"}, {"role": "system", "name": "example_assistant", "content": "Grand Duke Alexander Alexandrovich of Russia"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "when is the new series of the only way is essex starting?"}, {"role": "system", "name": "example_assistant", "content": "West Horndon"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what is cher's son's name?"}, {"role": "system", "name": "example_assistant", "content": "Elijah Blue Allman"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what is martin cooper doing now?"}, {"role": "system", "name": "example_assistant", "content": "Inventor"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what party was andrew jackson?"}, {"role": "system", "name": "example_assistant", "content": "Democratic-Republican Party"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what is medicare a?"}, {"role": "system", "name": "example_assistant", "content": "Centers for Medicare and Medicaid Services"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what county is the city of hampton va in?"}, {"role": "system", "name": "example_assistant", "content": "Hampton"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what is the name of the first harry potter novel?"}, {"role": "system", "name": "example_assistant", "content": "Harry Potter and the Philosopher's Stone"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what did william shakespeare do for a living?"}, {"role": "system", "name": "example_assistant", "content": "Poet"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what county is heathrow airport in?"}, {"role": "system", "name": "example_assistant", "content": "London"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "where did dmitri mendeleev study science?"}, {"role": "system", "name": "example_assistant", "content": "Saint Petersburg State University"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what movie is josh hutcherson in?"}, {"role": "system", "name": "example_assistant", "content": "Cirque du Freak: The Vampire's Assistant"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what is there to do in laredo tx?"}, {"role": "system", "name": "example_assistant", "content": "Veterans Field"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what season did tony soprano get shot?"}, {"role": "system", "name": "example_assistant", "content": "The Sopranos"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "where do the san francisco giants play home games?"}, {"role": "system", "name": "example_assistant", "content": "AT&T Park"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what year did william jennings bryan run for president?"}, {"role": "system", "name": "example_assistant", "content": "1900 Democratic National Convention"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what was the name of frederick douglass book?"}, {"role": "system", "name": "example_assistant", "content": "Narrative of the Life of Frederick Douglass, an American Slave"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "who was queen victoria's parents called?"}, {"role": "system", "name": "example_assistant", "content": "Prince Edward, Duke of Kent and Strathearn"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what movies did sally field win an oscar for?"}, {"role": "system", "name": "example_assistant", "content": "Places in the Heart"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what is the first book sherlock holmes appeared in?"}, {"role": "system", "name": "example_assistant", "content": "A Study in Scarlet"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what type of car does michael weston drive?"}, {"role": "system", "name": "example_assistant", "content": "Wishcraft"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "where does lena river begin and end?"}, {"role": "system", "name": "example_assistant", "content": "Baikal Mountains"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what countries do people speak portuguese?"}, {"role": "system", "name": "example_assistant", "content": "Brazil"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "where to exchange euros in pittsburgh?"}, {"role": "system", "name": "example_assistant", "content": "Allegheny County"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "what are the names of walt disney kids?"}, {"role": "system", "name": "example_assistant", "content": "Diane Disney Miller"}]}
+{"sample": [{"role": "system", "name": "example_user", "content": "who is in the band bush?"}, {"role": "system", "name": "example_assistant", "content": "Dave Parsons"}]}

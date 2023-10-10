@@ -1,0 +1,1995 @@
+
+mmlu-abstract-algebra-3shot:
+  id: mmlu-abstract-algebra.val.ab-v1
+  metrics: [accuracy]
+mmlu-abstract-algebra.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=abstract_algebra&split=test
+    few_shot: hf://hendrycks_test?name=abstract_algebra&split=dev
+    instructions: The following are multiple choice questions (with answers) about abstract algebra.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-abstract-algebra-5shot:
+  id: mmlu-abstract-algebra.val.ab-v2
+  metrics: [accuracy]
+mmlu-abstract-algebra.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=abstract_algebra&split=test
+    few_shot: hf://hendrycks_test?name=abstract_algebra&split=dev
+    instructions: The following are multiple choice questions (with answers) about abstract algebra.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-abstract-algebra-CoT:
+  id: mmlu-abstract-algebra.val.ab-v3
+  metrics: [accuracy]
+mmlu-abstract-algebra.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=abstract_algebra&split=test
+    task_name: abstract_algebra
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-anatomy-3shot:
+  id: mmlu-anatomy.val.ab-v1
+  metrics: [accuracy]
+mmlu-anatomy.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=anatomy&split=test
+    few_shot: hf://hendrycks_test?name=anatomy&split=dev
+    instructions: The following are multiple choice questions (with answers) about anatomy.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-anatomy-5shot:
+  id: mmlu-anatomy.val.ab-v2
+  metrics: [accuracy]
+mmlu-anatomy.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=anatomy&split=test
+    few_shot: hf://hendrycks_test?name=anatomy&split=dev
+    instructions: The following are multiple choice questions (with answers) about anatomy.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-anatomy-CoT:
+  id: mmlu-anatomy.val.ab-v3
+  metrics: [accuracy]
+mmlu-anatomy.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=anatomy&split=test
+    task_name: anatomy
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-astronomy-3shot:
+  id: mmlu-astronomy.val.ab-v1
+  metrics: [accuracy]
+mmlu-astronomy.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=astronomy&split=test
+    few_shot: hf://hendrycks_test?name=astronomy&split=dev
+    instructions: The following are multiple choice questions (with answers) about astronomy.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-astronomy-5shot:
+  id: mmlu-astronomy.val.ab-v2
+  metrics: [accuracy]
+mmlu-astronomy.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=astronomy&split=test
+    few_shot: hf://hendrycks_test?name=astronomy&split=dev
+    instructions: The following are multiple choice questions (with answers) about astronomy.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-astronomy-CoT:
+  id: mmlu-astronomy.val.ab-v3
+  metrics: [accuracy]
+mmlu-astronomy.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=astronomy&split=test
+    task_name: astronomy
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-business-ethics-3shot:
+  id: mmlu-business-ethics.val.ab-v1
+  metrics: [accuracy]
+mmlu-business-ethics.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=business_ethics&split=test
+    few_shot: hf://hendrycks_test?name=business_ethics&split=dev
+    instructions: The following are multiple choice questions (with answers) about business ethics.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-business-ethics-5shot:
+  id: mmlu-business-ethics.val.ab-v2
+  metrics: [accuracy]
+mmlu-business-ethics.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=business_ethics&split=test
+    few_shot: hf://hendrycks_test?name=business_ethics&split=dev
+    instructions: The following are multiple choice questions (with answers) about business ethics.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-business-ethics-CoT:
+  id: mmlu-business-ethics.val.ab-v3
+  metrics: [accuracy]
+mmlu-business-ethics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=business_ethics&split=test
+    task_name: business_ethics
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-clinical-knowledge-3shot:
+  id: mmlu-clinical-knowledge.val.ab-v1
+  metrics: [accuracy]
+mmlu-clinical-knowledge.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=clinical_knowledge&split=test
+    few_shot: hf://hendrycks_test?name=clinical_knowledge&split=dev
+    instructions: The following are multiple choice questions (with answers) about clinical knowledge.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-clinical-knowledge-5shot:
+  id: mmlu-clinical-knowledge.val.ab-v2
+  metrics: [accuracy]
+mmlu-clinical-knowledge.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=clinical_knowledge&split=test
+    few_shot: hf://hendrycks_test?name=clinical_knowledge&split=dev
+    instructions: The following are multiple choice questions (with answers) about clinical knowledge.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-clinical-knowledge-CoT:
+  id: mmlu-clinical-knowledge.val.ab-v3
+  metrics: [accuracy]
+mmlu-clinical-knowledge.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=clinical_knowledge&split=test
+    task_name: clinical_knowledge
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-college-biology-3shot:
+  id: mmlu-college-biology.val.ab-v1
+  metrics: [accuracy]
+mmlu-college-biology.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=college_biology&split=test
+    few_shot: hf://hendrycks_test?name=college_biology&split=dev
+    instructions: The following are multiple choice questions (with answers) about college biology.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-college-biology-5shot:
+  id: mmlu-college-biology.val.ab-v2
+  metrics: [accuracy]
+mmlu-college-biology.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=college_biology&split=test
+    few_shot: hf://hendrycks_test?name=college_biology&split=dev
+    instructions: The following are multiple choice questions (with answers) about college biology.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-college-biology-CoT:
+  id: mmlu-college-biology.val.ab-v3
+  metrics: [accuracy]
+mmlu-college-biology.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=college_biology&split=test
+    task_name: college_biology
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-college-chemistry-3shot:
+  id: mmlu-college-chemistry.val.ab-v1
+  metrics: [accuracy]
+mmlu-college-chemistry.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=college_chemistry&split=test
+    few_shot: hf://hendrycks_test?name=college_chemistry&split=dev
+    instructions: The following are multiple choice questions (with answers) about college chemistry.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-college-chemistry-5shot:
+  id: mmlu-college-chemistry.val.ab-v2
+  metrics: [accuracy]
+mmlu-college-chemistry.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=college_chemistry&split=test
+    few_shot: hf://hendrycks_test?name=college_chemistry&split=dev
+    instructions: The following are multiple choice questions (with answers) about college chemistry.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-college-chemistry-CoT:
+  id: mmlu-college-chemistry.val.ab-v3
+  metrics: [accuracy]
+mmlu-college-chemistry.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=college_chemistry&split=test
+    task_name: college_chemistry
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-college-computer-science-3shot:
+  id: mmlu-college-computer-science.val.ab-v1
+  metrics: [accuracy]
+mmlu-college-computer-science.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=college_computer_science&split=test
+    few_shot: hf://hendrycks_test?name=college_computer_science&split=dev
+    instructions: The following are multiple choice questions (with answers) about college computer science.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-college-computer-science-5shot:
+  id: mmlu-college-computer-science.val.ab-v2
+  metrics: [accuracy]
+mmlu-college-computer-science.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=college_computer_science&split=test
+    few_shot: hf://hendrycks_test?name=college_computer_science&split=dev
+    instructions: The following are multiple choice questions (with answers) about college computer science.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-college-computer-science-CoT:
+  id: mmlu-college-computer-science.val.ab-v3
+  metrics: [accuracy]
+mmlu-college-computer-science.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=college_computer_science&split=test
+    task_name: college_computer_science
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-college-mathematics-3shot:
+  id: mmlu-college-mathematics.val.ab-v1
+  metrics: [accuracy]
+mmlu-college-mathematics.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=college_mathematics&split=test
+    few_shot: hf://hendrycks_test?name=college_mathematics&split=dev
+    instructions: The following are multiple choice questions (with answers) about college mathematics.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-college-mathematics-5shot:
+  id: mmlu-college-mathematics.val.ab-v2
+  metrics: [accuracy]
+mmlu-college-mathematics.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=college_mathematics&split=test
+    few_shot: hf://hendrycks_test?name=college_mathematics&split=dev
+    instructions: The following are multiple choice questions (with answers) about college mathematics.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-college-mathematics-CoT:
+  id: mmlu-college-mathematics.val.ab-v3
+  metrics: [accuracy]
+mmlu-college-mathematics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=college_mathematics&split=test
+    task_name: college_mathematics
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-college-medicine-3shot:
+  id: mmlu-college-medicine.val.ab-v1
+  metrics: [accuracy]
+mmlu-college-medicine.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=college_medicine&split=test
+    few_shot: hf://hendrycks_test?name=college_medicine&split=dev
+    instructions: The following are multiple choice questions (with answers) about college medicine.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-college-medicine-5shot:
+  id: mmlu-college-medicine.val.ab-v2
+  metrics: [accuracy]
+mmlu-college-medicine.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=college_medicine&split=test
+    few_shot: hf://hendrycks_test?name=college_medicine&split=dev
+    instructions: The following are multiple choice questions (with answers) about college medicine.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-college-medicine-CoT:
+  id: mmlu-college-medicine.val.ab-v3
+  metrics: [accuracy]
+mmlu-college-medicine.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=college_medicine&split=test
+    task_name: college_medicine
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-college-physics-3shot:
+  id: mmlu-college-physics.val.ab-v1
+  metrics: [accuracy]
+mmlu-college-physics.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=college_physics&split=test
+    few_shot: hf://hendrycks_test?name=college_physics&split=dev
+    instructions: The following are multiple choice questions (with answers) about college physics.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-college-physics-5shot:
+  id: mmlu-college-physics.val.ab-v2
+  metrics: [accuracy]
+mmlu-college-physics.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=college_physics&split=test
+    few_shot: hf://hendrycks_test?name=college_physics&split=dev
+    instructions: The following are multiple choice questions (with answers) about college physics.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-college-physics-CoT:
+  id: mmlu-college-physics.val.ab-v3
+  metrics: [accuracy]
+mmlu-college-physics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=college_physics&split=test
+    task_name: college_physics
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-computer-security-3shot:
+  id: mmlu-computer-security.val.ab-v1
+  metrics: [accuracy]
+mmlu-computer-security.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=computer_security&split=test
+    few_shot: hf://hendrycks_test?name=computer_security&split=dev
+    instructions: The following are multiple choice questions (with answers) about computer security.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-computer-security-5shot:
+  id: mmlu-computer-security.val.ab-v2
+  metrics: [accuracy]
+mmlu-computer-security.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=computer_security&split=test
+    few_shot: hf://hendrycks_test?name=computer_security&split=dev
+    instructions: The following are multiple choice questions (with answers) about computer security.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-computer-security-CoT:
+  id: mmlu-computer-security.val.ab-v3
+  metrics: [accuracy]
+mmlu-computer-security.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=computer_security&split=test
+    task_name: computer_security
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-conceptual-physics-3shot:
+  id: mmlu-conceptual-physics.val.ab-v1
+  metrics: [accuracy]
+mmlu-conceptual-physics.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=conceptual_physics&split=test
+    few_shot: hf://hendrycks_test?name=conceptual_physics&split=dev
+    instructions: The following are multiple choice questions (with answers) about conceptual physics.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-conceptual-physics-5shot:
+  id: mmlu-conceptual-physics.val.ab-v2
+  metrics: [accuracy]
+mmlu-conceptual-physics.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=conceptual_physics&split=test
+    few_shot: hf://hendrycks_test?name=conceptual_physics&split=dev
+    instructions: The following are multiple choice questions (with answers) about conceptual physics.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-conceptual-physics-CoT:
+  id: mmlu-conceptual-physics.val.ab-v3
+  metrics: [accuracy]
+mmlu-conceptual-physics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=conceptual_physics&split=test
+    task_name: conceptual_physics
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-econometrics-3shot:
+  id: mmlu-econometrics.val.ab-v1
+  metrics: [accuracy]
+mmlu-econometrics.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=econometrics&split=test
+    few_shot: hf://hendrycks_test?name=econometrics&split=dev
+    instructions: The following are multiple choice questions (with answers) about econometrics.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-econometrics-5shot:
+  id: mmlu-econometrics.val.ab-v2
+  metrics: [accuracy]
+mmlu-econometrics.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=econometrics&split=test
+    few_shot: hf://hendrycks_test?name=econometrics&split=dev
+    instructions: The following are multiple choice questions (with answers) about econometrics.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-econometrics-CoT:
+  id: mmlu-econometrics.val.ab-v3
+  metrics: [accuracy]
+mmlu-econometrics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=econometrics&split=test
+    task_name: econometrics
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-electrical-engineering-3shot:
+  id: mmlu-electrical-engineering.val.ab-v1
+  metrics: [accuracy]
+mmlu-electrical-engineering.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=electrical_engineering&split=test
+    few_shot: hf://hendrycks_test?name=electrical_engineering&split=dev
+    instructions: The following are multiple choice questions (with answers) about electrical engineering.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-electrical-engineering-5shot:
+  id: mmlu-electrical-engineering.val.ab-v2
+  metrics: [accuracy]
+mmlu-electrical-engineering.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=electrical_engineering&split=test
+    few_shot: hf://hendrycks_test?name=electrical_engineering&split=dev
+    instructions: The following are multiple choice questions (with answers) about electrical engineering.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-electrical-engineering-CoT:
+  id: mmlu-electrical-engineering.val.ab-v3
+  metrics: [accuracy]
+mmlu-electrical-engineering.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=electrical_engineering&split=test
+    task_name: electrical_engineering
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-elementary-mathematics-3shot:
+  id: mmlu-elementary-mathematics.val.ab-v1
+  metrics: [accuracy]
+mmlu-elementary-mathematics.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=elementary_mathematics&split=test
+    few_shot: hf://hendrycks_test?name=elementary_mathematics&split=dev
+    instructions: The following are multiple choice questions (with answers) about elementary mathematics.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-elementary-mathematics-5shot:
+  id: mmlu-elementary-mathematics.val.ab-v2
+  metrics: [accuracy]
+mmlu-elementary-mathematics.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=elementary_mathematics&split=test
+    few_shot: hf://hendrycks_test?name=elementary_mathematics&split=dev
+    instructions: The following are multiple choice questions (with answers) about elementary mathematics.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-elementary-mathematics-CoT:
+  id: mmlu-elementary-mathematics.val.ab-v3
+  metrics: [accuracy]
+mmlu-elementary-mathematics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=elementary_mathematics&split=test
+    task_name: elementary_mathematics
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-formal-logic-3shot:
+  id: mmlu-formal-logic.val.ab-v1
+  metrics: [accuracy]
+mmlu-formal-logic.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=formal_logic&split=test
+    few_shot: hf://hendrycks_test?name=formal_logic&split=dev
+    instructions: The following are multiple choice questions (with answers) about formal logic.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-formal-logic-5shot:
+  id: mmlu-formal-logic.val.ab-v2
+  metrics: [accuracy]
+mmlu-formal-logic.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=formal_logic&split=test
+    few_shot: hf://hendrycks_test?name=formal_logic&split=dev
+    instructions: The following are multiple choice questions (with answers) about formal logic.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-formal-logic-CoT:
+  id: mmlu-formal-logic.val.ab-v3
+  metrics: [accuracy]
+mmlu-formal-logic.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=formal_logic&split=test
+    task_name: formal_logic
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-global-facts-3shot:
+  id: mmlu-global-facts.val.ab-v1
+  metrics: [accuracy]
+mmlu-global-facts.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=global_facts&split=test
+    few_shot: hf://hendrycks_test?name=global_facts&split=dev
+    instructions: The following are multiple choice questions (with answers) about global facts.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-global-facts-5shot:
+  id: mmlu-global-facts.val.ab-v2
+  metrics: [accuracy]
+mmlu-global-facts.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=global_facts&split=test
+    few_shot: hf://hendrycks_test?name=global_facts&split=dev
+    instructions: The following are multiple choice questions (with answers) about global facts.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-global-facts-CoT:
+  id: mmlu-global-facts.val.ab-v3
+  metrics: [accuracy]
+mmlu-global-facts.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=global_facts&split=test
+    task_name: global_facts
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-high-school-biology-3shot:
+  id: mmlu-high-school-biology.val.ab-v1
+  metrics: [accuracy]
+mmlu-high-school-biology.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_biology&split=test
+    few_shot: hf://hendrycks_test?name=high_school_biology&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school biology.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-high-school-biology-5shot:
+  id: mmlu-high-school-biology.val.ab-v2
+  metrics: [accuracy]
+mmlu-high-school-biology.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_biology&split=test
+    few_shot: hf://hendrycks_test?name=high_school_biology&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school biology.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-high-school-biology-CoT:
+  id: mmlu-high-school-biology.val.ab-v3
+  metrics: [accuracy]
+mmlu-high-school-biology.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=high_school_biology&split=test
+    task_name: high_school_biology
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-high-school-chemistry-3shot:
+  id: mmlu-high-school-chemistry.val.ab-v1
+  metrics: [accuracy]
+mmlu-high-school-chemistry.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_chemistry&split=test
+    few_shot: hf://hendrycks_test?name=high_school_chemistry&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school chemistry.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-high-school-chemistry-5shot:
+  id: mmlu-high-school-chemistry.val.ab-v2
+  metrics: [accuracy]
+mmlu-high-school-chemistry.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_chemistry&split=test
+    few_shot: hf://hendrycks_test?name=high_school_chemistry&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school chemistry.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-high-school-chemistry-CoT:
+  id: mmlu-high-school-chemistry.val.ab-v3
+  metrics: [accuracy]
+mmlu-high-school-chemistry.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=high_school_chemistry&split=test
+    task_name: high_school_chemistry
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-high-school-computer-science-3shot:
+  id: mmlu-high-school-computer-science.val.ab-v1
+  metrics: [accuracy]
+mmlu-high-school-computer-science.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_computer_science&split=test
+    few_shot: hf://hendrycks_test?name=high_school_computer_science&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school computer science.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-high-school-computer-science-5shot:
+  id: mmlu-high-school-computer-science.val.ab-v2
+  metrics: [accuracy]
+mmlu-high-school-computer-science.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_computer_science&split=test
+    few_shot: hf://hendrycks_test?name=high_school_computer_science&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school computer science.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-high-school-computer-science-CoT:
+  id: mmlu-high-school-computer-science.val.ab-v3
+  metrics: [accuracy]
+mmlu-high-school-computer-science.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=high_school_computer_science&split=test
+    task_name: high_school_computer_science
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-high-school-european-history-3shot:
+  id: mmlu-high-school-european-history.val.ab-v1
+  metrics: [accuracy]
+mmlu-high-school-european-history.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_european_history&split=test
+    few_shot: hf://hendrycks_test?name=high_school_european_history&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school european history.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-high-school-european-history-5shot:
+  id: mmlu-high-school-european-history.val.ab-v2
+  metrics: [accuracy]
+mmlu-high-school-european-history.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_european_history&split=test
+    few_shot: hf://hendrycks_test?name=high_school_european_history&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school european history.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-high-school-european-history-CoT:
+  id: mmlu-high-school-european-history.val.ab-v3
+  metrics: [accuracy]
+mmlu-high-school-european-history.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=high_school_european_history&split=test
+    task_name: high_school_european_history
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-high-school-geography-3shot:
+  id: mmlu-high-school-geography.val.ab-v1
+  metrics: [accuracy]
+mmlu-high-school-geography.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_geography&split=test
+    few_shot: hf://hendrycks_test?name=high_school_geography&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school geography.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-high-school-geography-5shot:
+  id: mmlu-high-school-geography.val.ab-v2
+  metrics: [accuracy]
+mmlu-high-school-geography.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_geography&split=test
+    few_shot: hf://hendrycks_test?name=high_school_geography&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school geography.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-high-school-geography-CoT:
+  id: mmlu-high-school-geography.val.ab-v3
+  metrics: [accuracy]
+mmlu-high-school-geography.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=high_school_geography&split=test
+    task_name: high_school_geography
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-high-school-government-and-politics-3shot:
+  id: mmlu-high-school-government-and-politics.val.ab-v1
+  metrics: [accuracy]
+mmlu-high-school-government-and-politics.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_government_and_politics&split=test
+    few_shot: hf://hendrycks_test?name=high_school_government_and_politics&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school government and politics.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-high-school-government-and-politics-5shot:
+  id: mmlu-high-school-government-and-politics.val.ab-v2
+  metrics: [accuracy]
+mmlu-high-school-government-and-politics.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_government_and_politics&split=test
+    few_shot: hf://hendrycks_test?name=high_school_government_and_politics&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school government and politics.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-high-school-government-and-politics-CoT:
+  id: mmlu-high-school-government-and-politics.val.ab-v3
+  metrics: [accuracy]
+mmlu-high-school-government-and-politics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=high_school_government_and_politics&split=test
+    task_name: high_school_government_and_politics
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-high-school-macroeconomics-3shot:
+  id: mmlu-high-school-macroeconomics.val.ab-v1
+  metrics: [accuracy]
+mmlu-high-school-macroeconomics.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_macroeconomics&split=test
+    few_shot: hf://hendrycks_test?name=high_school_macroeconomics&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school macroeconomics.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-high-school-macroeconomics-5shot:
+  id: mmlu-high-school-macroeconomics.val.ab-v2
+  metrics: [accuracy]
+mmlu-high-school-macroeconomics.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_macroeconomics&split=test
+    few_shot: hf://hendrycks_test?name=high_school_macroeconomics&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school macroeconomics.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-high-school-macroeconomics-CoT:
+  id: mmlu-high-school-macroeconomics.val.ab-v3
+  metrics: [accuracy]
+mmlu-high-school-macroeconomics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=high_school_macroeconomics&split=test
+    task_name: high_school_macroeconomics
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-high-school-mathematics-3shot:
+  id: mmlu-high-school-mathematics.val.ab-v1
+  metrics: [accuracy]
+mmlu-high-school-mathematics.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_mathematics&split=test
+    few_shot: hf://hendrycks_test?name=high_school_mathematics&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school mathematics.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-high-school-mathematics-5shot:
+  id: mmlu-high-school-mathematics.val.ab-v2
+  metrics: [accuracy]
+mmlu-high-school-mathematics.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_mathematics&split=test
+    few_shot: hf://hendrycks_test?name=high_school_mathematics&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school mathematics.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-high-school-mathematics-CoT:
+  id: mmlu-high-school-mathematics.val.ab-v3
+  metrics: [accuracy]
+mmlu-high-school-mathematics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=high_school_mathematics&split=test
+    task_name: high_school_mathematics
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-high-school-microeconomics-3shot:
+  id: mmlu-high-school-microeconomics.val.ab-v1
+  metrics: [accuracy]
+mmlu-high-school-microeconomics.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_microeconomics&split=test
+    few_shot: hf://hendrycks_test?name=high_school_microeconomics&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school microeconomics.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-high-school-microeconomics-5shot:
+  id: mmlu-high-school-microeconomics.val.ab-v2
+  metrics: [accuracy]
+mmlu-high-school-microeconomics.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_microeconomics&split=test
+    few_shot: hf://hendrycks_test?name=high_school_microeconomics&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school microeconomics.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-high-school-microeconomics-CoT:
+  id: mmlu-high-school-microeconomics.val.ab-v3
+  metrics: [accuracy]
+mmlu-high-school-microeconomics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=high_school_microeconomics&split=test
+    task_name: high_school_microeconomics
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-high-school-physics-3shot:
+  id: mmlu-high-school-physics.val.ab-v1
+  metrics: [accuracy]
+mmlu-high-school-physics.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_physics&split=test
+    few_shot: hf://hendrycks_test?name=high_school_physics&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school physics.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-high-school-physics-5shot:
+  id: mmlu-high-school-physics.val.ab-v2
+  metrics: [accuracy]
+mmlu-high-school-physics.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_physics&split=test
+    few_shot: hf://hendrycks_test?name=high_school_physics&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school physics.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-high-school-physics-CoT:
+  id: mmlu-high-school-physics.val.ab-v3
+  metrics: [accuracy]
+mmlu-high-school-physics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=high_school_physics&split=test
+    task_name: high_school_physics
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-high-school-psychology-3shot:
+  id: mmlu-high-school-psychology.val.ab-v1
+  metrics: [accuracy]
+mmlu-high-school-psychology.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_psychology&split=test
+    few_shot: hf://hendrycks_test?name=high_school_psychology&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school psychology.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-high-school-psychology-5shot:
+  id: mmlu-high-school-psychology.val.ab-v2
+  metrics: [accuracy]
+mmlu-high-school-psychology.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_psychology&split=test
+    few_shot: hf://hendrycks_test?name=high_school_psychology&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school psychology.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-high-school-psychology-CoT:
+  id: mmlu-high-school-psychology.val.ab-v3
+  metrics: [accuracy]
+mmlu-high-school-psychology.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=high_school_psychology&split=test
+    task_name: high_school_psychology
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-high-school-statistics-3shot:
+  id: mmlu-high-school-statistics.val.ab-v1
+  metrics: [accuracy]
+mmlu-high-school-statistics.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_statistics&split=test
+    few_shot: hf://hendrycks_test?name=high_school_statistics&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school statistics.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-high-school-statistics-5shot:
+  id: mmlu-high-school-statistics.val.ab-v2
+  metrics: [accuracy]
+mmlu-high-school-statistics.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_statistics&split=test
+    few_shot: hf://hendrycks_test?name=high_school_statistics&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school statistics.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-high-school-statistics-CoT:
+  id: mmlu-high-school-statistics.val.ab-v3
+  metrics: [accuracy]
+mmlu-high-school-statistics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=high_school_statistics&split=test
+    task_name: high_school_statistics
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-high-school-us-history-3shot:
+  id: mmlu-high-school-us-history.val.ab-v1
+  metrics: [accuracy]
+mmlu-high-school-us-history.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_us_history&split=test
+    few_shot: hf://hendrycks_test?name=high_school_us_history&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school us history.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-high-school-us-history-5shot:
+  id: mmlu-high-school-us-history.val.ab-v2
+  metrics: [accuracy]
+mmlu-high-school-us-history.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_us_history&split=test
+    few_shot: hf://hendrycks_test?name=high_school_us_history&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school us history.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-high-school-us-history-CoT:
+  id: mmlu-high-school-us-history.val.ab-v3
+  metrics: [accuracy]
+mmlu-high-school-us-history.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=high_school_us_history&split=test
+    task_name: high_school_us_history
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-high-school-world-history-3shot:
+  id: mmlu-high-school-world-history.val.ab-v1
+  metrics: [accuracy]
+mmlu-high-school-world-history.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_world_history&split=test
+    few_shot: hf://hendrycks_test?name=high_school_world_history&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school world history.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-high-school-world-history-5shot:
+  id: mmlu-high-school-world-history.val.ab-v2
+  metrics: [accuracy]
+mmlu-high-school-world-history.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=high_school_world_history&split=test
+    few_shot: hf://hendrycks_test?name=high_school_world_history&split=dev
+    instructions: The following are multiple choice questions (with answers) about high school world history.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-high-school-world-history-CoT:
+  id: mmlu-high-school-world-history.val.ab-v3
+  metrics: [accuracy]
+mmlu-high-school-world-history.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=high_school_world_history&split=test
+    task_name: high_school_world_history
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-human-aging-3shot:
+  id: mmlu-human-aging.val.ab-v1
+  metrics: [accuracy]
+mmlu-human-aging.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=human_aging&split=test
+    few_shot: hf://hendrycks_test?name=human_aging&split=dev
+    instructions: The following are multiple choice questions (with answers) about human aging.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-human-aging-5shot:
+  id: mmlu-human-aging.val.ab-v2
+  metrics: [accuracy]
+mmlu-human-aging.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=human_aging&split=test
+    few_shot: hf://hendrycks_test?name=human_aging&split=dev
+    instructions: The following are multiple choice questions (with answers) about human aging.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-human-aging-CoT:
+  id: mmlu-human-aging.val.ab-v3
+  metrics: [accuracy]
+mmlu-human-aging.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=human_aging&split=test
+    task_name: human_aging
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-human-sexuality-3shot:
+  id: mmlu-human-sexuality.val.ab-v1
+  metrics: [accuracy]
+mmlu-human-sexuality.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=human_sexuality&split=test
+    few_shot: hf://hendrycks_test?name=human_sexuality&split=dev
+    instructions: The following are multiple choice questions (with answers) about human sexuality.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-human-sexuality-5shot:
+  id: mmlu-human-sexuality.val.ab-v2
+  metrics: [accuracy]
+mmlu-human-sexuality.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=human_sexuality&split=test
+    few_shot: hf://hendrycks_test?name=human_sexuality&split=dev
+    instructions: The following are multiple choice questions (with answers) about human sexuality.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-human-sexuality-CoT:
+  id: mmlu-human-sexuality.val.ab-v3
+  metrics: [accuracy]
+mmlu-human-sexuality.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=human_sexuality&split=test
+    task_name: human_sexuality
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-international-law-3shot:
+  id: mmlu-international-law.val.ab-v1
+  metrics: [accuracy]
+mmlu-international-law.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=international_law&split=test
+    few_shot: hf://hendrycks_test?name=international_law&split=dev
+    instructions: The following are multiple choice questions (with answers) about international law.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-international-law-5shot:
+  id: mmlu-international-law.val.ab-v2
+  metrics: [accuracy]
+mmlu-international-law.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=international_law&split=test
+    few_shot: hf://hendrycks_test?name=international_law&split=dev
+    instructions: The following are multiple choice questions (with answers) about international law.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-international-law-CoT:
+  id: mmlu-international-law.val.ab-v3
+  metrics: [accuracy]
+mmlu-international-law.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=international_law&split=test
+    task_name: international_law
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-jurisprudence-3shot:
+  id: mmlu-jurisprudence.val.ab-v1
+  metrics: [accuracy]
+mmlu-jurisprudence.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=jurisprudence&split=test
+    few_shot: hf://hendrycks_test?name=jurisprudence&split=dev
+    instructions: The following are multiple choice questions (with answers) about jurisprudence.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-jurisprudence-5shot:
+  id: mmlu-jurisprudence.val.ab-v2
+  metrics: [accuracy]
+mmlu-jurisprudence.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=jurisprudence&split=test
+    few_shot: hf://hendrycks_test?name=jurisprudence&split=dev
+    instructions: The following are multiple choice questions (with answers) about jurisprudence.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-jurisprudence-CoT:
+  id: mmlu-jurisprudence.val.ab-v3
+  metrics: [accuracy]
+mmlu-jurisprudence.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=jurisprudence&split=test
+    task_name: jurisprudence
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-logical-fallacies-3shot:
+  id: mmlu-logical-fallacies.val.ab-v1
+  metrics: [accuracy]
+mmlu-logical-fallacies.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=logical_fallacies&split=test
+    few_shot: hf://hendrycks_test?name=logical_fallacies&split=dev
+    instructions: The following are multiple choice questions (with answers) about logical fallacies.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-logical-fallacies-5shot:
+  id: mmlu-logical-fallacies.val.ab-v2
+  metrics: [accuracy]
+mmlu-logical-fallacies.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=logical_fallacies&split=test
+    few_shot: hf://hendrycks_test?name=logical_fallacies&split=dev
+    instructions: The following are multiple choice questions (with answers) about logical fallacies.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-logical-fallacies-CoT:
+  id: mmlu-logical-fallacies.val.ab-v3
+  metrics: [accuracy]
+mmlu-logical-fallacies.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=logical_fallacies&split=test
+    task_name: logical_fallacies
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-machine-learning-3shot:
+  id: mmlu-machine-learning.val.ab-v1
+  metrics: [accuracy]
+mmlu-machine-learning.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=machine_learning&split=test
+    few_shot: hf://hendrycks_test?name=machine_learning&split=dev
+    instructions: The following are multiple choice questions (with answers) about machine learning.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-machine-learning-5shot:
+  id: mmlu-machine-learning.val.ab-v2
+  metrics: [accuracy]
+mmlu-machine-learning.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=machine_learning&split=test
+    few_shot: hf://hendrycks_test?name=machine_learning&split=dev
+    instructions: The following are multiple choice questions (with answers) about machine learning.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-machine-learning-CoT:
+  id: mmlu-machine-learning.val.ab-v3
+  metrics: [accuracy]
+mmlu-machine-learning.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=machine_learning&split=test
+    task_name: machine_learning
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-management-3shot:
+  id: mmlu-management.val.ab-v1
+  metrics: [accuracy]
+mmlu-management.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=management&split=test
+    few_shot: hf://hendrycks_test?name=management&split=dev
+    instructions: The following are multiple choice questions (with answers) about management.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-management-5shot:
+  id: mmlu-management.val.ab-v2
+  metrics: [accuracy]
+mmlu-management.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=management&split=test
+    few_shot: hf://hendrycks_test?name=management&split=dev
+    instructions: The following are multiple choice questions (with answers) about management.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-management-CoT:
+  id: mmlu-management.val.ab-v3
+  metrics: [accuracy]
+mmlu-management.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=management&split=test
+    task_name: management
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-marketing-3shot:
+  id: mmlu-marketing.val.ab-v1
+  metrics: [accuracy]
+mmlu-marketing.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=marketing&split=test
+    few_shot: hf://hendrycks_test?name=marketing&split=dev
+    instructions: The following are multiple choice questions (with answers) about marketing.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-marketing-5shot:
+  id: mmlu-marketing.val.ab-v2
+  metrics: [accuracy]
+mmlu-marketing.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=marketing&split=test
+    few_shot: hf://hendrycks_test?name=marketing&split=dev
+    instructions: The following are multiple choice questions (with answers) about marketing.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-marketing-CoT:
+  id: mmlu-marketing.val.ab-v3
+  metrics: [accuracy]
+mmlu-marketing.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=marketing&split=test
+    task_name: marketing
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-medical-genetics-3shot:
+  id: mmlu-medical-genetics.val.ab-v1
+  metrics: [accuracy]
+mmlu-medical-genetics.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=medical_genetics&split=test
+    few_shot: hf://hendrycks_test?name=medical_genetics&split=dev
+    instructions: The following are multiple choice questions (with answers) about medical genetics.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-medical-genetics-5shot:
+  id: mmlu-medical-genetics.val.ab-v2
+  metrics: [accuracy]
+mmlu-medical-genetics.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=medical_genetics&split=test
+    few_shot: hf://hendrycks_test?name=medical_genetics&split=dev
+    instructions: The following are multiple choice questions (with answers) about medical genetics.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-medical-genetics-CoT:
+  id: mmlu-medical-genetics.val.ab-v3
+  metrics: [accuracy]
+mmlu-medical-genetics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=medical_genetics&split=test
+    task_name: medical_genetics
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-miscellaneous-3shot:
+  id: mmlu-miscellaneous.val.ab-v1
+  metrics: [accuracy]
+mmlu-miscellaneous.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=miscellaneous&split=test
+    few_shot: hf://hendrycks_test?name=miscellaneous&split=dev
+    instructions: The following are multiple choice questions (with answers) about miscellaneous.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-miscellaneous-5shot:
+  id: mmlu-miscellaneous.val.ab-v2
+  metrics: [accuracy]
+mmlu-miscellaneous.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=miscellaneous&split=test
+    few_shot: hf://hendrycks_test?name=miscellaneous&split=dev
+    instructions: The following are multiple choice questions (with answers) about miscellaneous.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-miscellaneous-CoT:
+  id: mmlu-miscellaneous.val.ab-v3
+  metrics: [accuracy]
+mmlu-miscellaneous.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=miscellaneous&split=test
+    task_name: miscellaneous
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-moral-disputes-3shot:
+  id: mmlu-moral-disputes.val.ab-v1
+  metrics: [accuracy]
+mmlu-moral-disputes.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=moral_disputes&split=test
+    few_shot: hf://hendrycks_test?name=moral_disputes&split=dev
+    instructions: The following are multiple choice questions (with answers) about moral disputes.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-moral-disputes-5shot:
+  id: mmlu-moral-disputes.val.ab-v2
+  metrics: [accuracy]
+mmlu-moral-disputes.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=moral_disputes&split=test
+    few_shot: hf://hendrycks_test?name=moral_disputes&split=dev
+    instructions: The following are multiple choice questions (with answers) about moral disputes.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-moral-disputes-CoT:
+  id: mmlu-moral-disputes.val.ab-v3
+  metrics: [accuracy]
+mmlu-moral-disputes.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=moral_disputes&split=test
+    task_name: moral_disputes
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-moral-scenarios-3shot:
+  id: mmlu-moral-scenarios.val.ab-v1
+  metrics: [accuracy]
+mmlu-moral-scenarios.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=moral_scenarios&split=test
+    few_shot: hf://hendrycks_test?name=moral_scenarios&split=dev
+    instructions: The following are multiple choice questions (with answers) about moral scenarios.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-moral-scenarios-5shot:
+  id: mmlu-moral-scenarios.val.ab-v2
+  metrics: [accuracy]
+mmlu-moral-scenarios.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=moral_scenarios&split=test
+    few_shot: hf://hendrycks_test?name=moral_scenarios&split=dev
+    instructions: The following are multiple choice questions (with answers) about moral scenarios.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-moral-scenarios-CoT:
+  id: mmlu-moral-scenarios.val.ab-v3
+  metrics: [accuracy]
+mmlu-moral-scenarios.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=moral_scenarios&split=test
+    task_name: moral_scenarios
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-nutrition-3shot:
+  id: mmlu-nutrition.val.ab-v1
+  metrics: [accuracy]
+mmlu-nutrition.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=nutrition&split=test
+    few_shot: hf://hendrycks_test?name=nutrition&split=dev
+    instructions: The following are multiple choice questions (with answers) about nutrition.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-nutrition-5shot:
+  id: mmlu-nutrition.val.ab-v2
+  metrics: [accuracy]
+mmlu-nutrition.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=nutrition&split=test
+    few_shot: hf://hendrycks_test?name=nutrition&split=dev
+    instructions: The following are multiple choice questions (with answers) about nutrition.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-nutrition-CoT:
+  id: mmlu-nutrition.val.ab-v3
+  metrics: [accuracy]
+mmlu-nutrition.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=nutrition&split=test
+    task_name: nutrition
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-philosophy-3shot:
+  id: mmlu-philosophy.val.ab-v1
+  metrics: [accuracy]
+mmlu-philosophy.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=philosophy&split=test
+    few_shot: hf://hendrycks_test?name=philosophy&split=dev
+    instructions: The following are multiple choice questions (with answers) about philosophy.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-philosophy-5shot:
+  id: mmlu-philosophy.val.ab-v2
+  metrics: [accuracy]
+mmlu-philosophy.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=philosophy&split=test
+    few_shot: hf://hendrycks_test?name=philosophy&split=dev
+    instructions: The following are multiple choice questions (with answers) about philosophy.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-philosophy-CoT:
+  id: mmlu-philosophy.val.ab-v3
+  metrics: [accuracy]
+mmlu-philosophy.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=philosophy&split=test
+    task_name: philosophy
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-prehistory-3shot:
+  id: mmlu-prehistory.val.ab-v1
+  metrics: [accuracy]
+mmlu-prehistory.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=prehistory&split=test
+    few_shot: hf://hendrycks_test?name=prehistory&split=dev
+    instructions: The following are multiple choice questions (with answers) about prehistory.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-prehistory-5shot:
+  id: mmlu-prehistory.val.ab-v2
+  metrics: [accuracy]
+mmlu-prehistory.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=prehistory&split=test
+    few_shot: hf://hendrycks_test?name=prehistory&split=dev
+    instructions: The following are multiple choice questions (with answers) about prehistory.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-prehistory-CoT:
+  id: mmlu-prehistory.val.ab-v3
+  metrics: [accuracy]
+mmlu-prehistory.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=prehistory&split=test
+    task_name: prehistory
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-professional-accounting-3shot:
+  id: mmlu-professional-accounting.val.ab-v1
+  metrics: [accuracy]
+mmlu-professional-accounting.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=professional_accounting&split=test
+    few_shot: hf://hendrycks_test?name=professional_accounting&split=dev
+    instructions: The following are multiple choice questions (with answers) about professional accounting.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-professional-accounting-5shot:
+  id: mmlu-professional-accounting.val.ab-v2
+  metrics: [accuracy]
+mmlu-professional-accounting.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=professional_accounting&split=test
+    few_shot: hf://hendrycks_test?name=professional_accounting&split=dev
+    instructions: The following are multiple choice questions (with answers) about professional accounting.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-professional-accounting-CoT:
+  id: mmlu-professional-accounting.val.ab-v3
+  metrics: [accuracy]
+mmlu-professional-accounting.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=professional_accounting&split=test
+    task_name: professional_accounting
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-professional-law-3shot:
+  id: mmlu-professional-law.val.ab-v1
+  metrics: [accuracy]
+mmlu-professional-law.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=professional_law&split=test
+    few_shot: hf://hendrycks_test?name=professional_law&split=dev
+    instructions: The following are multiple choice questions (with answers) about professional law.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-professional-law-5shot:
+  id: mmlu-professional-law.val.ab-v2
+  metrics: [accuracy]
+mmlu-professional-law.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=professional_law&split=test
+    few_shot: hf://hendrycks_test?name=professional_law&split=dev
+    instructions: The following are multiple choice questions (with answers) about professional law.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-professional-law-CoT:
+  id: mmlu-professional-law.val.ab-v3
+  metrics: [accuracy]
+mmlu-professional-law.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=professional_law&split=test
+    task_name: professional_law
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-professional-medicine-3shot:
+  id: mmlu-professional-medicine.val.ab-v1
+  metrics: [accuracy]
+mmlu-professional-medicine.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=professional_medicine&split=test
+    few_shot: hf://hendrycks_test?name=professional_medicine&split=dev
+    instructions: The following are multiple choice questions (with answers) about professional medicine.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-professional-medicine-5shot:
+  id: mmlu-professional-medicine.val.ab-v2
+  metrics: [accuracy]
+mmlu-professional-medicine.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=professional_medicine&split=test
+    few_shot: hf://hendrycks_test?name=professional_medicine&split=dev
+    instructions: The following are multiple choice questions (with answers) about professional medicine.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-professional-medicine-CoT:
+  id: mmlu-professional-medicine.val.ab-v3
+  metrics: [accuracy]
+mmlu-professional-medicine.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=professional_medicine&split=test
+    task_name: professional_medicine
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-professional-psychology-3shot:
+  id: mmlu-professional-psychology.val.ab-v1
+  metrics: [accuracy]
+mmlu-professional-psychology.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=professional_psychology&split=test
+    few_shot: hf://hendrycks_test?name=professional_psychology&split=dev
+    instructions: The following are multiple choice questions (with answers) about professional psychology.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-professional-psychology-5shot:
+  id: mmlu-professional-psychology.val.ab-v2
+  metrics: [accuracy]
+mmlu-professional-psychology.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=professional_psychology&split=test
+    few_shot: hf://hendrycks_test?name=professional_psychology&split=dev
+    instructions: The following are multiple choice questions (with answers) about professional psychology.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-professional-psychology-CoT:
+  id: mmlu-professional-psychology.val.ab-v3
+  metrics: [accuracy]
+mmlu-professional-psychology.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=professional_psychology&split=test
+    task_name: professional_psychology
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-public-relations-3shot:
+  id: mmlu-public-relations.val.ab-v1
+  metrics: [accuracy]
+mmlu-public-relations.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=public_relations&split=test
+    few_shot: hf://hendrycks_test?name=public_relations&split=dev
+    instructions: The following are multiple choice questions (with answers) about public relations.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-public-relations-5shot:
+  id: mmlu-public-relations.val.ab-v2
+  metrics: [accuracy]
+mmlu-public-relations.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=public_relations&split=test
+    few_shot: hf://hendrycks_test?name=public_relations&split=dev
+    instructions: The following are multiple choice questions (with answers) about public relations.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-public-relations-CoT:
+  id: mmlu-public-relations.val.ab-v3
+  metrics: [accuracy]
+mmlu-public-relations.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=public_relations&split=test
+    task_name: public_relations
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-security-studies-3shot:
+  id: mmlu-security-studies.val.ab-v1
+  metrics: [accuracy]
+mmlu-security-studies.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=security_studies&split=test
+    few_shot: hf://hendrycks_test?name=security_studies&split=dev
+    instructions: The following are multiple choice questions (with answers) about security studies.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-security-studies-5shot:
+  id: mmlu-security-studies.val.ab-v2
+  metrics: [accuracy]
+mmlu-security-studies.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=security_studies&split=test
+    few_shot: hf://hendrycks_test?name=security_studies&split=dev
+    instructions: The following are multiple choice questions (with answers) about security studies.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-security-studies-CoT:
+  id: mmlu-security-studies.val.ab-v3
+  metrics: [accuracy]
+mmlu-security-studies.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=security_studies&split=test
+    task_name: security_studies
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-sociology-3shot:
+  id: mmlu-sociology.val.ab-v1
+  metrics: [accuracy]
+mmlu-sociology.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=sociology&split=test
+    few_shot: hf://hendrycks_test?name=sociology&split=dev
+    instructions: The following are multiple choice questions (with answers) about sociology.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-sociology-5shot:
+  id: mmlu-sociology.val.ab-v2
+  metrics: [accuracy]
+mmlu-sociology.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=sociology&split=test
+    few_shot: hf://hendrycks_test?name=sociology&split=dev
+    instructions: The following are multiple choice questions (with answers) about sociology.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-sociology-CoT:
+  id: mmlu-sociology.val.ab-v3
+  metrics: [accuracy]
+mmlu-sociology.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=sociology&split=test
+    task_name: sociology
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-us-foreign-policy-3shot:
+  id: mmlu-us-foreign-policy.val.ab-v1
+  metrics: [accuracy]
+mmlu-us-foreign-policy.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=us_foreign_policy&split=test
+    few_shot: hf://hendrycks_test?name=us_foreign_policy&split=dev
+    instructions: The following are multiple choice questions (with answers) about us foreign policy.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-us-foreign-policy-5shot:
+  id: mmlu-us-foreign-policy.val.ab-v2
+  metrics: [accuracy]
+mmlu-us-foreign-policy.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=us_foreign_policy&split=test
+    few_shot: hf://hendrycks_test?name=us_foreign_policy&split=dev
+    instructions: The following are multiple choice questions (with answers) about us foreign policy.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-us-foreign-policy-CoT:
+  id: mmlu-us-foreign-policy.val.ab-v3
+  metrics: [accuracy]
+mmlu-us-foreign-policy.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=us_foreign_policy&split=test
+    task_name: us_foreign_policy
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-virology-3shot:
+  id: mmlu-virology.val.ab-v1
+  metrics: [accuracy]
+mmlu-virology.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=virology&split=test
+    few_shot: hf://hendrycks_test?name=virology&split=dev
+    instructions: The following are multiple choice questions (with answers) about virology.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-virology-5shot:
+  id: mmlu-virology.val.ab-v2
+  metrics: [accuracy]
+mmlu-virology.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=virology&split=test
+    few_shot: hf://hendrycks_test?name=virology&split=dev
+    instructions: The following are multiple choice questions (with answers) about virology.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-virology-CoT:
+  id: mmlu-virology.val.ab-v3
+  metrics: [accuracy]
+mmlu-virology.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=virology&split=test
+    task_name: virology
+    no_MC_prompt: True
+    CoT: True
+
+mmlu-world-religions-3shot:
+  id: mmlu-world-religions.val.ab-v1
+  metrics: [accuracy]
+mmlu-world-religions.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=world_religions&split=test
+    few_shot: hf://hendrycks_test?name=world_religions&split=dev
+    instructions: The following are multiple choice questions (with answers) about world religions.
+    no_MC_prompt: True
+    num_few_shot: 3
+
+mmlu-world-religions-5shot:
+  id: mmlu-world-religions.val.ab-v2
+  metrics: [accuracy]
+mmlu-world-religions.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=world_religions&split=test
+    few_shot: hf://hendrycks_test?name=world_religions&split=dev
+    instructions: The following are multiple choice questions (with answers) about world religions.
+    num_few_shot: 5
+    no_MC_prompt: True
+
+mmlu-world-religions-CoT:
+  id: mmlu-world-religions.val.ab-v3
+  metrics: [accuracy]
+mmlu-world-religions.val.ab-v3:
+  class: evals.elsuite.dataset_specific.mmlu_CoT:MC_CoT
+  args:
+    dataset: hf://hendrycks_test?name=world_religions&split=test
+    task_name: world_religions
+    no_MC_prompt: True
+    CoT: True

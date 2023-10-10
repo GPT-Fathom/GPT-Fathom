@@ -1,0 +1,208 @@
+tydiqa-arabic-1shotgold:
+  id: tydiqa-arabic.val.ab-v1
+  metrics: [f1_score]
+tydiqa-arabic.val.ab-v1:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_arabic.jsonl
+    few_shot_jsonl: tydiqa/fewshot_arabic.jsonl
+    num_few_shot: 1
+tydiqa-arabic-1shotnocontext:
+  id: tydiqa-arabic.val.ab-v2
+  metrics: [f1_score]
+tydiqa-arabic.val.ab-v2:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_nocontext_arabic.jsonl
+    few_shot_jsonl: tydiqa/fewshot_nocontext_arabic.jsonl
+    num_few_shot: 1
+
+tydiqa-bengali-1shotgold:
+  id: tydiqa-bengali.val.ab-v1
+  metrics: [f1_score]
+tydiqa-bengali.val.ab-v1:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_bengali.jsonl
+    few_shot_jsonl: tydiqa/fewshot_bengali.jsonl
+    num_few_shot: 1
+tydiqa-bengali-1shotnocontext:
+  id: tydiqa-bengali.val.ab-v2
+  metrics: [f1_score]
+tydiqa-bengali.val.ab-v2:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_nocontext_bengali.jsonl
+    few_shot_jsonl: tydiqa/fewshot_nocontext_bengali.jsonl
+    num_few_shot: 1
+
+tydiqa-english-1shotgold:
+  id: tydiqa-english.val.ab-v1
+  metrics: [f1_score]
+tydiqa-english.val.ab-v1:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_english.jsonl
+    few_shot_jsonl: tydiqa/fewshot_english.jsonl
+    num_few_shot: 1
+tydiqa-english-1shotnocontext:
+  id: tydiqa-english.val.ab-v2
+  metrics: [f1_score]
+tydiqa-english.val.ab-v2:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_nocontext_english.jsonl
+    few_shot_jsonl: tydiqa/fewshot_nocontext_english.jsonl
+    num_few_shot: 1
+
+tydiqa-finnish-1shotgold:
+  id: tydiqa-finnish.val.ab-v1
+  metrics: [f1_score]
+tydiqa-finnish.val.ab-v1:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_finnish.jsonl
+    few_shot_jsonl: tydiqa/fewshot_finnish.jsonl
+    num_few_shot: 1
+tydiqa-finnish-1shotnocontext:
+  id: tydiqa-finnish.val.ab-v2
+  metrics: [f1_score]
+tydiqa-finnish.val.ab-v2:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_nocontext_finnish.jsonl
+    few_shot_jsonl: tydiqa/fewshot_nocontext_finnish.jsonl
+    num_few_shot: 1
+
+tydiqa-indonesian-1shotgold:
+  id: tydiqa-indonesian.val.ab-v1
+  metrics: [f1_score]
+tydiqa-indonesian.val.ab-v1:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_indonesian.jsonl
+    few_shot_jsonl: tydiqa/fewshot_indonesian.jsonl
+    num_few_shot: 1
+tydiqa-indonesian-1shotnocontext:
+  id: tydiqa-indonesian.val.ab-v2
+  metrics: [f1_score]
+tydiqa-indonesian.val.ab-v2:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_nocontext_indonesian.jsonl
+    few_shot_jsonl: tydiqa/fewshot_nocontext_indonesian.jsonl
+    num_few_shot: 1
+
+tydiqa-japanese-1shotgold:
+  id: tydiqa-japanese.val.ab-v1
+  metrics: [f1_score]
+tydiqa-japanese.val.ab-v1:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_japanese.jsonl
+    few_shot_jsonl: tydiqa/fewshot_japanese.jsonl
+    num_few_shot: 1
+tydiqa-japanese-1shotnocontext:
+  id: tydiqa-japanese.val.ab-v2
+  metrics: [f1_score]
+tydiqa-japanese.val.ab-v2:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_nocontext_japanese.jsonl
+    few_shot_jsonl: tydiqa/fewshot_nocontext_japanese.jsonl
+    num_few_shot: 1
+
+tydiqa-korean-1shotgold:
+  id: tydiqa-korean.val.ab-v1
+  metrics: [f1_score]
+tydiqa-korean.val.ab-v1:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_korean.jsonl
+    few_shot_jsonl: tydiqa/fewshot_korean.jsonl
+    num_few_shot: 1
+tydiqa-korean-1shotnocontext:
+  id: tydiqa-korean.val.ab-v2
+  metrics: [f1_score]
+tydiqa-korean.val.ab-v2:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_nocontext_korean.jsonl
+    few_shot_jsonl: tydiqa/fewshot_nocontext_korean.jsonl
+    num_few_shot: 1
+
+tydiqa-russian-1shotgold:
+  id: tydiqa-russian.val.ab-v1
+  metrics: [f1_score]
+tydiqa-russian.val.ab-v1:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_russian.jsonl
+    few_shot_jsonl: tydiqa/fewshot_russian.jsonl
+    num_few_shot: 1
+tydiqa-russian-1shotnocontext:
+  id: tydiqa-russian.val.ab-v2
+  metrics: [f1_score]
+tydiqa-russian.val.ab-v2:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_nocontext_russian.jsonl
+    few_shot_jsonl: tydiqa/fewshot_nocontext_russian.jsonl
+    num_few_shot: 1
+
+tydiqa-swahili-1shotgold:
+  id: tydiqa-swahili.val.ab-v1
+  metrics: [f1_score]
+tydiqa-swahili.val.ab-v1:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_swahili.jsonl
+    few_shot_jsonl: tydiqa/fewshot_swahili.jsonl
+    num_few_shot: 1
+tydiqa-swahili-1shotnocontext:
+  id: tydiqa-swahili.val.ab-v2
+  metrics: [f1_score]
+tydiqa-swahili.val.ab-v2:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_nocontext_swahili.jsonl
+    few_shot_jsonl: tydiqa/fewshot_nocontext_swahili.jsonl
+    num_few_shot: 1
+
+tydiqa-telugu-1shotgold:
+  id: tydiqa-telugu.val.ab-v1
+  metrics: [f1_score]
+tydiqa-telugu.val.ab-v1:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_telugu.jsonl
+    few_shot_jsonl: tydiqa/fewshot_telugu.jsonl
+    num_few_shot: 1
+tydiqa-telugu-1shotnocontext:
+  id: tydiqa-telugu.val.ab-v2
+  metrics: [f1_score]
+tydiqa-telugu.val.ab-v2:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_nocontext_telugu.jsonl
+    few_shot_jsonl: tydiqa/fewshot_nocontext_telugu.jsonl
+    num_few_shot: 1
+
+tydiqa-thai-1shotgold:
+  id: tydiqa-thai.val.ab-v1
+  metrics: [f1_score]
+tydiqa-thai.val.ab-v1:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_thai.jsonl
+    few_shot_jsonl: tydiqa/fewshot_thai.jsonl
+    num_few_shot: 1
+tydiqa-thai-1shotnocontext:
+  id: tydiqa-thai.val.ab-v2
+  metrics: [f1_score]
+tydiqa-thai.val.ab-v2:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: tydiqa/samples_nocontext_thai.jsonl
+    few_shot_jsonl: tydiqa/fewshot_nocontext_thai.jsonl
+    num_few_shot: 1

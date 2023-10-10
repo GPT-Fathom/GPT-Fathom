@@ -1,0 +1,79 @@
+agieval-en-set-5shot:
+  evals:
+    - agieval-sat-math-5shot
+    - agieval-sat-en-5shot
+    - agieval-aqua-rat-5shot
+    - agieval-lsat-ar-5shot
+    - agieval-lsat-lr-5shot
+    - agieval-lsat-rc-5shot
+    - agieval-logiqa-en-5shot
+    - agieval-sat-en-without-passage-5shot
+    - agieval-math-5shot
+
+agieval-en-set-CoT:
+  evals:
+    - agieval-sat-math-CoT
+    - agieval-sat-en-CoT
+    - agieval-aqua-rat-CoT
+    - agieval-lsat-ar-CoT
+    - agieval-lsat-lr-CoT
+    - agieval-lsat-rc-CoT
+    - agieval-logiqa-en-CoT
+    - agieval-sat-en-without-passage-CoT
+    - agieval-math-CoT
+
+
+agieval-cn-set-5shot:
+  evals:
+    - agieval-gaokao-chinese-5shot
+    - agieval-gaokao-geography-5shot
+    - agieval-gaokao-history-5shot
+    - agieval-gaokao-biology-5shot
+    - agieval-gaokao-chemistry-5shot
+    - agieval-gaokao-english-5shot
+    - agieval-logiqa-zh-5shot
+    - agieval-gaokao-mathqa-5shot
+    - agieval-gaokao-mathcloze-5shot
+    - agieval-jec-qa-kd-5shot
+    - agieval-jec-qa-ca-5shot
+    - agieval-gaokao-physics-5shot
+
+agieval-cn-set-CoT:
+  evals:
+    - agieval-gaokao-chinese-CoT
+    - agieval-gaokao-geography-CoT
+    - agieval-gaokao-history-CoT
+    - agieval-gaokao-biology-CoT
+    - agieval-gaokao-chemistry-CoT
+    - agieval-gaokao-english-CoT
+    - agieval-logiqa-zh-CoT
+    - agieval-gaokao-mathqa-CoT
+    - agieval-gaokao-mathcloze-CoT
+    - agieval-jec-qa-kd-CoT
+    - agieval-jec-qa-ca-CoT
+    - agieval-gaokao-physics-CoT
+
+
+agieval-all-set:
+  evals:
+    - agieval-sat-math-5shot
+    - agieval-sat-en-5shot
+    - agieval-aqua-rat-5shot
+    - agieval-lsat-ar-5shot
+    - agieval-lsat-lr-5shot
+    - agieval-lsat-rc-5shot
+    - agieval-logiqa-en-5shot
+    - agieval-sat-en-without-passage-5shot
+    - agieval-math-5shot
+    - agieval-gaokao-chinese-5shot
+    - agieval-gaokao-geography-5shot
+    - agieval-gaokao-history-5shot
+    - agieval-gaokao-biology-5shot
+    - agieval-gaokao-chemistry-5shot
+    - agieval-gaokao-english-5shot
+    - agieval-logiqa-zh-5shot
+    - agieval-gaokao-mathqa-5shot
+    - agieval-gaokao-mathcloze-5shot
+    - agieval-jec-qa-kd-5shot
+    - agieval-jec-qa-ca-5shot
+    - agieval-gaokao-physics-5shot

@@ -1,0 +1,49 @@
+winogrande-0shot:
+  id: winogrande.val.ab-v1
+  metrics: [accuracy]
+winogrande.val.ab-v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://winogrande?name=winogrande_xl&split=validation
+    few_shot: hf://winogrande?name=winogrande_xl&split=train
+    instructions: Choose the option that fill in the blank best.
+    no_MC_prompt: False
+    num_few_shot: 0
+
+
+winogrande-1shot:
+  id: winogrande.val.ab-v2
+  metrics: [accuracy]
+winogrande.val.ab-v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://winogrande?name=winogrande_xl&split=validation
+    few_shot: hf://winogrande?name=winogrande_xl&split=train
+    instructions: Choose the option that fill in the blank best.
+    no_MC_prompt: False
+    num_few_shot: 1
+
+
+winogrande-5shot:
+  id: winogrande.val.ab-v3
+  metrics: [accuracy]
+winogrande.val.ab-v3:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://winogrande?name=winogrande_xl&split=validation
+    few_shot: hf://winogrande?name=winogrande_xl&split=train
+    instructions: Choose the option that fill in the blank best.
+    no_MC_prompt: True
+    num_few_shot: 5
+
+winogrande-30shot:
+  id: winogrande.val.ab-v4
+  metrics: [accuracy]
+winogrande.val.ab-v4:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://winogrande?name=winogrande_xl&split=validation
+    few_shot: hf://winogrande?name=winogrande_xl&split=train
+    instructions: Choose the option that fill in the blank best.
+    no_MC_prompt: True
+    num_few_shot: 30

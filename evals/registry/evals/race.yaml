@@ -1,0 +1,71 @@
+race-h-0shot:
+  id: race.val.ab-v1
+  metrics: [accuracy]
+race.val.ab-v1:
+  class: evals.elsuite.basic.reading_comprehension:READ_COMPRE
+  args:
+    samples_jsonl: race/samples_h.jsonl
+    few_shot_jsonl: race/fewshot_h.jsonl
+    num_few_shot: 0
+    MC: True
+
+race-h-1shot:
+  id: race.val.ab-v2
+  metrics: [accuracy]
+race.val.ab-v2:
+  class: evals.elsuite.basic.reading_comprehension:READ_COMPRE
+  args:
+    samples_jsonl: race/samples_h.jsonl
+    few_shot_jsonl: race/fewshot_h.jsonl
+    num_few_shot: 1
+    MC: True
+
+
+race-h-5shot:
+  id: race.val.ab-v3
+  metrics: [accuracy]
+race.val.ab-v3:
+  class: evals.elsuite.basic.reading_comprehension:READ_COMPRE
+  args:
+    samples_jsonl: race/samples_h.jsonl
+    few_shot_jsonl: race/fewshot_h.jsonl
+    num_few_shot: 5
+    MC: True
+    no_MC_prompt: True
+
+
+race-m-0shot:
+  id: race.val.ab-v4
+  metrics: [accuracy]
+race.val.ab-v4:
+  class: evals.elsuite.basic.reading_comprehension:READ_COMPRE
+  args:
+    samples_jsonl: race/samples_m.jsonl
+    few_shot_jsonl: race/fewshot_m.jsonl
+    num_few_shot: 0
+    MC: True
+    
+
+race-m-1shot:
+  id: race.val.ab-v5
+  metrics: [accuracy]
+race.val.ab-v5:
+  class: evals.elsuite.basic.reading_comprehension:READ_COMPRE
+  args:
+    samples_jsonl: race/samples_m.jsonl
+    few_shot_jsonl: race/fewshot_m.jsonl
+    num_few_shot: 1
+    MC: True
+
+
+race-m-5shot:
+  id: race.val.ab-v6
+  metrics: [accuracy]
+race.val.ab-v6:
+  class: evals.elsuite.basic.reading_comprehension:READ_COMPRE
+  args:
+    samples_jsonl: race/samples_m.jsonl
+    few_shot_jsonl: race/fewshot_m.jsonl
+    num_few_shot: 5
+    MC: True
+    no_MC_prompt: True

@@ -1,0 +1,5 @@
+llama:
+  class: evals.completion_fns.llama:LLAMACompletion
+
+llama2:
+  class: evals.completion_fns.llama:LLAMA2Completion

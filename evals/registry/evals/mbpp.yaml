@@ -1,0 +1,10 @@
+mbpp-3shot:
+  id: mbpp.test.v1
+  metrics: [pass@1, pass@80]
+
+
+
+mbpp.test.v1:
+  class: evals.elsuite.basic.code:CODE
+  args:
+    dataset: mbpp

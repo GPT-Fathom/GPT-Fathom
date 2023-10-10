@@ -1,0 +1,10 @@
+realtoxic:
+  id: realtoxic.test.v1
+  description: realtoxic dataset
+  metrics: [summaryscore]
+
+
+realtoxic.test.v1:
+  class: evals.elsuite.dataset_specific.realtoxic:RealToxicity
+  args:
+    samples_jsonl: realtoxic/samples.jsonl

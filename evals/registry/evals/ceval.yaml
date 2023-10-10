@@ -1,0 +1,1976 @@
+
+ceval-computer-network-0shot:
+  id: ceval-computer-network.val.ab-v1
+  metrics: [accuracy]
+ceval-computer-network.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=computer_network&split=val
+    few_shot: hf://ceval/ceval-exam?name=computer_network&split=dev
+    instructions: 以下是中国关于computer_network考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-computer-network-5shot:
+  id: ceval-computer-network.val.ab-v2
+  metrics: [accuracy]
+ceval-computer-network.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=computer_network&split=val
+    few_shot: hf://ceval/ceval-exam?name=computer_network&split=dev
+    instructions: 以下是中国关于computer_network考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-computer-network-CoT:
+  id: ceval-computer-network.val.ab-v3
+  metrics: [accuracy]
+ceval-computer-network.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=computer_network&split=val
+    few_shot: hf://ceval/ceval-exam?name=computer_network&split=dev
+    instructions: 以下是中国关于computer_network考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-operating-system-0shot:
+  id: ceval-operating-system.val.ab-v1
+  metrics: [accuracy]
+ceval-operating-system.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=operating_system&split=val
+    few_shot: hf://ceval/ceval-exam?name=operating_system&split=dev
+    instructions: 以下是中国关于operating_system考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-operating-system-5shot:
+  id: ceval-operating-system.val.ab-v2
+  metrics: [accuracy]
+ceval-operating-system.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=operating_system&split=val
+    few_shot: hf://ceval/ceval-exam?name=operating_system&split=dev
+    instructions: 以下是中国关于operating_system考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-operating-system-CoT:
+  id: ceval-operating-system.val.ab-v3
+  metrics: [accuracy]
+ceval-operating-system.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=operating_system&split=val
+    few_shot: hf://ceval/ceval-exam?name=operating_system&split=dev
+    instructions: 以下是中国关于operating_system考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-computer-architecture-0shot:
+  id: ceval-computer-architecture.val.ab-v1
+  metrics: [accuracy]
+ceval-computer-architecture.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=computer_architecture&split=val
+    few_shot: hf://ceval/ceval-exam?name=computer_architecture&split=dev
+    instructions: 以下是中国关于computer_architecture考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-computer-architecture-5shot:
+  id: ceval-computer-architecture.val.ab-v2
+  metrics: [accuracy]
+ceval-computer-architecture.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=computer_architecture&split=val
+    few_shot: hf://ceval/ceval-exam?name=computer_architecture&split=dev
+    instructions: 以下是中国关于computer_architecture考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-computer-architecture-CoT:
+  id: ceval-computer-architecture.val.ab-v3
+  metrics: [accuracy]
+ceval-computer-architecture.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=computer_architecture&split=val
+    few_shot: hf://ceval/ceval-exam?name=computer_architecture&split=dev
+    instructions: 以下是中国关于computer_architecture考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-college-programming-0shot:
+  id: ceval-college-programming.val.ab-v1
+  metrics: [accuracy]
+ceval-college-programming.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=college_programming&split=val
+    few_shot: hf://ceval/ceval-exam?name=college_programming&split=dev
+    instructions: 以下是中国关于college_programming考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-college-programming-5shot:
+  id: ceval-college-programming.val.ab-v2
+  metrics: [accuracy]
+ceval-college-programming.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=college_programming&split=val
+    few_shot: hf://ceval/ceval-exam?name=college_programming&split=dev
+    instructions: 以下是中国关于college_programming考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-college-programming-CoT:
+  id: ceval-college-programming.val.ab-v3
+  metrics: [accuracy]
+ceval-college-programming.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=college_programming&split=val
+    few_shot: hf://ceval/ceval-exam?name=college_programming&split=dev
+    instructions: 以下是中国关于college_programming考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-college-physics-0shot:
+  id: ceval-college-physics.val.ab-v1
+  metrics: [accuracy]
+ceval-college-physics.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=college_physics&split=val
+    few_shot: hf://ceval/ceval-exam?name=college_physics&split=dev
+    instructions: 以下是中国关于college_physics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-college-physics-5shot:
+  id: ceval-college-physics.val.ab-v2
+  metrics: [accuracy]
+ceval-college-physics.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=college_physics&split=val
+    few_shot: hf://ceval/ceval-exam?name=college_physics&split=dev
+    instructions: 以下是中国关于college_physics考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-college-physics-CoT:
+  id: ceval-college-physics.val.ab-v3
+  metrics: [accuracy]
+ceval-college-physics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=college_physics&split=val
+    few_shot: hf://ceval/ceval-exam?name=college_physics&split=dev
+    instructions: 以下是中国关于college_physics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-college-chemistry-0shot:
+  id: ceval-college-chemistry.val.ab-v1
+  metrics: [accuracy]
+ceval-college-chemistry.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=college_chemistry&split=val
+    few_shot: hf://ceval/ceval-exam?name=college_chemistry&split=dev
+    instructions: 以下是中国关于college_chemistry考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-college-chemistry-5shot:
+  id: ceval-college-chemistry.val.ab-v2
+  metrics: [accuracy]
+ceval-college-chemistry.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=college_chemistry&split=val
+    few_shot: hf://ceval/ceval-exam?name=college_chemistry&split=dev
+    instructions: 以下是中国关于college_chemistry考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-college-chemistry-CoT:
+  id: ceval-college-chemistry.val.ab-v3
+  metrics: [accuracy]
+ceval-college-chemistry.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=college_chemistry&split=val
+    few_shot: hf://ceval/ceval-exam?name=college_chemistry&split=dev
+    instructions: 以下是中国关于college_chemistry考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-advanced-mathematics-0shot:
+  id: ceval-advanced-mathematics.val.ab-v1
+  metrics: [accuracy]
+ceval-advanced-mathematics.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=advanced_mathematics&split=val
+    few_shot: hf://ceval/ceval-exam?name=advanced_mathematics&split=dev
+    instructions: 以下是中国关于advanced_mathematics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-advanced-mathematics-5shot:
+  id: ceval-advanced-mathematics.val.ab-v2
+  metrics: [accuracy]
+ceval-advanced-mathematics.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=advanced_mathematics&split=val
+    few_shot: hf://ceval/ceval-exam?name=advanced_mathematics&split=dev
+    instructions: 以下是中国关于advanced_mathematics考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-advanced-mathematics-CoT:
+  id: ceval-advanced-mathematics.val.ab-v3
+  metrics: [accuracy]
+ceval-advanced-mathematics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=advanced_mathematics&split=val
+    few_shot: hf://ceval/ceval-exam?name=advanced_mathematics&split=dev
+    instructions: 以下是中国关于advanced_mathematics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-probability-and-statistics-0shot:
+  id: ceval-probability-and-statistics.val.ab-v1
+  metrics: [accuracy]
+ceval-probability-and-statistics.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=probability_and_statistics&split=val
+    few_shot: hf://ceval/ceval-exam?name=probability_and_statistics&split=dev
+    instructions: 以下是中国关于probability_and_statistics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-probability-and-statistics-5shot:
+  id: ceval-probability-and-statistics.val.ab-v2
+  metrics: [accuracy]
+ceval-probability-and-statistics.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=probability_and_statistics&split=val
+    few_shot: hf://ceval/ceval-exam?name=probability_and_statistics&split=dev
+    instructions: 以下是中国关于probability_and_statistics考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-probability-and-statistics-CoT:
+  id: ceval-probability-and-statistics.val.ab-v3
+  metrics: [accuracy]
+ceval-probability-and-statistics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=probability_and_statistics&split=val
+    few_shot: hf://ceval/ceval-exam?name=probability_and_statistics&split=dev
+    instructions: 以下是中国关于probability_and_statistics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-discrete-mathematics-0shot:
+  id: ceval-discrete-mathematics.val.ab-v1
+  metrics: [accuracy]
+ceval-discrete-mathematics.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=discrete_mathematics&split=val
+    few_shot: hf://ceval/ceval-exam?name=discrete_mathematics&split=dev
+    instructions: 以下是中国关于discrete_mathematics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-discrete-mathematics-5shot:
+  id: ceval-discrete-mathematics.val.ab-v2
+  metrics: [accuracy]
+ceval-discrete-mathematics.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=discrete_mathematics&split=val
+    few_shot: hf://ceval/ceval-exam?name=discrete_mathematics&split=dev
+    instructions: 以下是中国关于discrete_mathematics考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-discrete-mathematics-CoT:
+  id: ceval-discrete-mathematics.val.ab-v3
+  metrics: [accuracy]
+ceval-discrete-mathematics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=discrete_mathematics&split=val
+    few_shot: hf://ceval/ceval-exam?name=discrete_mathematics&split=dev
+    instructions: 以下是中国关于discrete_mathematics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-electrical-engineer-0shot:
+  id: ceval-electrical-engineer.val.ab-v1
+  metrics: [accuracy]
+ceval-electrical-engineer.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=electrical_engineer&split=val
+    few_shot: hf://ceval/ceval-exam?name=electrical_engineer&split=dev
+    instructions: 以下是中国关于electrical_engineer考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-electrical-engineer-5shot:
+  id: ceval-electrical-engineer.val.ab-v2
+  metrics: [accuracy]
+ceval-electrical-engineer.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=electrical_engineer&split=val
+    few_shot: hf://ceval/ceval-exam?name=electrical_engineer&split=dev
+    instructions: 以下是中国关于electrical_engineer考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-electrical-engineer-CoT:
+  id: ceval-electrical-engineer.val.ab-v3
+  metrics: [accuracy]
+ceval-electrical-engineer.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=electrical_engineer&split=val
+    few_shot: hf://ceval/ceval-exam?name=electrical_engineer&split=dev
+    instructions: 以下是中国关于electrical_engineer考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-metrology-engineer-0shot:
+  id: ceval-metrology-engineer.val.ab-v1
+  metrics: [accuracy]
+ceval-metrology-engineer.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=metrology_engineer&split=val
+    few_shot: hf://ceval/ceval-exam?name=metrology_engineer&split=dev
+    instructions: 以下是中国关于metrology_engineer考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-metrology-engineer-5shot:
+  id: ceval-metrology-engineer.val.ab-v2
+  metrics: [accuracy]
+ceval-metrology-engineer.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=metrology_engineer&split=val
+    few_shot: hf://ceval/ceval-exam?name=metrology_engineer&split=dev
+    instructions: 以下是中国关于metrology_engineer考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-metrology-engineer-CoT:
+  id: ceval-metrology-engineer.val.ab-v3
+  metrics: [accuracy]
+ceval-metrology-engineer.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=metrology_engineer&split=val
+    few_shot: hf://ceval/ceval-exam?name=metrology_engineer&split=dev
+    instructions: 以下是中国关于metrology_engineer考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-high-school-mathematics-0shot:
+  id: ceval-high-school-mathematics.val.ab-v1
+  metrics: [accuracy]
+ceval-high-school-mathematics.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_mathematics&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_mathematics&split=dev
+    instructions: 以下是中国关于high_school_mathematics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-high-school-mathematics-5shot:
+  id: ceval-high-school-mathematics.val.ab-v2
+  metrics: [accuracy]
+ceval-high-school-mathematics.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_mathematics&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_mathematics&split=dev
+    instructions: 以下是中国关于high_school_mathematics考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-high-school-mathematics-CoT:
+  id: ceval-high-school-mathematics.val.ab-v3
+  metrics: [accuracy]
+ceval-high-school-mathematics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_mathematics&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_mathematics&split=dev
+    instructions: 以下是中国关于high_school_mathematics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-high-school-physics-0shot:
+  id: ceval-high-school-physics.val.ab-v1
+  metrics: [accuracy]
+ceval-high-school-physics.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_physics&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_physics&split=dev
+    instructions: 以下是中国关于high_school_physics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-high-school-physics-5shot:
+  id: ceval-high-school-physics.val.ab-v2
+  metrics: [accuracy]
+ceval-high-school-physics.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_physics&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_physics&split=dev
+    instructions: 以下是中国关于high_school_physics考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-high-school-physics-CoT:
+  id: ceval-high-school-physics.val.ab-v3
+  metrics: [accuracy]
+ceval-high-school-physics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_physics&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_physics&split=dev
+    instructions: 以下是中国关于high_school_physics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-high-school-chemistry-0shot:
+  id: ceval-high-school-chemistry.val.ab-v1
+  metrics: [accuracy]
+ceval-high-school-chemistry.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_chemistry&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_chemistry&split=dev
+    instructions: 以下是中国关于high_school_chemistry考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-high-school-chemistry-5shot:
+  id: ceval-high-school-chemistry.val.ab-v2
+  metrics: [accuracy]
+ceval-high-school-chemistry.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_chemistry&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_chemistry&split=dev
+    instructions: 以下是中国关于high_school_chemistry考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-high-school-chemistry-CoT:
+  id: ceval-high-school-chemistry.val.ab-v3
+  metrics: [accuracy]
+ceval-high-school-chemistry.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_chemistry&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_chemistry&split=dev
+    instructions: 以下是中国关于high_school_chemistry考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-high-school-biology-0shot:
+  id: ceval-high-school-biology.val.ab-v1
+  metrics: [accuracy]
+ceval-high-school-biology.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_biology&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_biology&split=dev
+    instructions: 以下是中国关于high_school_biology考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-high-school-biology-5shot:
+  id: ceval-high-school-biology.val.ab-v2
+  metrics: [accuracy]
+ceval-high-school-biology.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_biology&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_biology&split=dev
+    instructions: 以下是中国关于high_school_biology考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-high-school-biology-CoT:
+  id: ceval-high-school-biology.val.ab-v3
+  metrics: [accuracy]
+ceval-high-school-biology.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_biology&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_biology&split=dev
+    instructions: 以下是中国关于high_school_biology考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-middle-school-mathematics-0shot:
+  id: ceval-middle-school-mathematics.val.ab-v1
+  metrics: [accuracy]
+ceval-middle-school-mathematics.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_mathematics&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_mathematics&split=dev
+    instructions: 以下是中国关于middle_school_mathematics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-middle-school-mathematics-5shot:
+  id: ceval-middle-school-mathematics.val.ab-v2
+  metrics: [accuracy]
+ceval-middle-school-mathematics.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_mathematics&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_mathematics&split=dev
+    instructions: 以下是中国关于middle_school_mathematics考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-middle-school-mathematics-CoT:
+  id: ceval-middle-school-mathematics.val.ab-v3
+  metrics: [accuracy]
+ceval-middle-school-mathematics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_mathematics&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_mathematics&split=dev
+    instructions: 以下是中国关于middle_school_mathematics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-middle-school-biology-0shot:
+  id: ceval-middle-school-biology.val.ab-v1
+  metrics: [accuracy]
+ceval-middle-school-biology.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_biology&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_biology&split=dev
+    instructions: 以下是中国关于middle_school_biology考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-middle-school-biology-5shot:
+  id: ceval-middle-school-biology.val.ab-v2
+  metrics: [accuracy]
+ceval-middle-school-biology.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_biology&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_biology&split=dev
+    instructions: 以下是中国关于middle_school_biology考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-middle-school-biology-CoT:
+  id: ceval-middle-school-biology.val.ab-v3
+  metrics: [accuracy]
+ceval-middle-school-biology.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_biology&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_biology&split=dev
+    instructions: 以下是中国关于middle_school_biology考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-middle-school-physics-0shot:
+  id: ceval-middle-school-physics.val.ab-v1
+  metrics: [accuracy]
+ceval-middle-school-physics.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_physics&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_physics&split=dev
+    instructions: 以下是中国关于middle_school_physics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-middle-school-physics-5shot:
+  id: ceval-middle-school-physics.val.ab-v2
+  metrics: [accuracy]
+ceval-middle-school-physics.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_physics&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_physics&split=dev
+    instructions: 以下是中国关于middle_school_physics考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-middle-school-physics-CoT:
+  id: ceval-middle-school-physics.val.ab-v3
+  metrics: [accuracy]
+ceval-middle-school-physics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_physics&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_physics&split=dev
+    instructions: 以下是中国关于middle_school_physics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-middle-school-chemistry-0shot:
+  id: ceval-middle-school-chemistry.val.ab-v1
+  metrics: [accuracy]
+ceval-middle-school-chemistry.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_chemistry&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_chemistry&split=dev
+    instructions: 以下是中国关于middle_school_chemistry考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-middle-school-chemistry-5shot:
+  id: ceval-middle-school-chemistry.val.ab-v2
+  metrics: [accuracy]
+ceval-middle-school-chemistry.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_chemistry&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_chemistry&split=dev
+    instructions: 以下是中国关于middle_school_chemistry考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-middle-school-chemistry-CoT:
+  id: ceval-middle-school-chemistry.val.ab-v3
+  metrics: [accuracy]
+ceval-middle-school-chemistry.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_chemistry&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_chemistry&split=dev
+    instructions: 以下是中国关于middle_school_chemistry考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-veterinary-medicine-0shot:
+  id: ceval-veterinary-medicine.val.ab-v1
+  metrics: [accuracy]
+ceval-veterinary-medicine.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=veterinary_medicine&split=val
+    few_shot: hf://ceval/ceval-exam?name=veterinary_medicine&split=dev
+    instructions: 以下是中国关于veterinary_medicine考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-veterinary-medicine-5shot:
+  id: ceval-veterinary-medicine.val.ab-v2
+  metrics: [accuracy]
+ceval-veterinary-medicine.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=veterinary_medicine&split=val
+    few_shot: hf://ceval/ceval-exam?name=veterinary_medicine&split=dev
+    instructions: 以下是中国关于veterinary_medicine考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-veterinary-medicine-CoT:
+  id: ceval-veterinary-medicine.val.ab-v3
+  metrics: [accuracy]
+ceval-veterinary-medicine.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=veterinary_medicine&split=val
+    few_shot: hf://ceval/ceval-exam?name=veterinary_medicine&split=dev
+    instructions: 以下是中国关于veterinary_medicine考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-college-economics-0shot:
+  id: ceval-college-economics.val.ab-v1
+  metrics: [accuracy]
+ceval-college-economics.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=college_economics&split=val
+    few_shot: hf://ceval/ceval-exam?name=college_economics&split=dev
+    instructions: 以下是中国关于college_economics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-college-economics-5shot:
+  id: ceval-college-economics.val.ab-v2
+  metrics: [accuracy]
+ceval-college-economics.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=college_economics&split=val
+    few_shot: hf://ceval/ceval-exam?name=college_economics&split=dev
+    instructions: 以下是中国关于college_economics考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-college-economics-CoT:
+  id: ceval-college-economics.val.ab-v3
+  metrics: [accuracy]
+ceval-college-economics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=college_economics&split=val
+    few_shot: hf://ceval/ceval-exam?name=college_economics&split=dev
+    instructions: 以下是中国关于college_economics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-business-administration-0shot:
+  id: ceval-business-administration.val.ab-v1
+  metrics: [accuracy]
+ceval-business-administration.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=business_administration&split=val
+    few_shot: hf://ceval/ceval-exam?name=business_administration&split=dev
+    instructions: 以下是中国关于business_administration考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-business-administration-5shot:
+  id: ceval-business-administration.val.ab-v2
+  metrics: [accuracy]
+ceval-business-administration.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=business_administration&split=val
+    few_shot: hf://ceval/ceval-exam?name=business_administration&split=dev
+    instructions: 以下是中国关于business_administration考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-business-administration-CoT:
+  id: ceval-business-administration.val.ab-v3
+  metrics: [accuracy]
+ceval-business-administration.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=business_administration&split=val
+    few_shot: hf://ceval/ceval-exam?name=business_administration&split=dev
+    instructions: 以下是中国关于business_administration考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-marxism-0shot:
+  id: ceval-marxism.val.ab-v1
+  metrics: [accuracy]
+ceval-marxism.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=marxism&split=val
+    few_shot: hf://ceval/ceval-exam?name=marxism&split=dev
+    instructions: 以下是中国关于marxism考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-marxism-5shot:
+  id: ceval-marxism.val.ab-v2
+  metrics: [accuracy]
+ceval-marxism.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=marxism&split=val
+    few_shot: hf://ceval/ceval-exam?name=marxism&split=dev
+    instructions: 以下是中国关于marxism考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-marxism-CoT:
+  id: ceval-marxism.val.ab-v3
+  metrics: [accuracy]
+ceval-marxism.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=marxism&split=val
+    few_shot: hf://ceval/ceval-exam?name=marxism&split=dev
+    instructions: 以下是中国关于marxism考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-mao-zedong-thought-0shot:
+  id: ceval-mao-zedong-thought.val.ab-v1
+  metrics: [accuracy]
+ceval-mao-zedong-thought.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=mao_zedong_thought&split=val
+    few_shot: hf://ceval/ceval-exam?name=mao_zedong_thought&split=dev
+    instructions: 以下是中国关于mao_zedong_thought考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-mao-zedong-thought-5shot:
+  id: ceval-mao-zedong-thought.val.ab-v2
+  metrics: [accuracy]
+ceval-mao-zedong-thought.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=mao_zedong_thought&split=val
+    few_shot: hf://ceval/ceval-exam?name=mao_zedong_thought&split=dev
+    instructions: 以下是中国关于mao_zedong_thought考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-mao-zedong-thought-CoT:
+  id: ceval-mao-zedong-thought.val.ab-v3
+  metrics: [accuracy]
+ceval-mao-zedong-thought.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=mao_zedong_thought&split=val
+    few_shot: hf://ceval/ceval-exam?name=mao_zedong_thought&split=dev
+    instructions: 以下是中国关于mao_zedong_thought考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-education-science-0shot:
+  id: ceval-education-science.val.ab-v1
+  metrics: [accuracy]
+ceval-education-science.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=education_science&split=val
+    few_shot: hf://ceval/ceval-exam?name=education_science&split=dev
+    instructions: 以下是中国关于education_science考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-education-science-5shot:
+  id: ceval-education-science.val.ab-v2
+  metrics: [accuracy]
+ceval-education-science.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=education_science&split=val
+    few_shot: hf://ceval/ceval-exam?name=education_science&split=dev
+    instructions: 以下是中国关于education_science考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-education-science-CoT:
+  id: ceval-education-science.val.ab-v3
+  metrics: [accuracy]
+ceval-education-science.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=education_science&split=val
+    few_shot: hf://ceval/ceval-exam?name=education_science&split=dev
+    instructions: 以下是中国关于education_science考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-teacher-qualification-0shot:
+  id: ceval-teacher-qualification.val.ab-v1
+  metrics: [accuracy]
+ceval-teacher-qualification.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=teacher_qualification&split=val
+    few_shot: hf://ceval/ceval-exam?name=teacher_qualification&split=dev
+    instructions: 以下是中国关于teacher_qualification考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-teacher-qualification-5shot:
+  id: ceval-teacher-qualification.val.ab-v2
+  metrics: [accuracy]
+ceval-teacher-qualification.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=teacher_qualification&split=val
+    few_shot: hf://ceval/ceval-exam?name=teacher_qualification&split=dev
+    instructions: 以下是中国关于teacher_qualification考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-teacher-qualification-CoT:
+  id: ceval-teacher-qualification.val.ab-v3
+  metrics: [accuracy]
+ceval-teacher-qualification.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=teacher_qualification&split=val
+    few_shot: hf://ceval/ceval-exam?name=teacher_qualification&split=dev
+    instructions: 以下是中国关于teacher_qualification考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-high-school-politics-0shot:
+  id: ceval-high-school-politics.val.ab-v1
+  metrics: [accuracy]
+ceval-high-school-politics.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_politics&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_politics&split=dev
+    instructions: 以下是中国关于high_school_politics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-high-school-politics-5shot:
+  id: ceval-high-school-politics.val.ab-v2
+  metrics: [accuracy]
+ceval-high-school-politics.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_politics&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_politics&split=dev
+    instructions: 以下是中国关于high_school_politics考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-high-school-politics-CoT:
+  id: ceval-high-school-politics.val.ab-v3
+  metrics: [accuracy]
+ceval-high-school-politics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_politics&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_politics&split=dev
+    instructions: 以下是中国关于high_school_politics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-high-school-geography-0shot:
+  id: ceval-high-school-geography.val.ab-v1
+  metrics: [accuracy]
+ceval-high-school-geography.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_geography&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_geography&split=dev
+    instructions: 以下是中国关于high_school_geography考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-high-school-geography-5shot:
+  id: ceval-high-school-geography.val.ab-v2
+  metrics: [accuracy]
+ceval-high-school-geography.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_geography&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_geography&split=dev
+    instructions: 以下是中国关于high_school_geography考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-high-school-geography-CoT:
+  id: ceval-high-school-geography.val.ab-v3
+  metrics: [accuracy]
+ceval-high-school-geography.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_geography&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_geography&split=dev
+    instructions: 以下是中国关于high_school_geography考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-middle-school-politics-0shot:
+  id: ceval-middle-school-politics.val.ab-v1
+  metrics: [accuracy]
+ceval-middle-school-politics.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_politics&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_politics&split=dev
+    instructions: 以下是中国关于middle_school_politics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-middle-school-politics-5shot:
+  id: ceval-middle-school-politics.val.ab-v2
+  metrics: [accuracy]
+ceval-middle-school-politics.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_politics&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_politics&split=dev
+    instructions: 以下是中国关于middle_school_politics考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-middle-school-politics-CoT:
+  id: ceval-middle-school-politics.val.ab-v3
+  metrics: [accuracy]
+ceval-middle-school-politics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_politics&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_politics&split=dev
+    instructions: 以下是中国关于middle_school_politics考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-middle-school-geography-0shot:
+  id: ceval-middle-school-geography.val.ab-v1
+  metrics: [accuracy]
+ceval-middle-school-geography.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_geography&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_geography&split=dev
+    instructions: 以下是中国关于middle_school_geography考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-middle-school-geography-5shot:
+  id: ceval-middle-school-geography.val.ab-v2
+  metrics: [accuracy]
+ceval-middle-school-geography.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_geography&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_geography&split=dev
+    instructions: 以下是中国关于middle_school_geography考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-middle-school-geography-CoT:
+  id: ceval-middle-school-geography.val.ab-v3
+  metrics: [accuracy]
+ceval-middle-school-geography.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_geography&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_geography&split=dev
+    instructions: 以下是中国关于middle_school_geography考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-modern-chinese-history-0shot:
+  id: ceval-modern-chinese-history.val.ab-v1
+  metrics: [accuracy]
+ceval-modern-chinese-history.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=modern_chinese_history&split=val
+    few_shot: hf://ceval/ceval-exam?name=modern_chinese_history&split=dev
+    instructions: 以下是中国关于modern_chinese_history考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-modern-chinese-history-5shot:
+  id: ceval-modern-chinese-history.val.ab-v2
+  metrics: [accuracy]
+ceval-modern-chinese-history.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=modern_chinese_history&split=val
+    few_shot: hf://ceval/ceval-exam?name=modern_chinese_history&split=dev
+    instructions: 以下是中国关于modern_chinese_history考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-modern-chinese-history-CoT:
+  id: ceval-modern-chinese-history.val.ab-v3
+  metrics: [accuracy]
+ceval-modern-chinese-history.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=modern_chinese_history&split=val
+    few_shot: hf://ceval/ceval-exam?name=modern_chinese_history&split=dev
+    instructions: 以下是中国关于modern_chinese_history考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-ideological-and-moral-cultivation-0shot:
+  id: ceval-ideological-and-moral-cultivation.val.ab-v1
+  metrics: [accuracy]
+ceval-ideological-and-moral-cultivation.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=ideological_and_moral_cultivation&split=val
+    few_shot: hf://ceval/ceval-exam?name=ideological_and_moral_cultivation&split=dev
+    instructions: 以下是中国关于ideological_and_moral_cultivation考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-ideological-and-moral-cultivation-5shot:
+  id: ceval-ideological-and-moral-cultivation.val.ab-v2
+  metrics: [accuracy]
+ceval-ideological-and-moral-cultivation.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=ideological_and_moral_cultivation&split=val
+    few_shot: hf://ceval/ceval-exam?name=ideological_and_moral_cultivation&split=dev
+    instructions: 以下是中国关于ideological_and_moral_cultivation考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-ideological-and-moral-cultivation-CoT:
+  id: ceval-ideological-and-moral-cultivation.val.ab-v3
+  metrics: [accuracy]
+ceval-ideological-and-moral-cultivation.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=ideological_and_moral_cultivation&split=val
+    few_shot: hf://ceval/ceval-exam?name=ideological_and_moral_cultivation&split=dev
+    instructions: 以下是中国关于ideological_and_moral_cultivation考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-logic-0shot:
+  id: ceval-logic.val.ab-v1
+  metrics: [accuracy]
+ceval-logic.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=logic&split=val
+    few_shot: hf://ceval/ceval-exam?name=logic&split=dev
+    instructions: 以下是中国关于logic考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-logic-5shot:
+  id: ceval-logic.val.ab-v2
+  metrics: [accuracy]
+ceval-logic.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=logic&split=val
+    few_shot: hf://ceval/ceval-exam?name=logic&split=dev
+    instructions: 以下是中国关于logic考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-logic-CoT:
+  id: ceval-logic.val.ab-v3
+  metrics: [accuracy]
+ceval-logic.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=logic&split=val
+    few_shot: hf://ceval/ceval-exam?name=logic&split=dev
+    instructions: 以下是中国关于logic考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-law-0shot:
+  id: ceval-law.val.ab-v1
+  metrics: [accuracy]
+ceval-law.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=law&split=val
+    few_shot: hf://ceval/ceval-exam?name=law&split=dev
+    instructions: 以下是中国关于law考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-law-5shot:
+  id: ceval-law.val.ab-v2
+  metrics: [accuracy]
+ceval-law.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=law&split=val
+    few_shot: hf://ceval/ceval-exam?name=law&split=dev
+    instructions: 以下是中国关于law考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-law-CoT:
+  id: ceval-law.val.ab-v3
+  metrics: [accuracy]
+ceval-law.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=law&split=val
+    few_shot: hf://ceval/ceval-exam?name=law&split=dev
+    instructions: 以下是中国关于law考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-chinese-language-and-literature-0shot:
+  id: ceval-chinese-language-and-literature.val.ab-v1
+  metrics: [accuracy]
+ceval-chinese-language-and-literature.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=chinese_language_and_literature&split=val
+    few_shot: hf://ceval/ceval-exam?name=chinese_language_and_literature&split=dev
+    instructions: 以下是中国关于chinese_language_and_literature考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-chinese-language-and-literature-5shot:
+  id: ceval-chinese-language-and-literature.val.ab-v2
+  metrics: [accuracy]
+ceval-chinese-language-and-literature.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=chinese_language_and_literature&split=val
+    few_shot: hf://ceval/ceval-exam?name=chinese_language_and_literature&split=dev
+    instructions: 以下是中国关于chinese_language_and_literature考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-chinese-language-and-literature-CoT:
+  id: ceval-chinese-language-and-literature.val.ab-v3
+  metrics: [accuracy]
+ceval-chinese-language-and-literature.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=chinese_language_and_literature&split=val
+    few_shot: hf://ceval/ceval-exam?name=chinese_language_and_literature&split=dev
+    instructions: 以下是中国关于chinese_language_and_literature考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-art-studies-0shot:
+  id: ceval-art-studies.val.ab-v1
+  metrics: [accuracy]
+ceval-art-studies.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=art_studies&split=val
+    few_shot: hf://ceval/ceval-exam?name=art_studies&split=dev
+    instructions: 以下是中国关于art_studies考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-art-studies-5shot:
+  id: ceval-art-studies.val.ab-v2
+  metrics: [accuracy]
+ceval-art-studies.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=art_studies&split=val
+    few_shot: hf://ceval/ceval-exam?name=art_studies&split=dev
+    instructions: 以下是中国关于art_studies考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-art-studies-CoT:
+  id: ceval-art-studies.val.ab-v3
+  metrics: [accuracy]
+ceval-art-studies.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=art_studies&split=val
+    few_shot: hf://ceval/ceval-exam?name=art_studies&split=dev
+    instructions: 以下是中国关于art_studies考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-professional-tour-guide-0shot:
+  id: ceval-professional-tour-guide.val.ab-v1
+  metrics: [accuracy]
+ceval-professional-tour-guide.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=professional_tour_guide&split=val
+    few_shot: hf://ceval/ceval-exam?name=professional_tour_guide&split=dev
+    instructions: 以下是中国关于professional_tour_guide考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-professional-tour-guide-5shot:
+  id: ceval-professional-tour-guide.val.ab-v2
+  metrics: [accuracy]
+ceval-professional-tour-guide.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=professional_tour_guide&split=val
+    few_shot: hf://ceval/ceval-exam?name=professional_tour_guide&split=dev
+    instructions: 以下是中国关于professional_tour_guide考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-professional-tour-guide-CoT:
+  id: ceval-professional-tour-guide.val.ab-v3
+  metrics: [accuracy]
+ceval-professional-tour-guide.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=professional_tour_guide&split=val
+    few_shot: hf://ceval/ceval-exam?name=professional_tour_guide&split=dev
+    instructions: 以下是中国关于professional_tour_guide考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-legal-professional-0shot:
+  id: ceval-legal-professional.val.ab-v1
+  metrics: [accuracy]
+ceval-legal-professional.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=legal_professional&split=val
+    few_shot: hf://ceval/ceval-exam?name=legal_professional&split=dev
+    instructions: 以下是中国关于legal_professional考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-legal-professional-5shot:
+  id: ceval-legal-professional.val.ab-v2
+  metrics: [accuracy]
+ceval-legal-professional.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=legal_professional&split=val
+    few_shot: hf://ceval/ceval-exam?name=legal_professional&split=dev
+    instructions: 以下是中国关于legal_professional考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-legal-professional-CoT:
+  id: ceval-legal-professional.val.ab-v3
+  metrics: [accuracy]
+ceval-legal-professional.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=legal_professional&split=val
+    few_shot: hf://ceval/ceval-exam?name=legal_professional&split=dev
+    instructions: 以下是中国关于legal_professional考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-high-school-chinese-0shot:
+  id: ceval-high-school-chinese.val.ab-v1
+  metrics: [accuracy]
+ceval-high-school-chinese.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_chinese&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_chinese&split=dev
+    instructions: 以下是中国关于high_school_chinese考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-high-school-chinese-5shot:
+  id: ceval-high-school-chinese.val.ab-v2
+  metrics: [accuracy]
+ceval-high-school-chinese.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_chinese&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_chinese&split=dev
+    instructions: 以下是中国关于high_school_chinese考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-high-school-chinese-CoT:
+  id: ceval-high-school-chinese.val.ab-v3
+  metrics: [accuracy]
+ceval-high-school-chinese.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_chinese&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_chinese&split=dev
+    instructions: 以下是中国关于high_school_chinese考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-high-school-history-0shot:
+  id: ceval-high-school-history.val.ab-v1
+  metrics: [accuracy]
+ceval-high-school-history.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_history&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_history&split=dev
+    instructions: 以下是中国关于high_school_history考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-high-school-history-5shot:
+  id: ceval-high-school-history.val.ab-v2
+  metrics: [accuracy]
+ceval-high-school-history.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_history&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_history&split=dev
+    instructions: 以下是中国关于high_school_history考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-high-school-history-CoT:
+  id: ceval-high-school-history.val.ab-v3
+  metrics: [accuracy]
+ceval-high-school-history.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=high_school_history&split=val
+    few_shot: hf://ceval/ceval-exam?name=high_school_history&split=dev
+    instructions: 以下是中国关于high_school_history考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-middle-school-history-0shot:
+  id: ceval-middle-school-history.val.ab-v1
+  metrics: [accuracy]
+ceval-middle-school-history.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_history&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_history&split=dev
+    instructions: 以下是中国关于middle_school_history考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-middle-school-history-5shot:
+  id: ceval-middle-school-history.val.ab-v2
+  metrics: [accuracy]
+ceval-middle-school-history.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_history&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_history&split=dev
+    instructions: 以下是中国关于middle_school_history考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-middle-school-history-CoT:
+  id: ceval-middle-school-history.val.ab-v3
+  metrics: [accuracy]
+ceval-middle-school-history.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=middle_school_history&split=val
+    few_shot: hf://ceval/ceval-exam?name=middle_school_history&split=dev
+    instructions: 以下是中国关于middle_school_history考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-civil-servant-0shot:
+  id: ceval-civil-servant.val.ab-v1
+  metrics: [accuracy]
+ceval-civil-servant.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=civil_servant&split=val
+    few_shot: hf://ceval/ceval-exam?name=civil_servant&split=dev
+    instructions: 以下是中国关于civil_servant考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-civil-servant-5shot:
+  id: ceval-civil-servant.val.ab-v2
+  metrics: [accuracy]
+ceval-civil-servant.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=civil_servant&split=val
+    few_shot: hf://ceval/ceval-exam?name=civil_servant&split=dev
+    instructions: 以下是中国关于civil_servant考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-civil-servant-CoT:
+  id: ceval-civil-servant.val.ab-v3
+  metrics: [accuracy]
+ceval-civil-servant.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=civil_servant&split=val
+    few_shot: hf://ceval/ceval-exam?name=civil_servant&split=dev
+    instructions: 以下是中国关于civil_servant考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-sports-science-0shot:
+  id: ceval-sports-science.val.ab-v1
+  metrics: [accuracy]
+ceval-sports-science.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=sports_science&split=val
+    few_shot: hf://ceval/ceval-exam?name=sports_science&split=dev
+    instructions: 以下是中国关于sports_science考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-sports-science-5shot:
+  id: ceval-sports-science.val.ab-v2
+  metrics: [accuracy]
+ceval-sports-science.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=sports_science&split=val
+    few_shot: hf://ceval/ceval-exam?name=sports_science&split=dev
+    instructions: 以下是中国关于sports_science考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-sports-science-CoT:
+  id: ceval-sports-science.val.ab-v3
+  metrics: [accuracy]
+ceval-sports-science.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=sports_science&split=val
+    few_shot: hf://ceval/ceval-exam?name=sports_science&split=dev
+    instructions: 以下是中国关于sports_science考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-plant-protection-0shot:
+  id: ceval-plant-protection.val.ab-v1
+  metrics: [accuracy]
+ceval-plant-protection.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=plant_protection&split=val
+    few_shot: hf://ceval/ceval-exam?name=plant_protection&split=dev
+    instructions: 以下是中国关于plant_protection考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-plant-protection-5shot:
+  id: ceval-plant-protection.val.ab-v2
+  metrics: [accuracy]
+ceval-plant-protection.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=plant_protection&split=val
+    few_shot: hf://ceval/ceval-exam?name=plant_protection&split=dev
+    instructions: 以下是中国关于plant_protection考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-plant-protection-CoT:
+  id: ceval-plant-protection.val.ab-v3
+  metrics: [accuracy]
+ceval-plant-protection.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=plant_protection&split=val
+    few_shot: hf://ceval/ceval-exam?name=plant_protection&split=dev
+    instructions: 以下是中国关于plant_protection考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-basic-medicine-0shot:
+  id: ceval-basic-medicine.val.ab-v1
+  metrics: [accuracy]
+ceval-basic-medicine.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=basic_medicine&split=val
+    few_shot: hf://ceval/ceval-exam?name=basic_medicine&split=dev
+    instructions: 以下是中国关于basic_medicine考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-basic-medicine-5shot:
+  id: ceval-basic-medicine.val.ab-v2
+  metrics: [accuracy]
+ceval-basic-medicine.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=basic_medicine&split=val
+    few_shot: hf://ceval/ceval-exam?name=basic_medicine&split=dev
+    instructions: 以下是中国关于basic_medicine考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-basic-medicine-CoT:
+  id: ceval-basic-medicine.val.ab-v3
+  metrics: [accuracy]
+ceval-basic-medicine.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=basic_medicine&split=val
+    few_shot: hf://ceval/ceval-exam?name=basic_medicine&split=dev
+    instructions: 以下是中国关于basic_medicine考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-clinical-medicine-0shot:
+  id: ceval-clinical-medicine.val.ab-v1
+  metrics: [accuracy]
+ceval-clinical-medicine.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=clinical_medicine&split=val
+    few_shot: hf://ceval/ceval-exam?name=clinical_medicine&split=dev
+    instructions: 以下是中国关于clinical_medicine考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-clinical-medicine-5shot:
+  id: ceval-clinical-medicine.val.ab-v2
+  metrics: [accuracy]
+ceval-clinical-medicine.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=clinical_medicine&split=val
+    few_shot: hf://ceval/ceval-exam?name=clinical_medicine&split=dev
+    instructions: 以下是中国关于clinical_medicine考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-clinical-medicine-CoT:
+  id: ceval-clinical-medicine.val.ab-v3
+  metrics: [accuracy]
+ceval-clinical-medicine.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=clinical_medicine&split=val
+    few_shot: hf://ceval/ceval-exam?name=clinical_medicine&split=dev
+    instructions: 以下是中国关于clinical_medicine考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-urban-and-rural-planner-0shot:
+  id: ceval-urban-and-rural-planner.val.ab-v1
+  metrics: [accuracy]
+ceval-urban-and-rural-planner.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=urban_and_rural_planner&split=val
+    few_shot: hf://ceval/ceval-exam?name=urban_and_rural_planner&split=dev
+    instructions: 以下是中国关于urban_and_rural_planner考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-urban-and-rural-planner-5shot:
+  id: ceval-urban-and-rural-planner.val.ab-v2
+  metrics: [accuracy]
+ceval-urban-and-rural-planner.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=urban_and_rural_planner&split=val
+    few_shot: hf://ceval/ceval-exam?name=urban_and_rural_planner&split=dev
+    instructions: 以下是中国关于urban_and_rural_planner考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-urban-and-rural-planner-CoT:
+  id: ceval-urban-and-rural-planner.val.ab-v3
+  metrics: [accuracy]
+ceval-urban-and-rural-planner.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=urban_and_rural_planner&split=val
+    few_shot: hf://ceval/ceval-exam?name=urban_and_rural_planner&split=dev
+    instructions: 以下是中国关于urban_and_rural_planner考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-accountant-0shot:
+  id: ceval-accountant.val.ab-v1
+  metrics: [accuracy]
+ceval-accountant.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=accountant&split=val
+    few_shot: hf://ceval/ceval-exam?name=accountant&split=dev
+    instructions: 以下是中国关于accountant考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-accountant-5shot:
+  id: ceval-accountant.val.ab-v2
+  metrics: [accuracy]
+ceval-accountant.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=accountant&split=val
+    few_shot: hf://ceval/ceval-exam?name=accountant&split=dev
+    instructions: 以下是中国关于accountant考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-accountant-CoT:
+  id: ceval-accountant.val.ab-v3
+  metrics: [accuracy]
+ceval-accountant.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=accountant&split=val
+    few_shot: hf://ceval/ceval-exam?name=accountant&split=dev
+    instructions: 以下是中国关于accountant考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-fire-engineer-0shot:
+  id: ceval-fire-engineer.val.ab-v1
+  metrics: [accuracy]
+ceval-fire-engineer.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=fire_engineer&split=val
+    few_shot: hf://ceval/ceval-exam?name=fire_engineer&split=dev
+    instructions: 以下是中国关于fire_engineer考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-fire-engineer-5shot:
+  id: ceval-fire-engineer.val.ab-v2
+  metrics: [accuracy]
+ceval-fire-engineer.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=fire_engineer&split=val
+    few_shot: hf://ceval/ceval-exam?name=fire_engineer&split=dev
+    instructions: 以下是中国关于fire_engineer考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-fire-engineer-CoT:
+  id: ceval-fire-engineer.val.ab-v3
+  metrics: [accuracy]
+ceval-fire-engineer.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=fire_engineer&split=val
+    few_shot: hf://ceval/ceval-exam?name=fire_engineer&split=dev
+    instructions: 以下是中国关于fire_engineer考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-environmental-impact-assessment-engineer-0shot:
+  id: ceval-environmental-impact-assessment-engineer.val.ab-v1
+  metrics: [accuracy]
+ceval-environmental-impact-assessment-engineer.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=environmental_impact_assessment_engineer&split=val
+    few_shot: hf://ceval/ceval-exam?name=environmental_impact_assessment_engineer&split=dev
+    instructions: 以下是中国关于environmental_impact_assessment_engineer考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-environmental-impact-assessment-engineer-5shot:
+  id: ceval-environmental-impact-assessment-engineer.val.ab-v2
+  metrics: [accuracy]
+ceval-environmental-impact-assessment-engineer.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=environmental_impact_assessment_engineer&split=val
+    few_shot: hf://ceval/ceval-exam?name=environmental_impact_assessment_engineer&split=dev
+    instructions: 以下是中国关于environmental_impact_assessment_engineer考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-environmental-impact-assessment-engineer-CoT:
+  id: ceval-environmental-impact-assessment-engineer.val.ab-v3
+  metrics: [accuracy]
+ceval-environmental-impact-assessment-engineer.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=environmental_impact_assessment_engineer&split=val
+    few_shot: hf://ceval/ceval-exam?name=environmental_impact_assessment_engineer&split=dev
+    instructions: 以下是中国关于environmental_impact_assessment_engineer考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-tax-accountant-0shot:
+  id: ceval-tax-accountant.val.ab-v1
+  metrics: [accuracy]
+ceval-tax-accountant.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=tax_accountant&split=val
+    few_shot: hf://ceval/ceval-exam?name=tax_accountant&split=dev
+    instructions: 以下是中国关于tax_accountant考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-tax-accountant-5shot:
+  id: ceval-tax-accountant.val.ab-v2
+  metrics: [accuracy]
+ceval-tax-accountant.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=tax_accountant&split=val
+    few_shot: hf://ceval/ceval-exam?name=tax_accountant&split=dev
+    instructions: 以下是中国关于tax_accountant考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-tax-accountant-CoT:
+  id: ceval-tax-accountant.val.ab-v3
+  metrics: [accuracy]
+ceval-tax-accountant.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=tax_accountant&split=val
+    few_shot: hf://ceval/ceval-exam?name=tax_accountant&split=dev
+    instructions: 以下是中国关于tax_accountant考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True
+
+ceval-physician-0shot:
+  id: ceval-physician.val.ab-v1
+  metrics: [accuracy]
+ceval-physician.val.ab-v1:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=physician&split=val
+    few_shot: hf://ceval/ceval-exam?name=physician&split=dev
+    instructions: 以下是中国关于physician考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    num_few_shot: 0
+
+ceval-physician-5shot:
+  id: ceval-physician.val.ab-v2
+  metrics: [accuracy]
+ceval-physician.val.ab-v2:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=physician&split=val
+    few_shot: hf://ceval/ceval-exam?name=physician&split=dev
+    instructions: 以下是中国关于physician考试的单项选择题，请选出其中的正确答案。
+    num_few_shot: 5
+    no_MC_prompt: True
+
+ceval-physician-CoT:
+  id: ceval-physician.val.ab-v3
+  metrics: [accuracy]
+ceval-physician.val.ab-v3:
+  class: evals.elsuite.dataset_specific.ceval:CEVAL
+  args:
+    dataset: hf://ceval/ceval-exam?name=physician&split=val
+    few_shot: hf://ceval/ceval-exam?name=physician&split=dev
+    instructions: 以下是中国关于physician考试的单项选择题，请选出其中的正确答案。
+    no_MC_prompt: True
+    CoT: True
+    num_few_shot: 5
+    Chinese: True

@@ -1,0 +1,138 @@
+arc-e-0shot:
+  id: arc_e.test.v1
+  description: reasoning challenge
+  metrics: [accuracy]
+arc-e-1shot:
+  id: arc_e.test.v2
+  description: reasoning challenge
+  metrics: [accuracy]
+arc-e-25shot:
+  id: arc_e.test.v3
+  description: reasoning challenge
+  metrics: [accuracy]
+arc-e-50shot:
+  id: arc_e.test.v4
+  description: reasoning challenge
+  metrics: [accuracy] 
+arc-e-5shot:
+  id: arc_e.test.v5
+  description: reasoning challenge
+  metrics: [accuracy]
+
+arc-c-0shot:
+  id: arc_c.test.v1
+  description: reasoning challenge
+  metrics: [accuracy]
+arc-c-1shot:
+  id: arc_c.test.v2
+  description: reasoning challenge
+  metrics: [accuracy]
+
+arc-c-50shot:
+  id: arc_c.test.v4
+  description: reasoning challenge
+  metrics: [accuracy] 
+
+arc-c-5shot:
+  id: arc_c.test.v5
+  description: reasoning challenge
+  metrics: [accuracy]
+arc-c-25shot:
+  id: arc_c.test.v6
+  description: reasoning challenge
+  metrics: [accuracy]
+
+arc_e.test.v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    sample_jsonl: arc/samples_easy.jsonl
+    few_shot_jsonl: arc/fewshot_easy.jsonl
+    num_few_shot: 0
+    instructions: The following are multiple choice questions (with answers) about commensense reasoning. 
+    no_MC_prompt: True
+arc_e.test.v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    sample_jsonl: arc/samples_easy.jsonl
+    few_shot_jsonl: arc/fewshot_easy.jsonl
+    num_few_shot: 1
+    instructions: The following are multiple choice questions (with answers) about commensense reasoning. 
+    no_MC_prompt: True
+arc_e.test.v3:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    sample_jsonl: arc/samples_easy.jsonl
+    few_shot_jsonl: arc/fewshot_easy.jsonl
+    num_few_shot: 25
+    instructions: The following are multiple choice questions (with answers) about commensense reasoning. 
+    no_MC_prompt: True
+
+arc_e.test.v4:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    sample_jsonl: arc/samples_easy.jsonl
+    few_shot_jsonl: arc/fewshot_easy.jsonl
+    num_few_shot: 50
+    instructions: The following are multiple choice questions (with answers) about commensense reasoning. 
+    no_MC_prompt: True
+arc_e.test.v5:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    sample_jsonl: arc/samples_easy.jsonl
+    few_shot_jsonl: arc/fewshot_easy.jsonl
+    num_few_shot: 5
+    instructions: The following are multiple choice questions (with answers) about commensense reasoning. 
+    no_MC_prompt: True
+
+
+
+
+
+arc_c.test.v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    sample_jsonl: arc/samples_challenge.jsonl
+    few_shot_jsonl: arc/fewshot_challenge.jsonl
+    num_few_shot: 0
+    instructions: The following are multiple choice questions (with answers) about commensense reasoning. 
+    no_MC_prompt: True
+arc_c.test.v2:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    sample_jsonl: arc/samples_challenge.jsonl
+    few_shot_jsonl: arc/fewshot_challenge.jsonl
+    num_few_shot: 1
+    instructions: The following are multiple choice questions (with answers) about commensense reasoning. 
+    no_MC_prompt: True
+arc_c.test.v3:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    sample_jsonl: arc/samples_challenge.jsonl
+    few_shot_jsonl: arc/fewshot_challenge.jsonl
+    num_few_shot: 20
+    instructions: The following are multiple choice questions (with answers) about commensense reasoning. 
+    no_MC_prompt: True
+arc_c.test.v4:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    sample_jsonl: arc/samples_challenge.jsonl
+    few_shot_jsonl: arc/fewshot_challenge.jsonl
+    num_few_shot: 50  
+    instructions: The following are multiple choice questions (with answers) about commensense reasoning. 
+    no_MC_prompt: True
+arc_c.test.v5:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    sample_jsonl: arc/samples_challenge.jsonl
+    few_shot_jsonl: arc/fewshot_challenge.jsonl
+    num_few_shot: 5
+    instructions: The following are multiple choice questions (with answers) about commensense reasoning. 
+    no_MC_prompt: True
+arc_c.test.v6:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    sample_jsonl: arc/samples_challenge.jsonl
+    few_shot_jsonl: arc/fewshot_challenge.jsonl
+    num_few_shot: 25
+    instructions: The following are multiple choice questions (with answers) about commensense reasoning. 
+    no_MC_prompt: True

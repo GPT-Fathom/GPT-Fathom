@@ -1,0 +1,27 @@
+truthfulqa-0shot:
+  id: truthfulqa.test.v0
+  description: truthfulqa dataset
+  metrics: [accuracy]
+
+
+truthfulqa.test.v0:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    few_shot_jsonl: truthfulqa/fewshot.jsonl
+    sample_jsonl: truthfulqa/samples.jsonl
+    num_few_shot: 1
+    instructions: Answer the following multiple choice questions. 
+
+truthfulqa-1shot:
+  id: truthfulqa.test.v1
+  description: truthfulqa dataset
+  metrics: [accuracy]
+
+
+truthfulqa.test.v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    few_shot_jsonl: truthfulqa/fewshot.jsonl
+    sample_jsonl: truthfulqa/samples.jsonl
+    num_few_shot: 1
+    instructions: Answer the following multiple choice questions. 

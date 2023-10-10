@@ -1,0 +1,35 @@
+lambada-0shot:
+  id: lambada.test.v1
+  description: predict the last word
+  metrics: [accuracy]
+
+lambada-1shot:
+  id: lambada.test.v3
+  description: predict the last word
+  metrics: [accuracy]
+
+lambada-15shot:
+  id: lambada.test.v2
+  description: predict the last word
+  metrics: [accuracy]
+
+
+
+lambada.test.v1:
+  class: evals.elsuite.dataset_specific.lambada:Lambada
+  args:
+    samples_jsonl: lambada/samples.jsonl
+
+lambada.test.v2:
+  args:
+    few_shot_jsonl: lambada/fewshot.jsonl
+    num_few_shot: 15
+    samples_jsonl: lambada/samples.jsonl
+  class: evals.elsuite.dataset_specific.lambada:Lambada
+
+lambada.test.v3:
+  args:
+    few_shot_jsonl: lambada/fewshot.jsonl
+    num_few_shot: 1
+    samples_jsonl: lambada/samples.jsonl
+  class: evals.elsuite.dataset_specific.lambada:Lambada

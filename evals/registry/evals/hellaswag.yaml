@@ -1,0 +1,40 @@
+hellaswag-0shot:
+  id: hellaswag.test.v1
+  description: predict the last senetence
+  metrics: [accuracy]
+
+hellaswag-1shot:
+  id: hellaswag.test.v3
+  description: predict the last senetence
+  metrics: [accuracy]
+
+hellaswag-10shot:
+  id: hellaswag.test.v2
+  description: predict the last senetence
+  metrics: [accuracy]
+
+
+
+hellaswag.test.v1:
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hellaswag?split=validation
+    instructions: "Complete the description with an appropriate ending:"
+    few_shot: hf://hellaswag?split=train
+    num_few_shot: 0
+
+hellaswag.test.v2:
+  args:
+    num_few_shot: 10
+    dataset: hf://hellaswag?split=validation
+    few_shot: hf://hellaswag?split=train
+    instructions: "Choose the most plausible continuation for the story."
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice
+
+hellaswag.test.v3:
+  args:
+    num_few_shot: 1
+    dataset: hf://hellaswag?split=validation
+    few_shot: hf://hellaswag?split=train
+    instructions: "Choose the most plausible continuation for the story."
+  class: evals.elsuite.basic.multiple_choice:MultipleChoice

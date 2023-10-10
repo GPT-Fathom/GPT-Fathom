@@ -1,0 +1,897 @@
+
+agieval-sat-math-0shot:
+  id: agieval-sat-math.val.ab-v1
+  metrics: [accuracy]
+agieval-sat-math.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/sat-math.jsonl
+    task: sat-math
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    max_tokens: 50
+    type: MC
+
+agieval-sat-math-5shot:
+  id: agieval-sat-math.val.ab-v2
+  metrics: [accuracy]
+agieval-sat-math.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/sat-math.jsonl
+    task: sat-math
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    type: MC
+
+agieval-sat-math-CoT:
+  id: agieval-sat-math.val.ab-v3
+  metrics: [accuracy]
+agieval-sat-math.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/sat-math.jsonl
+    task: sat-math
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    CoT: True
+    type: MC
+
+
+agieval-sat-en-0shot:
+  id: agieval-sat-en.val.ab-v1
+  metrics: [accuracy]
+agieval-sat-en.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/sat-en.jsonl
+    task: sat-en
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    max_tokens: 50
+    type: MC
+
+agieval-sat-en-5shot:
+  id: agieval-sat-en.val.ab-v2
+  metrics: [accuracy]
+agieval-sat-en.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/sat-en.jsonl
+    task: sat-en
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    type: MC
+
+agieval-sat-en-CoT:
+  id: agieval-sat-en.val.ab-v3
+  metrics: [accuracy]
+agieval-sat-en.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/sat-en.jsonl
+    task: sat-en
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    CoT: True
+    type: MC
+
+
+agieval-aqua-rat-0shot:
+  id: agieval-aqua-rat.val.ab-v1
+  metrics: [accuracy]
+agieval-aqua-rat.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/aqua-rat.jsonl
+    task: aqua-rat
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    max_tokens: 50
+    type: MC
+
+agieval-aqua-rat-5shot:
+  id: agieval-aqua-rat.val.ab-v2
+  metrics: [accuracy]
+agieval-aqua-rat.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/aqua-rat.jsonl
+    task: aqua-rat
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    type: MC
+
+agieval-aqua-rat-CoT:
+  id: agieval-aqua-rat.val.ab-v3
+  metrics: [accuracy]
+agieval-aqua-rat.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/aqua-rat.jsonl
+    task: aqua-rat
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    CoT: True
+    type: MC
+
+
+agieval-lsat-ar-0shot:
+  id: agieval-lsat-ar.val.ab-v1
+  metrics: [accuracy]
+agieval-lsat-ar.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/lsat-ar.jsonl
+    task: lsat-ar
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    max_tokens: 50
+    type: MC
+
+agieval-lsat-ar-5shot:
+  id: agieval-lsat-ar.val.ab-v2
+  metrics: [accuracy]
+agieval-lsat-ar.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/lsat-ar.jsonl
+    task: lsat-ar
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    type: MC
+
+agieval-lsat-ar-CoT:
+  id: agieval-lsat-ar.val.ab-v3
+  metrics: [accuracy]
+agieval-lsat-ar.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/lsat-ar.jsonl
+    task: lsat-ar
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    CoT: True
+    type: MC
+
+
+agieval-lsat-lr-0shot:
+  id: agieval-lsat-lr.val.ab-v1
+  metrics: [accuracy]
+agieval-lsat-lr.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/lsat-lr.jsonl
+    task: lsat-lr
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    max_tokens: 50
+    type: MC
+
+agieval-lsat-lr-5shot:
+  id: agieval-lsat-lr.val.ab-v2
+  metrics: [accuracy]
+agieval-lsat-lr.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/lsat-lr.jsonl
+    task: lsat-lr
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    type: MC
+
+agieval-lsat-lr-CoT:
+  id: agieval-lsat-lr.val.ab-v3
+  metrics: [accuracy]
+agieval-lsat-lr.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/lsat-lr.jsonl
+    task: lsat-lr
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    CoT: True
+    type: MC
+
+
+agieval-lsat-rc-0shot:
+  id: agieval-lsat-rc.val.ab-v1
+  metrics: [accuracy]
+agieval-lsat-rc.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/lsat-rc.jsonl
+    task: lsat-rc
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    max_tokens: 50
+    type: MC
+
+agieval-lsat-rc-5shot:
+  id: agieval-lsat-rc.val.ab-v2
+  metrics: [accuracy]
+agieval-lsat-rc.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/lsat-rc.jsonl
+    task: lsat-rc
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    type: MC
+
+agieval-lsat-rc-CoT:
+  id: agieval-lsat-rc.val.ab-v3
+  metrics: [accuracy]
+agieval-lsat-rc.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/lsat-rc.jsonl
+    task: lsat-rc
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    CoT: True
+    type: MC
+
+
+agieval-logiqa-en-0shot:
+  id: agieval-logiqa-en.val.ab-v1
+  metrics: [accuracy]
+agieval-logiqa-en.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/logiqa-en.jsonl
+    task: logiqa-en
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    max_tokens: 50
+    type: MC
+
+agieval-logiqa-en-5shot:
+  id: agieval-logiqa-en.val.ab-v2
+  metrics: [accuracy]
+agieval-logiqa-en.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/logiqa-en.jsonl
+    task: logiqa-en
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    type: MC
+
+agieval-logiqa-en-CoT:
+  id: agieval-logiqa-en.val.ab-v3
+  metrics: [accuracy]
+agieval-logiqa-en.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/logiqa-en.jsonl
+    task: logiqa-en
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    CoT: True
+    type: MC
+
+
+agieval-sat-en-without-passage-0shot:
+  id: agieval-sat-en-without-passage.val.ab-v1
+  metrics: [accuracy]
+agieval-sat-en-without-passage.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/sat-en-without-passage.jsonl
+    task: sat-en-without-passage
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    max_tokens: 50
+    type: MC
+
+agieval-sat-en-without-passage-5shot:
+  id: agieval-sat-en-without-passage.val.ab-v2
+  metrics: [accuracy]
+agieval-sat-en-without-passage.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/sat-en-without-passage.jsonl
+    task: sat-en-without-passage
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    type: MC
+
+agieval-sat-en-without-passage-CoT:
+  id: agieval-sat-en-without-passage.val.ab-v3
+  metrics: [accuracy]
+agieval-sat-en-without-passage.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/sat-en-without-passage.jsonl
+    task: sat-en-without-passage
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    CoT: True
+    type: MC
+
+
+agieval-math-0shot:
+  id: agieval-math.val.ab-v1
+  metrics: [accuracy]
+agieval-math.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/math.jsonl
+    task: math
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    max_tokens: 50
+    type: Cloze
+
+agieval-math-5shot:
+  id: agieval-math.val.ab-v2
+  metrics: [accuracy]
+agieval-math.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/math.jsonl
+    task: math
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    type: Cloze
+
+agieval-math-CoT:
+  id: agieval-math.val.ab-v3
+  metrics: [accuracy]
+agieval-math.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/math.jsonl
+    task: math
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    CoT: True
+    type: Cloze
+    
+
+agieval-gaokao-chinese-0shot:
+  id: agieval-gaokao-chinese.val.ab-v1
+  metrics: [accuracy]
+agieval-gaokao-chinese.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-chinese.jsonl
+    task: gaokao-chinese
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    type: MC
+    max_tokens: 50
+    Cn: True
+
+agieval-gaokao-chinese-5shot:
+  id: agieval-gaokao-chinese.val.ab-v2
+  metrics: [accuracy]
+agieval-gaokao-chinese.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-chinese.jsonl
+    task: gaokao-chinese
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    Cn: True
+    type: MC
+
+agieval-gaokao-chinese-CoT:
+  id: agieval-gaokao-chinese.val.ab-v3
+  metrics: [accuracy]
+agieval-gaokao-chinese.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-chinese.jsonl
+    task: gaokao-chinese
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    Cn: True
+    CoT: True
+    type: MC
+
+
+agieval-gaokao-geography-0shot:
+  id: agieval-gaokao-geography.val.ab-v1
+  metrics: [accuracy]
+agieval-gaokao-geography.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-geography.jsonl
+    task: gaokao-geography
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    type: MC
+    max_tokens: 50
+    Cn: True
+
+agieval-gaokao-geography-5shot:
+  id: agieval-gaokao-geography.val.ab-v2
+  metrics: [accuracy]
+agieval-gaokao-geography.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-geography.jsonl
+    task: gaokao-geography
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    Cn: True
+    type: MC
+
+agieval-gaokao-geography-CoT:
+  id: agieval-gaokao-geography.val.ab-v3
+  metrics: [accuracy]
+agieval-gaokao-geography.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-geography.jsonl
+    task: gaokao-geography
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    Cn: True
+    CoT: True
+    type: MC
+
+
+agieval-gaokao-history-0shot:
+  id: agieval-gaokao-history.val.ab-v1
+  metrics: [accuracy]
+agieval-gaokao-history.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-history.jsonl
+    task: gaokao-history
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    type: MC
+    max_tokens: 50
+    Cn: True
+
+agieval-gaokao-history-5shot:
+  id: agieval-gaokao-history.val.ab-v2
+  metrics: [accuracy]
+agieval-gaokao-history.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-history.jsonl
+    task: gaokao-history
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    Cn: True
+    type: MC
+
+agieval-gaokao-history-CoT:
+  id: agieval-gaokao-history.val.ab-v3
+  metrics: [accuracy]
+agieval-gaokao-history.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-history.jsonl
+    task: gaokao-history
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    Cn: True
+    CoT: True
+    type: MC
+
+
+agieval-gaokao-biology-0shot:
+  id: agieval-gaokao-biology.val.ab-v1
+  metrics: [accuracy]
+agieval-gaokao-biology.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-biology.jsonl
+    task: gaokao-biology
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    type: MC
+    max_tokens: 50
+    Cn: True
+
+agieval-gaokao-biology-5shot:
+  id: agieval-gaokao-biology.val.ab-v2
+  metrics: [accuracy]
+agieval-gaokao-biology.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-biology.jsonl
+    task: gaokao-biology
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    Cn: True
+    type: MC
+
+agieval-gaokao-biology-CoT:
+  id: agieval-gaokao-biology.val.ab-v3
+  metrics: [accuracy]
+agieval-gaokao-biology.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-biology.jsonl
+    task: gaokao-biology
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    Cn: True
+    CoT: True
+    type: MC
+
+
+agieval-gaokao-chemistry-0shot:
+  id: agieval-gaokao-chemistry.val.ab-v1
+  metrics: [accuracy]
+agieval-gaokao-chemistry.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-chemistry.jsonl
+    task: gaokao-chemistry
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    type: MC
+    max_tokens: 50
+    Cn: True
+
+agieval-gaokao-chemistry-5shot:
+  id: agieval-gaokao-chemistry.val.ab-v2
+  metrics: [accuracy]
+agieval-gaokao-chemistry.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-chemistry.jsonl
+    task: gaokao-chemistry
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    Cn: True
+    type: MC
+
+agieval-gaokao-chemistry-CoT:
+  id: agieval-gaokao-chemistry.val.ab-v3
+  metrics: [accuracy]
+agieval-gaokao-chemistry.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-chemistry.jsonl
+    task: gaokao-chemistry
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    Cn: True
+    CoT: True
+    type: MC
+
+
+agieval-gaokao-english-0shot:
+  id: agieval-gaokao-english.val.ab-v1
+  metrics: [accuracy]
+agieval-gaokao-english.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-english.jsonl
+    task: gaokao-english
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    type: MC
+    max_tokens: 50
+    Cn: True
+
+agieval-gaokao-english-5shot:
+  id: agieval-gaokao-english.val.ab-v2
+  metrics: [accuracy]
+agieval-gaokao-english.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-english.jsonl
+    task: gaokao-english
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    Cn: True
+    type: MC
+
+agieval-gaokao-english-CoT:
+  id: agieval-gaokao-english.val.ab-v3
+  metrics: [accuracy]
+agieval-gaokao-english.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-english.jsonl
+    task: gaokao-english
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    Cn: True
+    CoT: True
+    type: MC
+
+
+agieval-logiqa-zh-0shot:
+  id: agieval-logiqa-zh.val.ab-v1
+  metrics: [accuracy]
+agieval-logiqa-zh.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/logiqa-zh.jsonl
+    task: logiqa-zh
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    type: MC
+    max_tokens: 50
+    Cn: True
+
+agieval-logiqa-zh-5shot:
+  id: agieval-logiqa-zh.val.ab-v2
+  metrics: [accuracy]
+agieval-logiqa-zh.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/logiqa-zh.jsonl
+    task: logiqa-zh
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    Cn: True
+    type: MC
+
+agieval-logiqa-zh-CoT:
+  id: agieval-logiqa-zh.val.ab-v3
+  metrics: [accuracy]
+agieval-logiqa-zh.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/logiqa-zh.jsonl
+    task: logiqa-zh
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    Cn: True
+    CoT: True
+    type: MC
+
+
+agieval-gaokao-mathqa-0shot:
+  id: agieval-gaokao-mathqa.val.ab-v1
+  metrics: [accuracy]
+agieval-gaokao-mathqa.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-mathqa.jsonl
+    task: gaokao-mathqa
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    type: MC
+    max_tokens: 50
+    Cn: True
+
+agieval-gaokao-mathqa-5shot:
+  id: agieval-gaokao-mathqa.val.ab-v2
+  metrics: [accuracy]
+agieval-gaokao-mathqa.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-mathqa.jsonl
+    task: gaokao-mathqa
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    Cn: True
+    type: MC
+
+agieval-gaokao-mathqa-CoT:
+  id: agieval-gaokao-mathqa.val.ab-v3
+  metrics: [accuracy]
+agieval-gaokao-mathqa.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-mathqa.jsonl
+    task: gaokao-mathqa
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    Cn: True
+    CoT: True
+    type: MC
+
+
+agieval-jec-qa-kd-0shot:
+  id: agieval-jec-qa-kd.val.ab-v1
+  metrics: [accuracy]
+agieval-jec-qa-kd.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/jec-qa-kd.jsonl
+    task: jec-qa-kd
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    Cn: True
+    max_tokens: 50
+    num_few_shot: 0
+    type: IMC
+
+agieval-jec-qa-kd-5shot:
+  id: agieval-jec-qa-kd.val.ab-v2
+  metrics: [accuracy]
+agieval-jec-qa-kd.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/jec-qa-kd.jsonl
+    task: jec-qa-kd
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    Cn: True
+    type: IMC
+
+agieval-jec-qa-kd-CoT:
+  id: agieval-jec-qa-kd.val.ab-v3
+  metrics: [accuracy]
+agieval-jec-qa-kd.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/jec-qa-kd.jsonl
+    task: jec-qa-kd
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    Cn: True
+    CoT: True
+    type: IMC
+    
+
+agieval-jec-qa-ca-0shot:
+  id: agieval-jec-qa-ca.val.ab-v1
+  metrics: [accuracy]
+agieval-jec-qa-ca.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/jec-qa-ca.jsonl
+    task: jec-qa-ca
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    Cn: True
+    max_tokens: 50
+    num_few_shot: 0
+    type: IMC
+
+agieval-jec-qa-ca-5shot:
+  id: agieval-jec-qa-ca.val.ab-v2
+  metrics: [accuracy]
+agieval-jec-qa-ca.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/jec-qa-ca.jsonl
+    task: jec-qa-ca
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    Cn: True
+    type: IMC
+
+agieval-jec-qa-ca-CoT:
+  id: agieval-jec-qa-ca.val.ab-v3
+  metrics: [accuracy]
+agieval-jec-qa-ca.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/jec-qa-ca.jsonl
+    task: jec-qa-ca
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    Cn: True
+    CoT: True
+    type: IMC
+    
+
+agieval-gaokao-physics-0shot:
+  id: agieval-gaokao-physics.val.ab-v1
+  metrics: [accuracy]
+agieval-gaokao-physics.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-physics.jsonl
+    task: gaokao-physics
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    Cn: True
+    max_tokens: 50
+    num_few_shot: 0
+    type: IMC
+
+agieval-gaokao-physics-5shot:
+  id: agieval-gaokao-physics.val.ab-v2
+  metrics: [accuracy]
+agieval-gaokao-physics.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-physics.jsonl
+    task: gaokao-physics
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    Cn: True
+    type: IMC
+
+agieval-gaokao-physics-CoT:
+  id: agieval-gaokao-physics.val.ab-v3
+  metrics: [accuracy]
+agieval-gaokao-physics.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-physics.jsonl
+    task: gaokao-physics
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    Cn: True
+    CoT: True
+    type: IMC
+    
+
+agieval-gaokao-mathcloze-0shot:
+  id: agieval-gaokao-mathcloze.val.ab-v1
+  metrics: [accuracy]
+agieval-gaokao-mathcloze.val.ab-v1:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-mathcloze.jsonl
+    task: gaokao-mathcloze
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    no_MC_prompt: True
+    num_few_shot: 0
+    max_tokens: 50
+    type: Cloze
+    Cn: True
+
+agieval-gaokao-mathcloze-5shot:
+  id: agieval-gaokao-mathcloze.val.ab-v2
+  metrics: [accuracy]
+agieval-gaokao-mathcloze.val.ab-v2:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-mathcloze.jsonl
+    task: gaokao-mathcloze
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    max_tokens: 50
+    type: Cloze
+    Cn: True
+
+agieval-gaokao-mathcloze-CoT:
+  id: agieval-gaokao-mathcloze.val.ab-v3
+  metrics: [accuracy]
+agieval-gaokao-mathcloze.val.ab-v3:
+  class: evals.elsuite.dataset_specific.agieval:AGIEVAL
+  args:
+    sample_jsonl: agieval/gaokao-mathcloze.jsonl
+    task: gaokao-mathcloze
+    few_shot_jsonl: agieval/few_shot_prompts.csv
+    num_few_shot: 5
+    Cn: True
+    CoT: True
+    type: Cloze
+    

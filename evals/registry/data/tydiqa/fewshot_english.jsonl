@@ -1,0 +1,1 @@
+{"sample": [{"role": "system", "name": "example_user", "content": "Quantum field theory naturally began with the study of electromagnetic interactions, as the electromagnetic field was the only known classical field as of the 1920s.[8]:1\nWhen was quantum field theory developed?"}, {"role": "system", "name": "example_assistant", "content": ["1920s"]}]}

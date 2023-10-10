@@ -1,0 +1,46 @@
+web_questions-0shot:
+  id: web_questions.test.v1
+  description: closed-book QA
+  metrics: [accuracy]
+
+web_questions-1shot:
+  id: web_questions.test.v2
+  description: closed-book QA
+  metrics: [accuracy]
+
+web_questions-64shot:
+  id: web_questions.test.v3
+  description: closed-book QA
+  metrics: [accuracy]
+
+web_questions-5shot:
+  id: web_questions.test.v4
+  description: closed-book QA
+  metrics: [accuracy]
+
+
+web_questions.test.v1:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: web_questions/samples.jsonl
+
+web_questions.test.v2:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    few_shot_jsonl: web_questions/fewshot.jsonl
+    num_few_shot: 1
+    samples_jsonl: web_questions/samples.jsonl
+
+web_questions.test.v3:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    few_shot_jsonl: web_questions/fewshot.jsonl
+    num_few_shot: 64
+    samples_jsonl: web_questions/samples.jsonl
+
+web_questions.test.v4:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    few_shot_jsonl: web_questions/fewshot.jsonl
+    num_few_shot: 5
+    samples_jsonl: web_questions/samples.jsonl

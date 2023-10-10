@@ -1,0 +1,13 @@
+tydiqa-nocontext-set:
+  evals:
+    - tydiqa-arabic-1shotnocontext
+    - tydiqa-bengali-1shotnocontext
+    - tydiqa-english-1shotnocontext
+    - tydiqa-finnish-1shotnocontext
+    - tydiqa-indonesian-1shotnocontext
+    - tydiqa-japanese-1shotnocontext
+    - tydiqa-korean-1shotnocontext
+    - tydiqa-russian-1shotnocontext
+    - tydiqa-swahili-1shotnocontext
+    - tydiqa-telugu-1shotnocontext
+    - tydiqa-thai-1shotnocontext

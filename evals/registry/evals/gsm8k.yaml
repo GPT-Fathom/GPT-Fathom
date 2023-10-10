@@ -1,0 +1,31 @@
+
+gsm8k-8shotCoT:
+  id: gsm8k.val.ab-v1
+  metrics: [accuracy]
+gsm8k.val.ab-v1:
+  class: evals.elsuite.basic.math_problem:MATH_PROBLEM
+  args:
+    samples_jsonl: gsm8k/samples.jsonl
+    few_shot_jsonl: gsm8k/fewshot.jsonl
+    num_few_shot: 8
+
+gsm8k-5shotCoT:
+  id: gsm8k.val.ab-v2
+  metrics: [accuracy]
+gsm8k.val.ab-v2:
+  class: evals.elsuite.basic.math_problem:MATH_PROBLEM
+  args:
+    samples_jsonl: gsm8k/samples.jsonl
+    few_shot_jsonl: gsm8k/fewshot.jsonl
+    num_few_shot: 5
+
+
+gsm8k-0shotCoT:
+  id: gsm8k.val.ab-v3
+  metrics: [accuracy]
+gsm8k.val.ab-v3:
+  class: evals.elsuite.basic.math_problem:MATH_PROBLEM
+  args:
+    samples_jsonl: gsm8k/samples.jsonl
+    few_shot_jsonl: gsm8k/fewshot.jsonl
+    num_few_shot: 0

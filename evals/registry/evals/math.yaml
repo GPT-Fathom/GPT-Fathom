@@ -1,0 +1,20 @@
+math-2shotCoT:
+  id: math.val.ab-v1
+  metrics: [accuracy]
+math.val.ab-v1:
+  class: evals.elsuite.basic.math_problem:MATH_PROBLEM
+  args:
+    samples_jsonl: math/samples.jsonl
+    few_shot_jsonl: math/fewshot.jsonl
+    num_few_shot: 2
+
+
+math-4shotCoT:
+  id: math.val.ab-v2
+  metrics: [accuracy]
+math.val.ab-v2:
+  class: evals.elsuite.basic.math_problem:MATH_PROBLEM
+  args:
+    samples_jsonl: math/samples.jsonl
+    few_shot_jsonl: math/fewshot.jsonl
+    num_few_shot: 4

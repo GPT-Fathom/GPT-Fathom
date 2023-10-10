@@ -1,0 +1,12 @@
+mgsm-all-set:
+  evals:
+    - mgsm-bn-8shotCoT
+    - mgsm-de-8shotCoT
+    - mgsm-es-8shotCoT
+    - mgsm-fr-8shotCoT 
+    - mgsm-ja-8shotCoT
+    - mgsm-ru-8shotCoT
+    - mgsm-sw-8shotCoT
+    - mgsm-te-8shotCoT
+    - mgsm-th-8shotCoT
+    - mgsm-zh-8shotCoT

@@ -1,0 +1,109 @@
+
+mgsm-bn-8shotCoT:
+  id: mgsm-bn.val.ab-v1
+  metrics: [accuracy]
+mgsm-bn.val.ab-v1:
+  class: evals.elsuite.basic.math_problem:MATH_PROBLEM
+  args:
+    samples_jsonl: mgsm/samples_bn.jsonl
+    few_shot_jsonl: mgsm/fewshot_bn.jsonl
+    num_few_shot: 6
+
+
+mgsm-de-8shotCoT:
+  id: mgsm-de.val.ab-v1
+  metrics: [accuracy]
+mgsm-de.val.ab-v1:
+  class: evals.elsuite.basic.math_problem:MATH_PROBLEM
+  args:
+    samples_jsonl: mgsm/samples_de.jsonl
+    few_shot_jsonl: mgsm/fewshot_de.jsonl
+    num_few_shot: 6
+
+
+mgsm-es-8shotCoT:
+  id: mgsm-es.val.ab-v1
+  metrics: [accuracy]
+mgsm-es.val.ab-v1:
+  class: evals.elsuite.basic.math_problem:MATH_PROBLEM
+  args:
+    samples_jsonl: mgsm/samples_es.jsonl
+    few_shot_jsonl: mgsm/fewshot_es.jsonl
+    num_few_shot: 6
+
+
+mgsm-fr-8shotCoT:
+  id: mgsm-fr.val.ab-v1
+  metrics: [accuracy]
+mgsm-fr.val.ab-v1:
+  class: evals.elsuite.basic.math_problem:MATH_PROBLEM
+  args:
+    samples_jsonl: mgsm/samples_fr.jsonl
+    few_shot_jsonl: mgsm/fewshot_fr.jsonl
+    num_few_shot: 6
+
+
+mgsm-ja-8shotCoT:
+  id: mgsm-ja.val.ab-v1
+  metrics: [accuracy]
+mgsm-ja.val.ab-v1:
+  class: evals.elsuite.basic.math_problem:MATH_PROBLEM
+  args:
+    samples_jsonl: mgsm/samples_ja.jsonl
+    few_shot_jsonl: mgsm/fewshot_ja.jsonl
+    num_few_shot: 6
+
+
+mgsm-ru-8shotCoT:
+  id: mgsm-ru.val.ab-v1
+  metrics: [accuracy]
+mgsm-ru.val.ab-v1:
+  class: evals.elsuite.basic.math_problem:MATH_PROBLEM
+  args:
+    samples_jsonl: mgsm/samples_ru.jsonl
+    few_shot_jsonl: mgsm/fewshot_ru.jsonl
+    num_few_shot: 6
+
+
+mgsm-sw-8shotCoT:
+  id: mgsm-sw.val.ab-v1
+  metrics: [accuracy]
+mgsm-sw.val.ab-v1:
+  class: evals.elsuite.basic.math_problem:MATH_PROBLEM
+  args:
+    samples_jsonl: mgsm/samples_sw.jsonl
+    few_shot_jsonl: mgsm/fewshot_sw.jsonl
+    num_few_shot: 6
+
+
+mgsm-te-8shotCoT:
+  id: mgsm-te.val.ab-v1
+  metrics: [accuracy]
+mgsm-te.val.ab-v1:
+  class: evals.elsuite.basic.math_problem:MATH_PROBLEM
+  args:
+    samples_jsonl: mgsm/samples_te.jsonl
+    few_shot_jsonl: mgsm/fewshot_te.jsonl
+    num_few_shot: 6
+
+
+mgsm-th-8shotCoT:
+  id: mgsm-th.val.ab-v1
+  metrics: [accuracy]
+mgsm-th.val.ab-v1:
+  class: evals.elsuite.basic.math_problem:MATH_PROBLEM
+  args:
+    samples_jsonl: mgsm/samples_th.jsonl
+    few_shot_jsonl: mgsm/fewshot_th.jsonl
+    num_few_shot: 6
+
+
+mgsm-zh-8shotCoT:
+  id: mgsm-zh.val.ab-v1
+  metrics: [accuracy]
+mgsm-zh.val.ab-v1:
+  class: evals.elsuite.basic.math_problem:MATH_PROBLEM
+  args:
+    samples_jsonl: mgsm/samples_zh.jsonl
+    few_shot_jsonl: mgsm/fewshot_zh.jsonl
+    num_few_shot: 6

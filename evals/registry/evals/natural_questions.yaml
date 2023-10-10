@@ -1,0 +1,46 @@
+natural_questions-0shot:
+  id: natural_questions.test.v1
+  description: closed-book QA
+  metrics: [accuracy]
+
+natural_questions-1shot:
+  id: natural_questions.test.v2
+  description: closed-book QA
+  metrics: [accuracy]
+
+natural_questions-64shot:
+  id: natural_questions.test.v3
+  description: closed-book QA
+  metrics: [accuracy]
+
+natural_questions-5shot:
+  id: natural_questions.test.v4
+  description: closed-book QA
+  metrics: [accuracy]
+
+
+natural_questions.test.v1:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: natural_questions/samples.jsonl
+
+natural_questions.test.v2:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    few_shot_jsonl: natural_questions/fewshot.jsonl
+    num_few_shot: 1
+    samples_jsonl: natural_questions/samples.jsonl
+
+natural_questions.test.v3:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    few_shot_jsonl: natural_questions/fewshot.jsonl
+    num_few_shot: 64
+    samples_jsonl: natural_questions/samples.jsonl
+
+natural_questions.test.v4:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    few_shot_jsonl: natural_questions/fewshot.jsonl
+    num_few_shot: 5
+    samples_jsonl: natural_questions/samples.jsonl

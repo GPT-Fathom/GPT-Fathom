@@ -1,0 +1,5 @@
+math-set:
+  evals:
+    - math-4shotCoT
+    - gsm8k-5shotCoT
+    - gsm8k-8shotCoT
