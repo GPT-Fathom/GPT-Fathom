@@ -142,7 +142,7 @@ pip install -e .
 Supported models and evaluation tasks:
 - Following [OpenAI Evals](https://github.com/openai/evals), `completion function` is the generalization of model completion, where a "completion" is some text output that would be answer to the prompt. An `eval` is a task used to evaluate the LLM performance.
 - We support models listed in [OpenAI API](https://platform.openai.com/docs/models/), [Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models), [LLaMA and Llama 2](https://github.com/yuyuz/GPT-Fathom/blob/main/evals/registry/completion_fns/llama.yaml) as the `completion function` for evaluation.
-- We support evaluation tasks as `evals` registered under [`evals/registry/evals`](evals/registry/evals).
+- We support evaluation tasks as `evals` registered under [evals/registry/evals](evals/registry/evals).
 
 We offer two command-line interfaces:
 - `oaieval` for running a single evaluation.
@@ -153,7 +153,7 @@ To evaluate models in [OpenAI API](https://platform.openai.com/docs/models/), fi
 oaieval gpt-3.5-turbo gsm8k-8shotCoT
 ```
 **Notes**
-- To evaluate models in [Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models), make sure you first deploy the model following [Azure Deploy](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) to get a `deployment id`. Then specify a `completion function` name to bind with your `deployment id` in [`evals/completion_fns/openai.py`](https://github.com/yuyuz/GPT-Fathom/blob/fcb21e048aa4a68f5f66fa9079438c465d0d826b/evals/completion_fns/openai.py#L166), and specify your `api_key` and `api_base` in [`evals/utils/azure_utils.py`](/evals/utils/azure_utils.py). Run evaluation with flag `--azure_eval True`, for example:
+- To evaluate models in [Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models), make sure you first deploy the model following [Azure Deploy](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) to get a `deployment id`. Then specify a `completion function` name to bind with your `deployment id` in [evals/completion_fns/openai.py](https://github.com/yuyuz/GPT-Fathom/blob/fcb21e048aa4a68f5f66fa9079438c465d0d826b/evals/completion_fns/openai.py#L166), and specify your `api_key` and `api_base` in [evals/utils/azure_utils.py](/evals/utils/azure_utils.py). Run evaluation with flag `--azure_eval True`, for example:
 ```sh
 oaieval text-davinci-001 gsm8k-8shotCoT --azure_eval True
 ```
