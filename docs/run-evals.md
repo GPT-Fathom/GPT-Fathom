@@ -1,6 +1,6 @@
 # How to run evals
 
-We provide two command line interfaces (CLIs): `oaieval` for running a single eval and `oaievalset` for running a set of evals. To perform a quick eval with one line of code, see [`quick-evals.md`](quick-evals.md). 
+We provide two command line interfaces (CLIs): `oaieval` for running a single eval and `oaievalset` for running a set of evals. To perform a quick eval with one line of code, see [quick-evals.md](quick-evals.md). 
 
 ## Running an eval
 
@@ -10,9 +10,9 @@ oaieval gpt-3.5-turbo test-match
 ```
 The valid eval names are specified in the YAML files under `evals/registry/evals` and their corresponding implementations canbe found in `evals/elsuite`.
 
-In this example, `gpt-3.5-turbo` is an OpenAI model that we dynamically instantiate as a completion function using `OpenAIChatCompletionFn(model=gpt-3.5-turbo)`. Any implementation of the `CompletionFn` protocol can be run against `oaieval`. By default, we support calling `oaieval` with any models available in the [OpenAI API](https://platform.openai.com/docs/models/) and [Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models), or with CompletionFunctions available in [`evals/registry/completion_fns`](../evals/registry/completion_fns/).
+In this example, `gpt-3.5-turbo` is an OpenAI model that we dynamically instantiate as a completion function using `OpenAIChatCompletionFn(model=gpt-3.5-turbo)`. Any implementation of the `CompletionFn` protocol can be run against `oaieval`. By default, we support calling `oaieval` with any models available in the [OpenAI API](https://platform.openai.com/docs/models/) and [Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models), or with CompletionFunctions available in [evals/registry/completion_fns](../evals/registry/completion_fns/).
 - For evaluations using [OpenAI API](https://platform.openai.com/docs/models/), set your API key as an environment variable: ```OPENAI_API_KEY="YOURKEY"```. 
-- To evaluate models in [Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models), make sure you first deploy the model following [Azure Deploy](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) to get a `deployment id`. Then specify a `completion function` name to bind with your `deployment id` in [`evals/completion_fns/openai.py`](https://github.com/yuyuz/GPT-Fathom/blob/fcb21e048aa4a68f5f66fa9079438c465d0d826b/evals/completion_fns/openai.py#L166), and specify your `api_key` and `api_base` in [`evals/utils/azure_utils.py`](/evals/utils/azure_utils.py). Run evaluation with flag `--azure_eval True`, for example:
+- To evaluate models in [Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models), make sure you first deploy the model following [Azure Deploy](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) to get a `deployment id`. Then specify a `completion function` name to bind with your `deployment id` in [evals/completion_fns/openai.py](https://github.com/yuyuz/GPT-Fathom/blob/fcb21e048aa4a68f5f66fa9079438c465d0d826b/evals/completion_fns/openai.py#L166), and specify your `api_key` and `api_base` in [evals/utils/azure_utils.py](/evals/utils/azure_utils.py). Run evaluation with flag `--azure_eval True`, for example:
 ```sh
 oaieval text-davinci-001 gsm8k-8shotCoT --azure_eval True
 ```
@@ -21,7 +21,7 @@ oaieval text-davinci-001 gsm8k-8shotCoT --azure_eval True
 oaieval llama gsm8k-8shotCoT --eval_in_batch True
 ```
 
-Refer to [`completion-fns.md`](completion-fns.md) for more details of `CompletionFn`.
+Refer to [completion-fns.md](completion-fns.md) for more details of `CompletionFn`.
 
 These CLIs accept various flags to modify their default behavior. For example:
 - By default, logging locally will write to `tmp/evallogs`, and you can change this by setting a different `--record_path`.
