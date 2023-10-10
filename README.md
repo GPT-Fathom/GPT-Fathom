@@ -157,7 +157,7 @@ oaieval gpt-3.5-turbo gsm8k-8shotCoT
 ```sh
 oaieval text-davinci-001 gsm8k-8shotCoT --azure_eval True
 ```
-- To evaluate a model from LLaMA or Llama 2 family, run evaluation with flag `--eval_in_batch True`, for example:
+- To evaluate a model from LLaMA or Llama 2 family, first configure the model following the official HuggingFace documents for [LLaMA](https://huggingface.co/docs/transformers/main/model_doc/llama) and [Llama 2](https://huggingface.co/docs/transformers/main/model_doc/llama2). Then run evaluation with flag `--eval_in_batch True`, for example:
 ```sh
 oaieval llama gsm8k-8shotCoT --eval_in_batch True
 ```
