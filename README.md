@@ -162,12 +162,12 @@ oaieval text-davinci-001 gsm8k-8shotCoT --azure_eval True
 oaieval llama gsm8k-8shotCoT --eval_in_batch True
 ```
 
-For more one-line quick evaluations, refer to [`quick-evals.md`](docs/quick-evals.md).
+For more one-line quick evaluations, refer to [quick-evals.md](docs/quick-evals.md).
 
-Further details on `oaieval` and `oaievalset` are discussed in [`run-evals.md`](docs/run-evals.md).
+Further details on `oaieval` and `oaievalset` are discussed in [run-evals.md](docs/run-evals.md).
 
 ### Customize settings
-We support evaluations with customized settings, including sampling temperature, prompt format, number of shots, and maximum tokens. Learn how in [`custom-eval.md`](docs/custom-eval.md).
+We support evaluations with customized settings, including sampling temperature, prompt format, number of shots, and maximum tokens. Learn how in [custom-eval.md](docs/custom-eval.md).
 
 ### Evaluate new LLMs
 GPT-Fathom supports evaluation of new LLMs in two ways:
@@ -175,7 +175,7 @@ GPT-Fathom supports evaluation of new LLMs in two ways:
 1. Calling API: `completion function` is called in multi-thread fashion, which returns a response for a single sample each time.
 2. Inferencing HuggingFace models: `completion function` is called to generate responses to multiple samples in batch mode.
 
-To learn how to evaluate new models, refer to [`completion-fns.md`](docs/completion-fns.md).
+To learn how to evaluate new models, refer to [completion-fns.md](docs/completion-fns.md).
 
 <a name="faqs"></a>
 ## 💡 FAQs
