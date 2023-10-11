@@ -167,7 +167,7 @@ For more one-line quick evaluations, refer to [quick-evals.md](docs/quick-evals.
 Further details on `oaieval` and `oaievalset` are discussed in [run-evals.md](docs/run-evals.md).
 
 ### Customize settings
-We support evaluations with customized settings, including sampling temperature, prompt format, number of shots, and maximum tokens. Learn how in [custom-eval.md](docs/custom-eval.md).
+We support evaluations with customized settings, including sampling temperature, prompt format, number of "shots", and maximum tokens. Learn how in [custom-eval.md](docs/custom-eval.md).
 
 ### Evaluate new LLMs
 GPT-Fathom supports evaluation of new LLMs in two ways:
@@ -224,6 +224,9 @@ To avoid confusion, we first describe how black-box / white-box evaluation works
 GPT-Fathom adopts the black-box method throughout all evaluations, since 1) the per-token likelihood for input prompt is usually not provided by closed-source LLMs; 2) the white-box method manually restricts the prediction space, thus the evaluation result would be no worse than random guess in expectation; while for the black-box method, a model with inferior capability of instruction following may get 0 score since the output space is purely free-form. In our opinion, instruction following is such an important LLM capability and should be taken into consideration in evaluation.
 
 To reduce the variance of black-box evaluation on base models, which typically have weaker capability of instruction following due to lack of fine-tuning, GPT-Fathom uses 1-shot setting by default for most tasks. With just 1-shot example of question and answer, we observe that stronger base models are able to perform in-context learning to follow the required output format for multiple-choice questions.
+
+### Are the evaluation datasets locally stored?
+We pre-process the benchmark datasets from their official source or [HuggingFace Datasets](https://huggingface.co/docs/datasets/index), and each has a local copy for reproducible evaluation. For some datasets, we support real-time downloading from HuggingFace Datasets during the evaluation time. Since the real-time downloaded datasets subject to version changes, which is out of our control, we also support using local cache of these datasets when flag `--local_dataset True` is set.
 
 
 <a name="roadmap"></a>
