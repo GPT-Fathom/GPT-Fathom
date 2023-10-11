@@ -180,7 +180,7 @@ To learn how to evaluate new models, refer to [completion-fns.md](docs/completio
 <a name="faqs"></a>
 ## 💡 FAQs
 
-### Why our results differ from the officially reported scores?
+### Why some results in GPT-Fathom differ from officially reported scores?
 For fair comparison, we evaluate LLMs under aligned settings such as the number of "shots", whether CoT prompting is used, and sampling hyperparameters (e.g., temperature and top<sub>p</sub>). We report the results from our own experiments, instead of arbitrarily citing numbers from papers. Therefore, our evaluation setting of a LLM may differ from its official paper, which leads to different results. For example, on HumanEval, [LLaMA](https://arxiv.org/abs/2302.13971) and [Llama 2](https://arxiv.org/abs/2307.09288) use a temperature of 0.1 for pass@1 scores and 0.8 for pass@100 scores, while we consistently use 0.8 for all the coding benchmark evaluations.
 
 Moreover, even under the same setting, other factors such as the prompt template, answer parsing / matching details and sampling variance can still affect the evaluation results. Note that most of the released LLMs do not fully disclose these details. In our [paper](https://arxiv.org/abs/2309.16583), we investigate the impacts of model sensitivity on evaluation results with extensive experiments.
