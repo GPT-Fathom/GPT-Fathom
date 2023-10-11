@@ -226,7 +226,7 @@ GPT-Fathom adopts the black-box method throughout all evaluations, since 1) the 
 To reduce the variance of black-box evaluation on base models, which typically have weaker capability of instruction following due to lack of fine-tuning, GPT-Fathom uses 1-shot setting by default for most tasks. With just 1-shot example of question and answer, we observe that stronger base models are able to perform in-context learning to follow the required output format for multiple-choice questions.
 
 ### Are the evaluation datasets locally stored?
-We pre-process the benchmark datasets from their official source or [HuggingFace Datasets](https://huggingface.co/docs/datasets/index), and each has a local copy for reproducible evaluation. For some datasets, we support real-time downloading from HuggingFace Datasets during the evaluation time. Since the real-time downloaded datasets subject to version changes, which is out of our control, we also support using local cache of these datasets when flag `--local_dataset True` is set.
+We pre-processed the benchmark datasets either from their official source or [HuggingFace Datasets](https://huggingface.co/docs/datasets/index), and each has a local copy in our repo for reproducible evaluation. For some datasets, we support real-time downloading from HuggingFace Datasets during the evaluation time. Since the real-time downloaded datasets may subject to changes from HuggingFace Datasets, which is out of our control, we also support using the local cache of these datasets with flag `--local_dataset True`.
 
 
 <a name="roadmap"></a>
