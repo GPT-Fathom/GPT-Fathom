@@ -85,7 +85,7 @@ As claimed in OpenAI's [model index](https://platform.openai.com/docs/model-inde
   - SFT and RLHF models still have to pay the alignment tax, showing a minor performance drop in pass@100, which aligns with their slightly worse performance across other tasks.
   - SFT and RLHF can effectively distill the capability of pass@100 into pass@1, which transfers inherent problem-solving skills to one-take bug-free coding capability.
   - As expected, smaller models like `code-cushman-001` (Codex-12B) and `gpt-3.5-turbo-0301` have limited intrinsic capability in terms of pass@100. However, their pass@1 can be dramatically improved by SFT and RLHF. This is good news for research on low-cost small-size LLMs.
-- We observe that state-of-the-art LLMs like GPT-4 can inherently tackle complicated tasks, although sometimes succeed after many sampling trials. We anticipate that LLMs have yet to reach their full potential, since SFT and RLHF can consistently enhance LLMs by translating their intrinsic capabilities into one-take pass rates on reasoning-intensive tasks.
+- **GPT-4 can be even more powerful!** We observe that state-of-the-art LLMs like GPT-4 can inherently tackle complicated tasks, although sometimes succeed after many sampling trials ([example](https://chat.openai.com/share/f9757342-74df-48eb-b333-ad55b2ea1ac7)). We anticipate that LLMs have yet to reach their full potential, since SFT and RLHF can consistently enhance LLMs by translating their intrinsic capabilities into one-take pass rates on reasoning-intensive tasks.
 
 ### Impacts of pretraining with code data
 - `code-cushman-001` (Codex-12B) represents OpenAI's preliminary effort to train LLMs on code data, which shows decent coding performance despite its modest model size.
