@@ -93,7 +93,7 @@ As claimed in OpenAI's [model index](https://platform.openai.com/docs/model-inde
 
 ### Seesaw phenomenon of LLM capabilities
 - We observe a so-called "seesaw phenomenon" by comparing the OpenAI API models dated in 2023/03 and 2023/06, where certain capabilities exhibit improvement, while a few other capabilities clearly regress.
-- For instance, compared to `gpt-3.5-turbo-0301`, the upgraded model `gpt-3.5-turbo-0613` excels on HumanEval (53.9 -> 80.0) but dramatically degrades on MATH (32.0 -> 15.0). `gpt-4-0613` outperforms `gpt-4-0314` on DROP (78.7 -> 87.2) but plummets on MGSM (82.2 -> 68.7). OpenAI also [admits]((https://openai.com/blog/function-calling-and-other-api-updates)) that when they release a new model, while the majority of metrics have improved, there may be some tasks where the performance gets worse.
+- For instance, compared to `gpt-3.5-turbo-0301`, the upgraded model `gpt-3.5-turbo-0613` excels on HumanEval (53.9 -> 80.0) but dramatically degrades on MATH (32.0 -> 15.0). `gpt-4-0613` outperforms `gpt-4-0314` on DROP (78.7 -> 87.2) but plummets on MGSM (82.2 -> 68.7). OpenAI also [admits](https://openai.com/blog/function-calling-and-other-api-updates) that when they release a new model, while the majority of metrics have improved, there may be some tasks where the performance gets worse.
 - The seesaw phenomenon presents a universal challenge that may obstruct LLM's path towards AGI, which necessitates a model that excels across all types of tasks. We strongly encourage the research community to pay more attention to this challenge.
 
 ### OpenAI vs. non-OpenAI LLMs
