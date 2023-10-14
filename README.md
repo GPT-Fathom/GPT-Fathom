@@ -14,7 +14,7 @@ Xun Zhou, Kevin Chen-Chuan Chang
 
 From ByteDance, University of Illinois at Urbana-Champaign
 
-[📃 Paper](https://arxiv.org/abs/2309.16583) | [🐦 Twitter](https://twitter.com/shen_zheng25741/status/1711608646654673242)
+[📃 Paper](https://arxiv.org/abs/2309.16583) | [🐦 Twitter](https://twitter.com/shen_zheng25741/status/1713053733939015935)
 
 
 </div>
