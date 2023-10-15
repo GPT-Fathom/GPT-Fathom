@@ -9,7 +9,7 @@
 
 ----
 
-By [Shen Zheng](https://github.com/shenz2-2000)<sup>\*</sup>, [Yuyu Zhang](https://sites.google.com/site/yuyuzhang90)<sup>\*</sup>, [Yijie Zhu](https://github.com/zhuyijie), [Chenguang Xi](http://xichenguang.com), [Pengyang Gao](https://twitter.com/fuergaosi),<br>
+By [Shen Zheng](https://shenz2-2000.github.io)<sup>\*</sup>, [Yuyu Zhang](https://sites.google.com/site/yuyuzhang90)<sup>\*</sup>, [Yijie Zhu](https://github.com/zhuyijie), [Chenguang Xi](http://xichenguang.com), [Pengyang Gao](https://twitter.com/fuergaosi),<br>
 Xun Zhou, Kevin Chen-Chuan Chang
 
 From ByteDance, University of Illinois at Urbana-Champaign
