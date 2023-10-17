@@ -14,7 +14,7 @@ More details of running an eval are in [`run-evals.md`](run-evals.md).
 
 
 ```
-# Closed Book QA: 
+# Closed-book QA: 
 oaieval text-davinci-001 natural_questions-1shot
 oaieval text-davinci-001 web_questions-1shot
 oaieval text-davinci-001 triviaqa-1shot
