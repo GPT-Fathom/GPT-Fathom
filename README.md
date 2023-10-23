@@ -182,7 +182,7 @@ GPT-Fathom supports evaluation of new LLMs in two ways:
 1. Calling API: `completion function` is called in multi-thread fashion, which returns a response for a single sample each time.
 2. Inferencing HuggingFace models: `completion function` is called to generate responses to multiple samples in batch mode.
 
-To learn how to evaluate new models, refer to [completion-fns.md](docs/completion-fns.md). To see our example, refer to [sample.md](docs/sample.md). 
+To learn how to evaluate new models, refer to [completion-fns.md](docs/completion-fns.md) and our step-by-step tutorial in [example.md](docs/example.md).
 
 <a name="faqs"></a>
 ## 💡 FAQs
