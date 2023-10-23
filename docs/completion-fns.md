@@ -14,7 +14,7 @@ We support two kinds of completion function:
 
 The two completion functions share the same interfaces, but for the second type of completion function, you need to specify the argument `--eval_in_batch True` when you call `oaieval` or `oaievalset`. 
 
-We provide some example implementations inside `evals/completion_fns`. For example, the [`LLamaCompletion Function`](evals/completion_fns/llama.py) is an implementation to generate completions from LLaMA and Llama 2 LLMs. 
+We provide some example implementations inside `evals/completion_fns`. For example, the [`LLamaCompletion Function`](../evals/completion_fns/llama.py) is an implementation to generate completions from LLaMA and Llama 2 LLMs. 
 
 ## Registering Completion Functions
 Once you have written a completion function, we need to make the class visible to the `oaieval` CLI. Similar to how we register our evals, we also register Completion Functions inside `evals/registry/completion_fns` as `yaml` files. Here is the registration for our Llama LLM completion function:
