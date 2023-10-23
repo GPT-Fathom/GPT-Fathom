@@ -27,6 +27,12 @@ Our retrospective study on OpenAI's earlier models, including `davinci` ([GPT-3]
 
 Currently, the community is eager to know how GPT-3 progressively improves to GPT-4, including technical details like whether adding code data improves LLM's reasoning capability, which aspects of LLM capability can be improved by SFT and RLHF, how much is the alignment tax, etc. Our analysis sheds light on many of these questions, aiming to improve the transparency of advanced LLMs.
 
+<a name="updates"></a>
+## 🚀 Updates <a href="#updates"><img width="35" height="20" src="https://user-images.githubusercontent.com/12782558/212848161-5e783dd6-11e8-4fe0-bbba-39ffb77730be.png"></a>
+* [2023/10/23] We updated the evaluations results of the latest OpenAI model `gpt-3.5-turbo-instruct-0914`, which slightly outperforms `gpt-3.5-turbo-0613` on most benchmarks (except for some "Coding" and "Safety" tasks).
+
+<img src="assets/figures/radar_turbo_instruct.png" width=50%>
+
 ## 📖 Table of Contents
 - [📊 Leaderboard](#leaderboard)
 - [🔍 Analysis and Insights](#analysis-and-insights)
@@ -240,7 +246,8 @@ We pre-processed the benchmark datasets either from their official source or [Hu
   - [ ] Support evaluation of agent capability
   - [ ] Support long-context evaluation
 - [ ] More leading LLMs
-  - [ ] Support evaluation of `gpt-3.5-turbo-instruct`
+  - [x] Support evaluation of `gpt-3.5-turbo-instruct`
+  - [ ] LLaMA and Llama 2 models of various model sizes
 
 
 <a name="acknowledgements"></a>
