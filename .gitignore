@@ -1,0 +1,17 @@
+__pycache__/
+evals.egg-info/
+
+.venv/
+venv/
+
+# MacOS folder metadata
+.DS_Store
+.vscode/
+
+# PyCharm folder metadata
+.idea/
+
+build
+
+openai-key.txt
+*.code-workspace
