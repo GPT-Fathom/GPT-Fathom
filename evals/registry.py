@@ -62,23 +62,28 @@ def n_ctx_from_model_name(model_name: str) -> Optional[int]:
         "text-davinci-003": 4096,
         "gpt-3.5-turbo": 4096,
         "gpt-3.5-turbo-0301": 4096,
+        "gpt-3.5-turbo-16k": 16384,
         "gpt-4": 8192,
         "gpt-4-0314": 8192,
         "gpt-4-32k": 32768,
         "gpt-4-32k-0314": 32768,
     }
-    # first, look for a prefix match
+    # first, look for an exact match
+    if model_name in DICT_OF_N_CTX_BY_MODEL_NAME.keys():
+        return DICT_OF_N_CTX_BY_MODEL_NAME.get(model_name)
+    # otherwise, look for a prefix match and return None if not found
     for model_prefix, n_ctx in DICT_OF_N_CTX_BY_MODEL_NAME_PREFIX.items():
         if model_name.startswith(model_prefix):
             return n_ctx
-    # otherwise, look for an exact match and return None if not found
-    return DICT_OF_N_CTX_BY_MODEL_NAME.get(model_name, None)
+        else:
+            return None
 
 
 CHAT_MODELS = {
     "gpt-3.5",
     "gpt-3.5-frontend",
     "gpt-3.5-turbo",
+    "gpt-3.5-turbo-16k"，
     "gpt-3.5-turbo-0301",
     "gpt-3.5-turbo-0613",
     "gpt-4",

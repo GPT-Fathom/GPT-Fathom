@@ -1,0 +1,9 @@
+quality-0shot:
+  id: quality.val.ab-v1
+  metrics: [accuracy]
+quality.val.ab-v1:
+  class: evals.elsuite.basic.long_comprehension:LONG_COMPRE
+  args:
+    samples_jsonl: quality/samples.jsonl
+    num_few_shot: 0
+    MC: True

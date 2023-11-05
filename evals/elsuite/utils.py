@@ -15,6 +15,7 @@ from evals.prompt.base import (
     is_chat_prompt,
 )
 
+import jieba
 
 def get_answer(text, answer_prompt, ignore_case=False):
     if ignore_case:
@@ -44,6 +45,21 @@ def normalize(s: str) -> str:
     s = " ".join(s.split())
     return s
 
+def normalize_chinese(s):
+    """Lower text and remove punctuation, extra whitespace for Chinese characters."""
+
+    def white_space_fix(text):
+        return "".join(text.split())
+
+    def remove_punc(text):
+        cn_punctuation = "！？｡。＂＃＄％＆＇（）＊＋，－／：；＜＝＞＠［＼］＾＿｀｛｜｝～｟｠｢｣､、〃》「」『』【】〔〕〖〗〘〙〚〛〜〝〞〟〰〾〿–—‘’‛“”„‟…‧﹏."
+        all_punctuation = set(string.punctuation + cn_punctuation)
+        return "".join(ch for ch in text if ch not in all_punctuation)
+
+    def lower(text):
+        return text.lower()
+
+    return white_space_fix(remove_punc(s))
 
 def fuzzy_match(s1: str, s2: str) -> bool:
     s1 = normalize(s1)
@@ -88,6 +104,25 @@ def f1_score(prediction: str, answers: list[str]) -> float:
         return f1
 
     return max([_f1_score(prediction, answer) for answer in answers])
+
+def f1_score_chinese(prediction, ground_truth, **kwargs):
+    prediction_tokens = list(jieba.cut(prediction, cut_all=False))
+    ground_truth_tokens = list(jieba.cut(ground_truth, cut_all=False))
+
+    prediction_tokens = [normalize_chinese(token) for token in prediction_tokens]
+    ground_truth_tokens = [normalize_chinese(token) for token in ground_truth_tokens]
+
+    prediction_tokens = [token for token in prediction_tokens if len(token) > 0]
+    ground_truth_tokens = [token for token in ground_truth_tokens if len(token) > 0]
+
+    common = Counter(prediction) & Counter(ground_truth)
+    num_same = sum(common.values())
+    if num_same == 0:
+        return 0
+    precision = 1.0 * num_same / len(prediction)
+    recall = 1.0 * num_same / len(ground_truth)
+    f1 = (2 * precision * recall) / (precision + recall)
+    return f1
 
 
 def scrub_formatting_from_prompt(prompt):

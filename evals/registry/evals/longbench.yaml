@@ -1,0 +1,95 @@
+longbench-narrativeqa:
+  id: longbench.multi-QA.v1
+  metrics: [f1_score]
+longbench.multi-QA.v1:
+  class: evals.elsuite.basic.long_comprehension:LONG_COMPRE
+  args:
+    samples_jsonl: longbench/narrativeqa.jsonl
+    num_few_shot: 0
+    max_tokens: 128
+    instructions: "You are given a story, which can be either a novel or a movie script, and a question. Answer the question asconcisely as you can, using a single phrase if possible. Do not provide any explanation."
+    MC: False
+  
+longbench-qasper:
+  id: longbench.multi-QA.v2
+  metrics: [f1_score]
+longbench.multi-QA.v2:
+  class: evals.elsuite.basic.long_comprehension:LONG_COMPRE
+  args:
+    samples_jsonl: longbench/qasper.jsonl
+    num_few_shot: 0
+    max_tokens: 128
+    instructions: "You are given a scientific article and a question. Answer the question based on the article with one or more sentence. If the question is a yes/no question, answer \"yes\", \"no\", or \"unanswerable\". Do not provide any explanation. If the question cannot be answered based on the information in the article, write \"unanswerable\"."
+    MC: False
+  
+longbench-multifieldqa_en:
+  id: longbench.multi-QA.v3
+  metrics: [f1_score]
+longbench.multi-QA.v3:
+  class: evals.elsuite.basic.long_comprehension:LONG_COMPRE
+  args:
+    samples_jsonl: longbench/multifieldqa_en.jsonl
+    num_few_shot: 0
+    max_tokens: 64
+    instructions: "Read the following text and answer briefly, only give me the answer and do not output any other words."
+    MC: False
+
+longbench-multifieldqa_zh:
+  id: longbench.multi-QA.v4
+  metrics: [f1_score]
+longbench.multi-QA.v4:
+  class: evals.elsuite.basic.long_comprehension:LONG_COMPRE
+  args:
+    samples_jsonl: longbench/multifieldqa_zh.jsonl
+    num_few_shot: 0
+    max_tokens: 64
+    instructions: "阅读以下文字并用中文简短回答现，只告诉我答案，不要输出任何其他字词。"
+    MC: False
+
+longbench-hotpotqa:
+  id: longbench.single-QA.v1
+  metrics: [f1_score]
+longbench.single-QA.v1:
+  class: evals.elsuite.basic.long_comprehension:LONG_COMPRE
+  args:
+    samples_jsonl: longbench/hotpotqa.jsonl
+    num_few_shot: 0
+    max_tokens: 32
+    instructions: "Answer the question based on the given passages. Only give me the answer and do not output any other words.\n\nThe following are given passages."
+    MC: False
+
+longbench-2wikimqa:
+  id: longbench.single-QA.v2
+  metrics: [f1_score]
+longbench.single-QA.v2:
+  class: evals.elsuite.basic.long_comprehension:LONG_COMPRE
+  args:
+    samples_jsonl: longbench/2wikimqa.jsonl
+    num_few_shot: 0
+    max_tokens: 32
+    instructions: "Answer the question based on the given passages. Only give me the answer and do not output any other words.\n\nThe following are given passages."
+    MC: False
+
+longbench-musique:
+  id: longbench.single-QA.v3
+  metrics: [f1_score]
+longbench.single-QA.v3:
+  class: evals.elsuite.basic.long_comprehension:LONG_COMPRE
+  args:
+    samples_jsonl: longbench/musique.jsonl
+    num_few_shot: 0
+    max_tokens: 32
+    instructions: "Answer the question based on the given passages. Only give me the answer and do not output any other words. If the question asks about when/who/what, just give me only the time/name, be concise and don't repeat the question. \n\nThe following are given passages."
+    MC: False
+
+longbench-dureader:
+  id: longbench.single-QA.v4
+  metrics: [f1_score]
+longbench.single-QA.v4:
+  class: evals.elsuite.basic.long_comprehension:LONG_COMPRE
+  args:
+    samples_jsonl: longbench/dureader.jsonl
+    num_few_shot: 0
+    max_tokens: 128
+    instructions: "请基于给定的文章回答下述问题。"
+    MC: False
