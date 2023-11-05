@@ -9,6 +9,7 @@ from typing import Any, Callable, Optional, Protocol, Union, runtime_checkable
 
 from evals.prompt.base import OpenAICreateChatPrompt, OpenAICreatePrompt, Prompt
 from evals.record import record_match
+import math
 
 logger = logging.getLogger(__name__)
 
@@ -113,3 +114,73 @@ def record_and_check_match(
         detected=detected,
     )
     return picked
+
+
+def equiv_scibench(model_output, answer, unit):
+    """
+    Helper function for record_and_check_match_scibench. Checks the numerical equivalence between model output and answer.
+
+    Args:
+        model_output: The sampled response from the model.
+        answer: The expected response.
+        unit: The unit of the answer.
+
+    Returns:
+        If the model output matches the expected answer.
+    """
+
+    model_output = model_output.replace(",", "")
+    try:
+        ans = float(answer.strip())
+        if ans >= 1:
+            first = math.isclose(float(model_output.strip()), ans, abs_tol=0.1)
+        else:
+            first = math.isclose(float(model_output.strip()), ans, rel_tol=0.1)
+    except:
+        first = False
+    try:
+        model = model_output.strip().split()[0]
+        if ans >= 1:
+            second = math.isclose(float(model_output.strip()), ans, abs_tol=0.1)
+        else:
+            second = math.isclose(float(model_output.strip()), ans, rel_tol=0.1)
+    except:
+        second = False
+    if first or second:
+        return True
+    return False
+
+
+def record_and_check_match_scibench(
+    prompt: Any,
+    sampled: str,
+    expected: str,
+    unit: str,
+):
+    """
+    Records and checks if a sampled response from a CompletionFn matches the expected result for scibench.
+
+    Args:
+        prompt: The input prompt.
+        sampled: The sampled response from the model.
+        expected: The expected response or list of responses.
+        unit: The unit of the answer
+
+    Returns:
+        If the model output matches the expected answer.
+    """
+    result = {"prompt": prompt, "sampled": sampled}
+    match = False
+    try:
+        match = equiv_scibench(sampled, expected, unit)
+    except Exception as e:
+        match = False
+
+    result["expected"] = expected
+    result["match"] = match
+    record_match(
+        match,
+        expected=expected,
+        sampled=sampled,
+    )
+    return match

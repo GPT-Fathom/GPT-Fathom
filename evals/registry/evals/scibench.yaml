@@ -1,0 +1,174 @@
+scibench-atkins: 
+  id: scibench-atkins.val.ab-v1
+  metrics: [accuracy]
+scibench-atkins.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/atkins.jsonl
+
+
+scibench-atkins-CoT: 
+  id: scibench-atkins-CoT.val.ab-v1
+  metrics: [accuracy]
+scibench-atkins-CoT.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/atkins.jsonl
+    CoT: True
+
+
+scibench-calculus: 
+  id: scibench-calculus.val.ab-v1
+  metrics: [accuracy]
+scibench-calculus.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/calculus.jsonl
+
+
+scibench-calculus-CoT: 
+  id: scibench-calculus-CoT.val.ab-v1
+  metrics: [accuracy]
+scibench-calculus-CoT.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/calculus.jsonl
+    CoT: True
+
+
+scibench-chemmc: 
+  id: scibench-chemmc.val.ab-v1
+  metrics: [accuracy]
+scibench-chemmc.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/chemmc.jsonl
+
+scibench-chemmc-CoT: 
+  id: scibench-chemmc-CoT.val.ab-v1
+  metrics: [accuracy]
+scibench-chemmc-CoT.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/chemmc.jsonl
+    CoT: True
+
+scibench-class: 
+  id: scibench-class.val.ab-v1
+  metrics: [accuracy]
+scibench-class.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/class.jsonl
+
+scibench-class-CoT: 
+  id: scibench-class-CoT.val.ab-v1
+  metrics: [accuracy]
+scibench-class-CoT.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/class.jsonl
+    CoT: True
+
+scibench-diff: 
+  id: scibench-diff.val.ab-v1
+  metrics: [accuracy]
+scibench-diff.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/diff.jsonl
+
+scibench-diff-CoT: 
+  id: scibench-diff-CoT.val.ab-v1
+  metrics: [accuracy]
+scibench-diff-CoT.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/diff.jsonl
+    CoT: True
+
+scibench-fund: 
+  id: scibench-fund.val.ab-v1
+  metrics: [accuracy]
+scibench-fund.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/fund.jsonl
+
+scibench-fund-CoT: 
+  id: scibench-fund-CoT.val.ab-v1
+  metrics: [accuracy]
+scibench-fund-CoT.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/fund.jsonl
+    CoT: True
+
+scibench-matter: 
+  id: scibench-matter.val.ab-v1
+  metrics: [accuracy]
+scibench-matter.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/matter.jsonl
+
+scibench-matter-CoT: 
+  id: scibench-matter-CoT.val.ab-v1
+  metrics: [accuracy]
+scibench-matter-CoT.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/matter.jsonl
+    CoT: True
+
+scibench-quan: 
+  id: scibench-quan.val.ab-v1
+  metrics: [accuracy]
+scibench-quan.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/quan.jsonl
+
+scibench-quan-CoT: 
+  id: scibench-quan-CoT.val.ab-v1
+  metrics: [accuracy]
+scibench-quan-CoT.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/quan.jsonl
+    CoT: True
+
+scibench-stat: 
+  id: scibench-stat.val.ab-v1
+  metrics: [accuracy]
+scibench-stat.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/stat.jsonl
+
+scibench-stat-CoT: 
+  id: scibench-stat-CoT.val.ab-v1
+  metrics: [accuracy]
+scibench-stat-CoT.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/stat.jsonl
+    CoT: True
+
+scibench-thermo: 
+  id: scibench-thermo.val.ab-v1
+  metrics: [accuracy]
+scibench-thermo.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/thermo.jsonl
+
+scibench-thermo-CoT: 
+  id: scibench-thermo-CoT.val.ab-v1
+  metrics: [accuracy]
+scibench-thermo-CoT.val.ab-v1:
+  class: evals.elsuite.dataset_specific.scibench:SCIBENCH
+  args:
+    sample_jsonl: scibench/thermo.jsonl
+    CoT: True
+
