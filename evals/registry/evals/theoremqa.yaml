@@ -1,0 +1,36 @@
+theoremqa:
+  id: theoremqa.val.ab-v1
+  metrics: [accuracy]
+theoremqa.val.ab-v1:
+  class: evals.elsuite.dataset_specific.theoremqa:THEOREMQA
+  args:
+    sample_jsonl: theoremqa/test.jsonl
+
+theoremqa-withtheorem:
+  id: theoremqa-withtheorem.val.ab-v1
+  metrics: [accuracy]
+theoremqa-withtheorem.val.ab-v1:
+  class: evals.elsuite.dataset_specific.theoremqa:THEOREMQA
+  args:
+    sample_jsonl: theoremqa/test.jsonl
+    with_theorem: True
+
+theoremqa-CoT:
+  id: theoremqa-CoT.val.ab-v1
+  metrics: [accuracy]
+theoremqa-CoT.val.ab-v1:
+  class: evals.elsuite.dataset_specific.theoremqa:THEOREMQA
+  args:
+    sample_jsonl: theoremqa/test.jsonl
+    CoT: True
+
+theoremqa-CoT-withtheorem:
+  id: theoremqa-CoT-withtheorem.val.ab-v1
+  metrics: [accuracy]
+theoremqa-CoT-withtheorem.val.ab-v1:
+  class: evals.elsuite.dataset_specific.theoremqa:THEOREMQA
+  args:
+    sample_jsonl: theoremqa/test.jsonl
+    CoT: True
+    with_theorem: True
+

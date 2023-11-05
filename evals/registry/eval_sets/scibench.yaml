@@ -1,0 +1,26 @@
+scibench-set:
+  evals:
+    - scibench-atkins
+    - scibench-calculus
+    - scibench-chemmc
+    - scibench-class
+    - scibench-diff
+    - scibench-fund
+    - scibench-matter
+    - scibench-quan
+    - scibench-stat
+    - scibench-thermo
+
+
+scibench-set-CoT:
+  evals:
+    - scibench-atkins-CoT
+    - scibench-calculus-CoT
+    - scibench-chemmc-CoT
+    - scibench-class-CoT
+    - scibench-diff-CoT
+    - scibench-fund-CoT
+    - scibench-matter-CoT
+    - scibench-quan-CoT
+    - scibench-stat-CoT
+    - scibench-thermo-CoT

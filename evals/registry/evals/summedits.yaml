@@ -1,0 +1,9 @@
+summedits: 
+  id: summedits.val.ab-v1
+  metrics: [accuracy]
+summedits.val.ab-v1:
+  class: evals.elsuite.dataset_specific.summedits:SUMMEDITS
+  args:
+    sample_jsonl: summedits/test.jsonl
+
+
