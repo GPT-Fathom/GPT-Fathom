@@ -7,7 +7,7 @@ By default, we run with 10 threads, you can configure this with an environment v
 
 To evaluate your own model, see [`completion-fns.md`](docs/completion-fns.md). To modify/create an eval, see [`custom-eval.md`](docs/custom-eval.md). 
 
-If you need to use our local cached huggingface data, specify `--local_dataset True`
+If you need to use our local cached Hugging Face data, specify `--local_dataset True`
 
 More details of running an eval are in [`run-evals.md`](run-evals.md).
 
