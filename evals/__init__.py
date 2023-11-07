@@ -3,6 +3,7 @@ from .api import CompletionResult as CompletionResult
 from .api import DummyCompletionFn as DummyCompletionFn
 from .api import record_and_check_match as record_and_check_match
 from .api import record_and_check_match_scibench as record_and_check_match_scibench
+from .api import record_and_check_match_theoremqa as record_and_check_match_theoremqa
 from .completion_fns.openai import AzureChatCompletionFn as AzureChatCompletionFn
 from .completion_fns.openai import AzureCompletionFn as AzureCompletionFn
 from .completion_fns.openai import OpenAIChatCompletionFn as OpenAIChatCompletionFn

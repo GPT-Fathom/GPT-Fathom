@@ -73,6 +73,7 @@ class THEOREMQA(evals.Eval):
     def post_process(self, sampled, sample):
         sampled = self.extract_answer(sampled)
         correct_answer = sample["Answer"]
+
         return sampled, correct_answer
 
     def eval_sample(self, sample, rng):
@@ -90,8 +91,11 @@ class THEOREMQA(evals.Eval):
 
         sampled = result.get_completions()[0]
         sampled, correct_answer = self.post_process(sampled, sample)
-        evals.record_and_check_match(
-            prompt=prompt, sampled=sampled, expected=correct_answer
+        evals.record_and_check_match_theoremqa(
+            prompt=prompt,
+            sampled=sampled,
+            expected=correct_answer,
+            answer_type=sample["Answer_type"],
         )
 
     def eval_sample_batch(self, recorder, samples):
@@ -114,10 +118,11 @@ class THEOREMQA(evals.Eval):
             id = str(i)
             with recorder.as_default_recorder(id):
                 record_sampling(prompt=data[i], sampled=results[i])
-                evals.record_and_check_match(
+                evals.record_and_check_match_theoremqa(
                     prompt=data[i],
                     sampled=processed_res[i],
                     expected=correct_answers[i],
+                    answer_type=ideal[i]["Answer_type"],
                 )
 
     def run(self, recorder: RecorderBase):
