@@ -67,6 +67,7 @@ def n_ctx_from_model_name(model_name: str) -> Optional[int]:
         "gpt-4-0314": 8192,
         "gpt-4-32k": 32768,
         "gpt-4-32k-0314": 32768,
+        "gpt-4-1106-preview": 128*1024,
     }
     # first, look for an exact match
     if model_name in DICT_OF_N_CTX_BY_MODEL_NAME.keys():

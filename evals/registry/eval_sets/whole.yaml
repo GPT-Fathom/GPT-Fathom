@@ -1,8 +1,5 @@
 whole-set:
   evals:
-    - natural_questions-1shot
-    - web_questions-1shot
-    - triviaqa-1shot
     - arc-e-1shot
     - arc-c-1shot
     - lambada-1shot
@@ -13,8 +10,7 @@ whole-set:
     - drop-3shot
     - gsm8k-8shotCoT
     - math-4shotCoT
-    - humaneval-0shot
-    - mbpp-3shot
+    
     - mmlu-abstract-algebra-5shot
     - mmlu-anatomy-5shot
     - mmlu-astronomy-5shot
@@ -193,3 +189,8 @@ whole-set:
     - tydiqa-swahili-1shotnocontext
     - tydiqa-telugu-1shotnocontext
     - tydiqa-thai-1shotnocontext
+    - natural_questions-1shot
+    - web_questions-1shot
+    - triviaqa-1shot
+    - humaneval-0shot
+    - mbpp-3shot
