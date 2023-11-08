@@ -8,7 +8,7 @@ When using the `oaieval` command, you will need to provide the `completion funct
 ```sh
 oaieval gpt-3.5-turbo gsm8k-8shotCoT
 ```
-The valid eval names are specified in the YAML files under [evals/registry/evals](../evals/registry/evals) and their corresponding implementations canbe found in [evals/elsuite](../evals/elsuite).
+The valid eval names are specified in the YAML files under [evals/registry/evals](../evals/registry/evals) and their corresponding implementations can be found in [evals/elsuite](../evals/elsuite).
 
 In this example, `gpt-3.5-turbo` is an OpenAI model that we dynamically instantiate as a completion function using `OpenAIChatCompletionFn(model=gpt-3.5-turbo)`. Any implementation of the `CompletionFn` protocol can be run against `oaieval`. By default, we support calling `oaieval` with any models available in the [OpenAI API](https://platform.openai.com/docs/models/) and [Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models), or with CompletionFunctions available in [evals/registry/completion_fns](../evals/registry/completion_fns/).
 - For evaluations using [OpenAI API](https://platform.openai.com/docs/models/), set your API key as an environment variable: ```OPENAI_API_KEY="YOURKEY"```. 
