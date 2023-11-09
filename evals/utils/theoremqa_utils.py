@@ -5,6 +5,7 @@ from time import sleep
 
 import numpy as np
 import openai
+import litellm
 import wolframalpha
 from sympy import Rational
 
@@ -66,7 +67,7 @@ Input: {query}
 Output:"""
     while not got_result:
         try:
-            result = openai.ChatCompletion.create(
+            result = litellm.completion(
                 **kwargs,
                 messages=[
                     {"role": "system", "content": SYSTEMQ},

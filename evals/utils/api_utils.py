@@ -7,6 +7,7 @@ import os
 
 import backoff
 import openai
+import litellm
 
 EVALS_THREAD_TIMEOUT = float(os.environ.get("EVALS_THREAD_TIMEOUT", "40"))
 
@@ -66,7 +67,7 @@ def openai_chat_completion_create_retrying(*args, **kwargs):
     Helper function for creating a chat completion.
     `args` and `kwargs` match what is accepted by `openai.ChatCompletion.create`.
     """
-    result = request_with_timeout(openai.ChatCompletion.create, *args, **kwargs)
+    result = request_with_timeout(litellm.completion, *args, **kwargs)
     if "error" in result:
         logging.warning(result)
         raise openai.error.APIError(result["error"])
