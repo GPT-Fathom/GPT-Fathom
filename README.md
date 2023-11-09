@@ -161,6 +161,7 @@ We offer two command-line interfaces:
 
 To evaluate models in [OpenAI API](https://platform.openai.com/docs/models/), first set your API key as an environment variable: ```OPENAI_API_KEY="YOURKEY"```. Then specify the `completion function` and the `eval` to run evaluation, for example:
 ```sh
+export OPENAI_API_KEY="abcdefghijklmnopqrstuvwxyz"
 oaieval gpt-3.5-turbo gsm8k-8shotCoT
 ```
 **Notes**
