@@ -140,8 +140,12 @@ As claimed in OpenAI's [model index](https://platform.openai.com/docs/model-inde
 ### Install
 - Ensure you have Python version >= 3.9 installed.
 - Clone this repository to your local machine.
-- Install the necessary requirements using:
+- Install the necessary requirements
 ```sh
+conda create -n fathom python=3.9
+conda activate fathom
+git clone https://github.com/GPT-Fathom/GPT-Fathom.git
+cd GPT-Fathom
 pip install -e .
 ```
 
