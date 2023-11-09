@@ -37,7 +37,7 @@ dependencies = [
     "tensor-parallel==1.3.2",
     "google-api-python-client==2.90.0",
     "jieba",
-    "sympi",
+    "sympy",
     "wolframalpha"
 ]
 
