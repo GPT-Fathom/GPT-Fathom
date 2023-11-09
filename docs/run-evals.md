@@ -35,15 +35,15 @@ You can run `oaieval --help` to see a full list of CLI options.
 ## Running an eval set
 
 ```sh
-oaievalset gpt-3.5-turbo test
+oaievalset gpt-3.5-turbo mmlu
 ```
 
-Similarly, `oaievalset` also expects a model name and an eval set name, for which the valid options are specified in the YAML files under `evals/registry/eval_sets`.
+Similarly, `oaievalset` also expects a model name and an eval set name, for which the valid options are specified in the YAML files under [evals/registry/eval_sets](../evals/registry/eval_sets).
 
 By default we run with 10 threads, and each thread times out and restarts after 40 seconds. You can configure this, e.g.,
 
 ```sh
-EVALS_THREADS=42 EVALS_THREAD_TIMEOUT=600 oaievalset gpt-3.5-turbo test
+EVALS_THREADS=42 EVALS_THREAD_TIMEOUT=600 oaievalset gpt-3.5-turbo mmlu
 ```
 Running with more threads will make the eval faster, though keep in mind the costs and your [rate limits](https://platform.openai.com/docs/guides/rate-limits/overview). Running with a higher thread timeout may be necessary if you expect each sample to take a long time, e.g., the data contain long prompts that elicit long responses from the model.
 
