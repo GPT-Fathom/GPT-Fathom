@@ -1,5 +1,6 @@
 import math
 
+
 def equiv_scibench(model_output, answer, unit):
     """
     Helper function for record_and_check_match_scibench. Checks the numerical equivalence between model output and answer.
@@ -33,4 +34,3 @@ def equiv_scibench(model_output, answer, unit):
     if first or second:
         return True
     return False
-
