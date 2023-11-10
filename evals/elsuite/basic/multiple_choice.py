@@ -9,7 +9,8 @@ from pydantic import BaseModel
 import evals
 import evals.metrics
 from evals.api import CompletionFn
-from evals.elsuite.dataset_specific.lambada import CHAT_MODELS
+from evals.registry import CHAT_MODELS
+# from evals.elsuite.dataset_specific.lambada import CHAT_MODELS
 from evals.elsuite.utils import num_tokens_from_messages
 from evals.formatting import make_abc
 from evals.record import RecorderBase, record_sampling

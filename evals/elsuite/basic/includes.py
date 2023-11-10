@@ -6,15 +6,15 @@ from evals.api import CompletionFn
 from evals.elsuite import utils
 from evals.prompt.base import chat_prompt_to_text_prompt, is_chat_prompt
 from evals.record import record_sampling
-
-CHAT_MODELS = {
-    "gpt-3.5-turbo",
-    "gpt-3.5-turbo-0301",
-    "gpt-4",
-    "gpt-4-0314",
-    "gpt-4-32k",
-    "gpt-4-32k-0314",
-}
+from evals.registry import CHAT_MODELS
+# CHAT_MODELS = {
+#     "gpt-3.5-turbo",
+#     "gpt-3.5-turbo-0301",
+#     "gpt-4",
+#     "gpt-4-0314",
+#     "gpt-4-32k",
+#     "gpt-4-32k-0314",
+# }
 
 
 class Includes(evals.Eval):

@@ -14,22 +14,8 @@ from evals.elsuite.utils_execute import compute
 from evals.formatting import make_abc
 from evals.record import RecorderBase, record_sampling
 from evals.registry import n_ctx_from_model_name
+from evals.registry import CHAT_MODELS
 
-
-CHAT_MODELS = {
-    "gpt-3.5",
-    "gpt-3.5-frontend",
-    "gpt-3.5-turbo",
-    "gpt-3.5-turbo-0301",
-    "gpt-3.5-turbo-0613",
-    "gpt-4",
-    "gpt-4-frontend",
-    "gpt-4-code-interpreter-frontend",
-    "gpt-4-0314",
-    "gpt-4-32k",
-    "gpt-4-0613",
-    "gpt-4-32k-0314",
-}
 
 def get_dataset(local, dataset: str):
     if dataset == "humaneval":

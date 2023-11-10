@@ -9,18 +9,18 @@ import evals.metrics
 from evals.api import CompletionFn
 from evals.prompt.base import chat_prompt_to_text_prompt, is_chat_prompt
 from evals.record import RecorderBase, record_sampling
+from evals.registry import CHAT_MODELS
 
 
-
-CHAT_MODELS = {
-    "gpt-3.5-turbo",
-    "gpt-3.5-turbo-0301",
-    "gpt-3.5",
-    "gpt-4",
-    "gpt-4-0314",
-    "gpt-4-32k",
-    "gpt-4-32k-0314",
-}
+# CHAT_MODELS = {
+#     "gpt-3.5-turbo",
+#     "gpt-3.5-turbo-0301",
+#     "gpt-3.5",
+#     "gpt-4",
+#     "gpt-4-0314",
+#     "gpt-4-32k",
+#     "gpt-4-32k-0314",
+# }
 
 
 def extract_first_word(text):
