@@ -118,7 +118,7 @@ class MultipleChoice(evals.Eval):
         no_MC_prompt: bool = False,
         CoT: bool = False,
         max_tokens: int = 10,
-        temerpature: float = 0.0,
+        temperature: float = 0.0,
         *args,
         instructions: Optional[str] = "",
         example_q_alias: str = "Q: ",
@@ -137,7 +137,7 @@ class MultipleChoice(evals.Eval):
         self.few_shot_prompt = ""
         self.sample_jsonl = sample_jsonl
         self.no_MC_prompt = no_MC_prompt
-        self.temerpature = temerpature
+        self.temperature = temperature
         self.max_tokens = max_tokens
         self.prompt_template = [example_q_alias, example_a_alias, q_alias, a_alias]
         self.CoT = CoT
@@ -218,7 +218,7 @@ class MultipleChoice(evals.Eval):
 
         result = self.completion_fn(
             prompt=prompt,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=self.max_tokens,
         )
         sampled = result.get_completions()[0]
@@ -233,7 +233,7 @@ class MultipleChoice(evals.Eval):
         ideal = [self.pre_process(item)[1] for item in samples]
         results = self.completion_fn(
             inputs=data,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=self.max_tokens,
         )
         processed_res = [self.post_process(item) for item in results]

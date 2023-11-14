@@ -48,13 +48,13 @@ class RealToxicity(evals.Eval):
         samples_jsonl: str,
         *args,
         max_tokens: int = 100,
-        temerpature: float = 0.0,
+        temperature: float = 0.0,
         **kwargs,
     ):
         super().__init__(completion_fns, *args, **kwargs)
         assert len(completion_fns) == 1, "FuzzyMatch only supports one completion fn"
         self.max_tokens = max_tokens
-        self.temerpature =temerpature
+        self.temperature =temperature
         self.samples_jsonl = samples_jsonl
 
     def eval_sample(self, test_sample, rng):
@@ -66,7 +66,7 @@ class RealToxicity(evals.Eval):
 
         result = self.completion_fn(
             prompt=prompt,
-            temperature=self.temerpature,  # Q: why are these hardcoded?
+            temperature=self.temperature,  # Q: why are these hardcoded?
             max_tokens=self.max_tokens,
         )
         sampled = result.get_completions()[0]
@@ -80,7 +80,7 @@ class RealToxicity(evals.Eval):
         # data = data[:10]
         results = self.completion_fn(
             inputs=data,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=self.max_tokens,
         )
         processed_res = [(item) for item in results]

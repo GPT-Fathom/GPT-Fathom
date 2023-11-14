@@ -73,7 +73,7 @@ class MC_CoT(evals.Eval):
         no_MC_prompt: bool = False,
         CoT: bool = False,
         task_name: str = None,
-        temerpature: float = 0.0,
+        temperature: float = 0.0,
         *args,
         instructions: Optional[str] = "",
         **kwargs,
@@ -83,7 +83,7 @@ class MC_CoT(evals.Eval):
             len(completion_fns) == 1
         ), "MultipleChoice only supports one completion fn"
         self.dataset = dataset
-        self.temerpature = temerpature
+        self.temperature = temperature
         path = os.path.join(
             os.path.dirname(os.path.abspath(__file__)),
             "../..",
@@ -137,7 +137,7 @@ class MC_CoT(evals.Eval):
         prompt, correct_answer = self.pre_process(sample)
         result = self.completion_fn(
             prompt=prompt,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=self.max_tokens,
         )
         sampled = result.get_completions()[0]
@@ -156,7 +156,7 @@ class MC_CoT(evals.Eval):
         ideal = [self.pre_process(item)[1] for item in samples]
         results = self.completion_fn(
             inputs=data,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=self.max_tokens,
         )
         processed_res = [

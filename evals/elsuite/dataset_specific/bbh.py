@@ -26,7 +26,7 @@ class BBH(evals.Eval):
         CoT: bool = False,
         *args,
         instructions: Optional[str] = "",
-        temerpature: float = 0.0,
+        temperature: float = 0.0,
         **kwargs,
     ):
         super().__init__(completion_fns, *args, **kwargs)
@@ -59,7 +59,7 @@ class BBH(evals.Eval):
                 CoT_prompt = "\n\n".join(data)
         self.instructions = instructions
         self.few_shot_prompt = CoT_prompt
-        self.temerpature = temerpature
+        self.temperature = temperature
         self.CoT = CoT
         self.OUT_OF_WINDOW = False
 
@@ -96,7 +96,7 @@ class BBH(evals.Eval):
 
         result = self.completion_fn(
             prompt=prompt,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=400,
         )
 
@@ -114,7 +114,7 @@ class BBH(evals.Eval):
         ideal = [self.pre_process(item)[1] for item in samples]
         results = self.completion_fn(
             inputs=data,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=400,
         )
         processed_res = [self.post_process(item) for item in results]

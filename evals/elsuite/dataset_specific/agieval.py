@@ -37,7 +37,7 @@ class AGIEVAL(evals.Eval):
         Cn: bool = False,
         *args,
         instructions: Optional[str] = "",
-        temerpature: float = 0.0,
+        temperature: float = 0.0,
         **kwargs,
     ):
         super().__init__(completion_fns, *args, **kwargs)
@@ -51,7 +51,7 @@ class AGIEVAL(evals.Eval):
         self.type = type
         self.cn = Cn
         self.CoT = CoT
-        self.temerpature = temerpature
+        self.temperature = temperature
         self.few_shot_samples = []
         if self.type == "MC":
             self.instructions = (
@@ -402,7 +402,7 @@ class AGIEVAL(evals.Eval):
 
         result = self.completion_fn(
             prompt=prompt,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=self.max_tokens,
         )
 
@@ -417,7 +417,7 @@ class AGIEVAL(evals.Eval):
         ideal = [self.pre_process(item)[1] for item in samples]
         results = self.completion_fn(
             inputs=data,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=self.max_tokens,
         )
         processed_res, correct_answers = zip(

@@ -77,7 +77,7 @@ class CEVAL(evals.Eval):
         Chinese: bool = True,
         max_tokens: int = 256,
         *args,
-        temerpature: float = 0.0,
+        temperature: float = 0.0,
         instructions: Optional[str] = "",
         **kwargs,
     ):
@@ -90,7 +90,7 @@ class CEVAL(evals.Eval):
         self.few_shot = num_few_shot
         self.few_shot_prompt = ""
         self.no_MC_prompt = no_MC_prompt
-        self.temerpature = temerpature
+        self.temperature = temperature
         self.max_tokens = max_tokens
         self.Chinese = Chinese
         self.CoT = CoT
@@ -164,7 +164,7 @@ class CEVAL(evals.Eval):
 
         result = self.completion_fn(
             prompt=prompt,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=self.max_tokens if self.CoT else 10,
         )
         sampled = result.get_completions()[0]
@@ -181,7 +181,7 @@ class CEVAL(evals.Eval):
     def eval_sample_batch(self, recorder, samples):
         data = [self.pre_process(item)[0] for item in samples]
         ideal = [self.pre_process(item)[1] for item in samples]
-        results = self.completion_fn(inputs=data, temperature=self.temerpature, max_tokens=50)
+        results = self.completion_fn(inputs=data, temperature=self.temperature, max_tokens=50)
         processed_res = [(item) for item in results]
         for i in range(len(processed_res)):
             correct_answer = ideal[i]

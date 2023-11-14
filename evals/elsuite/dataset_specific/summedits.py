@@ -15,7 +15,7 @@ class SUMMEDITS(evals.Eval):
         CoT: bool = False,
         Cn: bool = False,
         *args,
-        temerpature: float = 0.0,
+        temperature: float = 0.0,
         **kwargs,
     ):
         super().__init__(completion_fns, *args, **kwargs)
@@ -29,7 +29,7 @@ class SUMMEDITS(evals.Eval):
         self.type = type
         self.cn = Cn
         self.CoT = CoT
-        self.temerpature = temerpature
+        self.temperature = temperature
         self.few_shot_samples = []
 
         self.instructions = 'Given the document below, you have to determine if "Yes" or "No", the summary is factually consistent with the document.'
@@ -83,7 +83,7 @@ class SUMMEDITS(evals.Eval):
 
         result = self.completion_fn(
             prompt=prompt,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=self.max_tokens,
         )
 
@@ -98,7 +98,7 @@ class SUMMEDITS(evals.Eval):
         ideal = [self.pre_process(item)[1] for item in samples]
         results = self.completion_fn(
             inputs=data,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=self.max_tokens,
         )
         processed_res, correct_answers = zip(

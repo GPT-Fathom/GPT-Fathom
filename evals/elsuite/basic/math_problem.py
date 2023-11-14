@@ -83,7 +83,7 @@ class MATH_PROBLEM(evals.Eval):
         max_tokens: int = 256,
         *args,
         instructions: Optional[str] = "",
-        temerpature: float = 0.0,
+        temperature: float = 0.0,
         example_q_alias: str = "Q: ",
         example_a_alias: str = "A: ",
         q_alias: str = "Q: ",
@@ -99,7 +99,7 @@ class MATH_PROBLEM(evals.Eval):
         self.few_shot_prompt = ""
         self.max_tokens = max_tokens
         self.sample_jsonl = samples_jsonl
-        self.temerpature = temerpature
+        self.temperature = temperature
         self.prompt_template = [example_q_alias, example_a_alias, q_alias, a_alias]
         self.OUT_OF_WINDOW = False
         if self.few_shot > 0:
@@ -149,7 +149,7 @@ class MATH_PROBLEM(evals.Eval):
 
         result = self.completion_fn(
             prompt=prompt,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=self.max_tokens,
         )
         sampled = result.get_completions()[0]
@@ -163,7 +163,7 @@ class MATH_PROBLEM(evals.Eval):
         ideal = [self.pre_process(item)[1] for item in samples]
         results = self.completion_fn(
             inputs=data,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=self.max_tokens,
         )
         processed_res, detected, correct_answers = [], [], []

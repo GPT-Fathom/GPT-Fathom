@@ -28,7 +28,7 @@ class READ_COMPRE(evals.Eval):
         no_MC_prompt: bool = False,
         *args,
         instructions: Optional[str] = "",
-        temerpature: float = 0.0,
+        temperature: float = 0.0,
         example_q_alias: str = "Q: ",
         example_a_alias: str = "A: ",
         q_alias: str = "Q: ",
@@ -49,7 +49,7 @@ class READ_COMPRE(evals.Eval):
         self.MC = MC
         self.OUT_OF_WINDOW = False
         self.prompt_template = [example_q_alias, example_a_alias, q_alias, a_alias]
-        self.temerpature = temerpature
+        self.temperature = temperature
         if self.few_shot > 0:
             self.example = evals.get_jsonl(few_shot_jsonl)
         self.no_MC_prompt = no_MC_prompt
@@ -141,7 +141,7 @@ class READ_COMPRE(evals.Eval):
             prompt, correct_answers = self.pre_process(sample)
             result = self.completion_fn(
                 prompt=prompt,
-                temperature=self.temerpature,
+                temperature=self.temperature,
                 max_tokens=self.max_tokens,
             )
             sampled = result.get_completions()[0]
@@ -164,7 +164,7 @@ class READ_COMPRE(evals.Eval):
             prompt, correct_answer = self.pre_process(sample)
             result = self.completion_fn(
                 prompt=prompt,
-                temperature=self.temerpature,
+                temperature=self.temperature,
                 max_tokens=50,
             )
             sampled = result.get_completions()[0]
@@ -186,7 +186,7 @@ class READ_COMPRE(evals.Eval):
         ideal = [self.pre_process(item)[1] for item in samples]
         results = self.completion_fn(
             inputs=data,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=30,
         )
         processed_res = [(item) for item in results]

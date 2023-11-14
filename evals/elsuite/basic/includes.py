@@ -25,7 +25,7 @@ class Includes(evals.Eval):
         ignore_case: bool = False,
         num_few_shot: int = 0,
         few_shot_jsonl: str = None,
-        temerpature: float = 0.0,
+        temperature: float = 0.0,
         *args,
         **kwargs,
     ):
@@ -34,7 +34,7 @@ class Includes(evals.Eval):
         self.samples_jsonl = samples_jsonl
         self.ignore_case = ignore_case
         self.num_few_shot = num_few_shot
-        self.temerpature = temerpature
+        self.temperature = temperature
         if self.num_few_shot > 0:
             assert (
                 few_shot_jsonl is not None
@@ -74,7 +74,7 @@ class Includes(evals.Eval):
         prompt, ideal = self.pre_process(sample)
         result = self.completion_fn(
             prompt=prompt,
-            temperature = self.temerpature
+            temperature = self.temperature
         )
         sampled = result.get_completions()[0]
 
@@ -92,7 +92,7 @@ class Includes(evals.Eval):
     def eval_sample_batch(self, recorder, samples):
         data = [self.pre_process(item)[0] for item in samples]
         ideal = [self.pre_process(item)[1] for item in samples]
-        results = self.completion_fn(inputs=data, temperature=self.temerpature, max_tokens=50)
+        results = self.completion_fn(inputs=data, temperature=self.temperature, max_tokens=50)
         processed_res = [(item) for item in results]
         for i in range(len(processed_res)):
             correct_answers = ideal[i]

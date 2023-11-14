@@ -44,7 +44,7 @@ class Lambada(evals.Eval):
         samples_jsonl: str,
         num_few_shot: int = 0,
         few_shot_jsonl: str = None,
-        temerpature: float = 0.0,
+        temperature: float = 0.0,
         *args,
         **kwargs,
     ):
@@ -54,7 +54,7 @@ class Lambada(evals.Eval):
         ), "MultipleChoice only supports one completion fn"
         self.samples_jsonl = samples_jsonl
         self.num_few_shot = num_few_shot
-        self.temerpature = temerpature
+        self.temperature = temperature
         if self.num_few_shot > 0:
             assert (
                 few_shot_jsonl is not None
@@ -103,7 +103,7 @@ class Lambada(evals.Eval):
         prompt, ideal = self.pre_process(sample)
         result = self.completion_fn(
             prompt=prompt,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=15,
         )
         sampled = self.post_process(result.get_completions()[0])
@@ -118,7 +118,7 @@ class Lambada(evals.Eval):
         ideal = [self.pre_process(item)[1] for item in samples]
         results = self.completion_fn(
             inputs=data,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=8,
         )
         processed_res = [self.post_process(item) for item in results]

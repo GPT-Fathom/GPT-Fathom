@@ -16,7 +16,7 @@ class FuzzyMatch(evals.Eval):
         few_shot_jsonl: str = None,
         *args,
         max_tokens: int = 100,
-        temerpature: float = 0.0,
+        temperature: float = 0.0,
         **kwargs,
     ):
         super().__init__(completion_fns, *args, **kwargs)
@@ -24,7 +24,7 @@ class FuzzyMatch(evals.Eval):
         self.max_tokens = max_tokens
         self.samples_jsonl = samples_jsonl
         self.num_few_shot = num_few_shot
-        self.temerpature = temerpature
+        self.temperature = temperature
         if self.num_few_shot > 0:
             assert (
                 few_shot_jsonl is not None
@@ -56,7 +56,7 @@ class FuzzyMatch(evals.Eval):
 
         result = self.completion_fn(
             prompt=prompt,
-            temperature=self.temerpature,  # Q: why are these hardcoded?
+            temperature=self.temperature,  # Q: why are these hardcoded?
             max_tokens=self.max_tokens,
         )
         sampled = result.get_completions()[0]
@@ -81,7 +81,7 @@ class FuzzyMatch(evals.Eval):
         ideal = [self.pre_process(item)[1] for item in samples]
         results = self.completion_fn(
             inputs=data,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             max_tokens=50,
         )
         processed_res = [(item) for item in results]

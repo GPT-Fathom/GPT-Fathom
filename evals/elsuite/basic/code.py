@@ -68,7 +68,7 @@ class CODE(evals.Eval):
         num_samples_per_task: int = 100,
         *args,
         instructions: Optional[str] = "",
-        temerpature: float = 0.8,
+        temperature: float = 0.8,
         **kwargs,
     ):
         super().__init__(completion_fns, *args, **kwargs)
@@ -78,7 +78,7 @@ class CODE(evals.Eval):
         self.max_tokens = max_tokens
         self.dataset = dataset
         self.num_samples_per_task = num_samples_per_task
-        self.temerpature = temerpature
+        self.temperature = temperature
         # The "code_eval" metric executes untrusted model-generated code in Python.
         # Although it is highly unlikely that model-generated code will do something
         # overtly malicious in response to this test suite, model-generated code may act
@@ -156,7 +156,7 @@ class CODE(evals.Eval):
                     prompt[len("Complete the code:\n") :]
                     + self.completion_fn(
                         prompt=prompt,
-                        temperature=self.temerpature,
+                        temperature=self.temperature,
                         max_tokens=self.max_tokens,
                         stop=["\nclass", "\ndef", "\n#", "\nif"],
                     ).get_completions()[0]
@@ -167,7 +167,7 @@ class CODE(evals.Eval):
                 preds = [
                     self.completion_fn(
                         prompt=prompt,
-                        temperature=self.temerpature,
+                        temperature=self.temperature,
                         max_tokens=self.max_tokens,
                         stop=["\nclass", "\ndef", "\n#", "\nif"],
                     ).get_completions()[0]
@@ -178,7 +178,7 @@ class CODE(evals.Eval):
             preds = [
                 self.completion_fn(
                     prompt=prompt,
-                    temperature=self.temerpature,
+                    temperature=self.temperature,
                     max_tokens=self.max_tokens,
                     stop=["\n[DONE]"],
                 ).get_completions()[0]
@@ -215,7 +215,7 @@ class CODE(evals.Eval):
 
         response = self.completion_fn(
             inputs=data,
-            temperature=self.temerpature,
+            temperature=self.temperature,
             do_sample=True,
             top_p=0.95,
             max_tokens=self.max_tokens,
