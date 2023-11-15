@@ -37,12 +37,15 @@ DEFAULT_PATHS = [
 
 
 def n_ctx_from_model_name(model_name: str) -> Optional[int]:
-    """Returns n_ctx for a given API model name. Model list last updated 2023-03-14."""
+    """Returns n_ctx for a given API model name. Model list last updated 2023-11-16."""
     # note that for most models, the max tokens is n_ctx + 1
     DICT_OF_N_CTX_BY_MODEL_NAME_PREFIX: dict[str, int] = {
         "gpt-3.5": 4096,
+        "gpt-3.5-turbo-16k": 16385,
         "gpt-4": 8192,
-        "gpt-4-32k-": 32768,
+        "gpt-4-32k": 32768,
+        "llama": 2048,
+        "llama2": 4096,
     }
     DICT_OF_N_CTX_BY_MODEL_NAME: dict[str, int] = {
         "ada": 2048,
@@ -51,8 +54,6 @@ def n_ctx_from_model_name(model_name: str) -> Optional[int]:
         "text-babbage-001": 2048,
         "code-cushman-001": 2048,
         "curie": 2048,
-        "llama": 2048,
-        "llama2": 4096,
         "text-curie-001": 2048,
         "davinci": 2048,
         "text-davinci-001": 2048,
@@ -62,39 +63,46 @@ def n_ctx_from_model_name(model_name: str) -> Optional[int]:
         "text-davinci-003": 4096,
         "gpt-3.5-turbo": 4096,
         "gpt-3.5-turbo-0301": 4096,
-        "gpt-3.5-turbo-16k": 16384,
+        "gpt-3.5-turbo-0613": 4096,
+        "gpt-3.5-turbo-1106": 16385,
+        "gpt-3.5-turbo-instruct-0914": 4096,
+        "gpt-3.5-turbo-16k-0613": 16385,
         "gpt-4": 8192,
         "gpt-4-0314": 8192,
+        "gpt-4-0613": 8192,
         "gpt-4-32k": 32768,
         "gpt-4-32k-0314": 32768,
-        "gpt-4-1106-preview": 128*1024,
+        "gpt-4-32k-0613": 32768,
+        "gpt-4-1106-preview": 128000,
     }
-    # first, look for an exact match
-    if model_name in DICT_OF_N_CTX_BY_MODEL_NAME.keys():
+    # first, look for the exact model name
+    if model_name in DICT_OF_N_CTX_BY_MODEL_NAME:
         return DICT_OF_N_CTX_BY_MODEL_NAME.get(model_name)
     # otherwise, look for a prefix match and return None if not found
-    for model_prefix, n_ctx in DICT_OF_N_CTX_BY_MODEL_NAME_PREFIX.items():
-        if model_name.startswith(model_prefix):
-            return n_ctx
-        else:
+    else:
+        matched_ctx = 0
+        for model_prefix, n_ctx in DICT_OF_N_CTX_BY_MODEL_NAME_PREFIX.items():
+            if model_name.startswith(model_prefix):
+                matched_ctx = max(n_ctx, matched_ctx)
+        if matched_ctx == 0:
             return None
+        return matched_ctx
 
 
 CHAT_MODELS = {
     "gpt-3.5",
-    "gpt-3.5-frontend",
     "gpt-3.5-turbo",
-    "gpt-3.5-turbo-16k",
     "gpt-3.5-turbo-0301",
     "gpt-3.5-turbo-0613",
+    "gpt-3.5-turbo-1106",
+    "gpt-3.5-turbo-16k-0613",
     "gpt-4",
-    "gpt-4-frontend",
-    "gpt-4-code-interpreter-frontend",
     "gpt-4-0314",
-    "gpt-4-32k",
     "gpt-4-0613",
+    "gpt-4-32k",
     "gpt-4-32k-0314",
-    "gpt-4-1106-preview"
+    "gpt-4-32k-0613",
+    "gpt-4-1106-preview",
 }
 
 
