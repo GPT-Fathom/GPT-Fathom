@@ -30,7 +30,7 @@ mmlu-abstract-algebra.val.ab-v1:
     no_MC_prompt: True # Avoid output the MCQ instruction at the end of the prompt: "Please answer with the letter of the correct answer."
     num_few_shot: 3    # Determine the number of shots
     max_tokens: 10    # Maximum output token length
-    temerpature: 0.0  # Set the temperature
+    temperature: 0.0  # Set the temperature
 
 ```
 
