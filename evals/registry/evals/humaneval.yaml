@@ -2,9 +2,8 @@ humaneval-0shot:
   id: humaneval.test.v1
   metrics: [pass@1, pass@10, pass@100]
 
-
-
 humaneval.test.v1:
   class: evals.elsuite.basic.code:CODE
   args:
     dataset: humaneval
+    temperature: 0.8
