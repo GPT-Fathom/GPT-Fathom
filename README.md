@@ -33,6 +33,7 @@ Currently, the community is eager to know how GPT-3 progressively improves to GP
 <p align="center">
 <img src="assets/figures/radar_turbo_instruct.png" width=50%>
 </p>
+
 * [2023/11/20] We updated the evaluation results of the entire LLaMA and Llama 2 family, including models of various sizes. Refer to this [table](#llama-family) for the complete results.
 <p align="center">
 <img src="assets/figures/radar_llama_family.png" width=40%>
