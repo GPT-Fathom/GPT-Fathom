@@ -207,7 +207,7 @@ For fair comparison, we evaluate LLMs under aligned settings such as the number 
 
 Moreover, even under the same setting, other factors such as the prompt template, in-context examples, answer parsing / matching details and sampling variance can still affect the evaluation results. Note that most of the released LLMs do not fully disclose these details. In our [paper](https://arxiv.org/abs/2309.16583), we investigate the impacts of model sensitivity on evaluation results with extensive experiments.
 
-Nevertheless, to verify the correctness of our implementation, we do compare our evaluation results with the officially reported scores of GPT-4. As summarized below, our evaluation results are consistent with the official scores of GPT-4, within a margin of slight deviation. Since the official prompts and in-context examples for evaluation are not publicly available, the slight deviation is totally reasonable.
+Nevertheless, to verify the correctness of our implementation, we do compare our evaluation results with the officially reported scores of GPT-4. As summarized below, our evaluation results are consistent with the official scores of GPT-4, within a margin of slight deviation. Since the official prompts and in-context examples for evaluation are not publicly available, the slight deviation is totally reasonable. We then use the exact same settings and prompts as we evaluate GPT-4 to evaluate other LLMs for apple-to-apple comparison.
 
 <p align="center">
 <img src="assets/figures/compare_official_gpt-4.png" width=50%>
