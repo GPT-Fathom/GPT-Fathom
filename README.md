@@ -205,7 +205,13 @@ To learn how to evaluate new models, refer to [completion-fns.md](docs/completio
 ### Why some results in GPT-Fathom differ from officially reported scores?
 For fair comparison, we evaluate LLMs under aligned settings such as the number of "shots", whether CoT prompting is used, and sampling hyperparameters (e.g., temperature and top<sub>p</sub>). We report the results from our own experiments, instead of arbitrarily citing numbers from papers. Therefore, our evaluation setting of a LLM may differ from its official paper, which leads to different results. For example, on HumanEval, [LLaMA](https://arxiv.org/abs/2302.13971) and [Llama 2](https://arxiv.org/abs/2307.09288) use a temperature of 0.1 for pass@1 scores and 0.8 for pass@100 scores, while we consistently use 0.8 for all the coding benchmark evaluations.
 
-Moreover, even under the same setting, other factors such as the prompt template, answer parsing / matching details and sampling variance can still affect the evaluation results. Note that most of the released LLMs do not fully disclose these details. In our [paper](https://arxiv.org/abs/2309.16583), we investigate the impacts of model sensitivity on evaluation results with extensive experiments.
+Moreover, even under the same setting, other factors such as the prompt template, in-context examples, answer parsing / matching details and sampling variance can still affect the evaluation results. Note that most of the released LLMs do not fully disclose these details. In our [paper](https://arxiv.org/abs/2309.16583), we investigate the impacts of model sensitivity on evaluation results with extensive experiments.
+
+Nevertheless, to verify the correctness of our implementation, we do compare our evaluation results with the officially reported scores of GPT-4. As summarized below, our evaluation results are consistent with the official scores of GPT-4, within a margin of slight deviation. Since the official prompts and in-context examples for evaluation are not publicly available, the slight deviation is totally reasonable.
+
+<p align="center">
+<img src="assets/figures/compare_official_gpt-4.png" width=50%>
+</p>
 
 ### How to rank LLMs in GPT-Fathom?
 Unfortunately, GPT-Fathom is not designed for ranking LLMs. Although it's simple to calculate (weighted) average over individual benchmark scores and arbitrarily define some "overall score" for ranking LLMs, we believe that any pre-defined ranking criteria may encourage "overfitting" and chasing a higher ranking on the leaderboard, whether intentionally or not.
