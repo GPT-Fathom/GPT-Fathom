@@ -270,6 +270,8 @@ We pre-processed the benchmark datasets either from their official source or [Hu
 - [ ] More leading LLMs
   - [x] Support evaluation of `gpt-3.5-turbo-instruct`
   - [x] LLaMA and Llama 2 models of various model sizes
+  - [ ] Support evaluation of `gpt-3.5-turbo-1106`
+  - [ ] Support evaluation of `gpt-4-1106-preview` (GPT-4 Turbo)
 
 
 <a name="acknowledgements"></a>
