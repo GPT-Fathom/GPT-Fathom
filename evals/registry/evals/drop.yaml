@@ -1,6 +1,6 @@
 drop-0shot:
   id: drop.val.ab-v1
-  metrics: [accuracy]
+  metrics: [f1_score]
 drop.val.ab-v1:
   class: evals.elsuite.basic.reading_comprehension:READ_COMPRE
   args:
@@ -10,7 +10,7 @@ drop.val.ab-v1:
 
 drop-1shot:
   id: drop.val.ab-v2
-  metrics: [accuracy]
+  metrics: [f1_score]
 drop.val.ab-v2:
   class: evals.elsuite.basic.reading_comprehension:READ_COMPRE
   args:
@@ -21,7 +21,7 @@ drop.val.ab-v2:
 
 drop-3shot:
   id: drop.val.ab-v3
-  metrics: [accuracy]
+  metrics: [f1_score]
 drop.val.ab-v3:
   class: evals.elsuite.basic.reading_comprehension:READ_COMPRE
   args:
