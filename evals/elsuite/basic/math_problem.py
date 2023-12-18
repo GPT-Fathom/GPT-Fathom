@@ -80,7 +80,7 @@ class MATH_PROBLEM(evals.Eval):
         few_shot: str = None,
         samples_jsonl: str = None,
         few_shot_jsonl: str = None,
-        max_tokens: int = 256,
+        max_tokens: int = 1024,
         *args,
         instructions: Optional[str] = "",
         temperature: float = 0.0,
