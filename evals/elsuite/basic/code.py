@@ -163,6 +163,17 @@ class CODE(evals.Eval):
                     + "\n"
                     for _ in range(self.num_samples_per_task)
                 ]
+            elif self.completion_fns[0].model in ["gpt-3.5-turbo-1106", "gpt-4-1106-preview"]:
+                preds = [
+                    self.completion_fn(
+                        prompt=prompt,
+                        temperature=self.temperature,
+                        max_tokens=self.max_tokens,
+                    ).get_completions()[0]
+                    + "\n"
+                    for _ in range(self.num_samples_per_task)
+                ]
+                preds = [item.split("```")[1][7:] if "```" in item else item for item in preds]
             else:
                 preds = [
                     self.completion_fn(
@@ -176,19 +187,20 @@ class CODE(evals.Eval):
                 ]
         elif self.dataset == "mbpp":
             preds = [
-                self.completion_fn(
-                    prompt=prompt,
-                    temperature=self.temperature,
-                    max_tokens=self.max_tokens,
-                    stop=["\n[DONE]"],
-                ).get_completions()[0]
-                + "\n"
-                for _ in range(self.num_samples_per_task)
-            ]
+                    self.completion_fn(
+                        prompt=prompt,
+                        temperature=self.temperature,
+                        max_tokens=self.max_tokens,
+                        stop=["\n[DONE]"],
+                    ).get_completions()[0]
+                    + "\n"
+                    for _ in range(self.num_samples_per_task)
+                ]
+            if self.completion_fns[0].model in ["gpt-3.5-turbo-1106", "gpt-4-1106-preview"]:
+                preds = [item.split("```")[1][7:] if "```" in item else item for item in preds]
 
-        # sampled = [[item.split("```")[1][6:] if "```" in item else item for item in preds]]
-        sampled = [["a" if None==item else item for item in preds]]
-        # print(sampled)
+        sampled = [["sampled = None" if item is None else item for item in preds]]
+
         pass_at_k, results = compute(
             references=correct_answer, predictions=sampled, k=self.k
         )
