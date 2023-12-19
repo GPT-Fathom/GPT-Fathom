@@ -29,14 +29,16 @@ Currently, the community is eager to know how GPT-3 progressively improves to GP
 
 <a name="updates"></a>
 ## 🚀 Updates <a href="#updates"><img width="35" height="20" src="https://user-images.githubusercontent.com/12782558/212848161-5e783dd6-11e8-4fe0-bbba-39ffb77730be.png"></a>
+* [2023/12/18] We updated the evaluation results of the latest OpenAI models `gpt-3.5-turbo-1106` and `gpt-4-1106-preview` (GPT-4-Turbo) in our main [table](#leaderboard). We observe that both models significantly regress on some benchmarks, such as DROP and BBH. Meanwhile, as revealed by our previous evaluations of the Web-based GPT-4, the new `gpt-4-1106-preview` (GPT-4-Turbo) model catches up on HumanEval with a striking 84.6 pass@1 score.
+
+* [2023/11/20] We updated the evaluation results of the entire LLaMA and Llama 2 family, including models of various sizes. Refer to the [table](#llama-family) below for complete results.
+<p align="center">
+<img src="assets/figures/radar_llama_family.png" width=40%>
+</p>
+
 * [2023/10/23] We updated the evaluation results of the latest OpenAI model `gpt-3.5-turbo-instruct-0914`, which slightly outperforms `gpt-3.5-turbo-0613` on most benchmarks (except for some "Coding" and "Safety" tasks). [[Twitter](https://twitter.com/shen_zheng25741/status/1717265146051957227)]
 <p align="center">
 <img src="assets/figures/radar_gpt-3.5-turbo-instruct-0914.png" width=50%>
-</p>
-
-* [2023/11/20] We updated the evaluation results of the entire LLaMA and Llama 2 family, including models of various sizes. Refer to this [table](#llama-family) for the complete results.
-<p align="center">
-<img src="assets/figures/radar_llama_family.png" width=40%>
 </p>
 
 ## 📖 Table of Contents
