@@ -29,7 +29,7 @@ Currently, the community is eager to know how GPT-3 progressively improves to GP
 
 <a name="updates"></a>
 ## 🚀 Updates <a href="#updates"><img width="35" height="20" src="https://user-images.githubusercontent.com/12782558/212848161-5e783dd6-11e8-4fe0-bbba-39ffb77730be.png"></a>
-* [2023/12/18] We updated the evaluation results of the latest OpenAI models `gpt-3.5-turbo-1106` and `gpt-4-1106-preview` (GPT-4-Turbo) in our main [table](#leaderboard). We observe that both models significantly regress on some benchmarks, such as DROP and BBH. Meanwhile, as revealed by our previous evaluations of the Web-based GPT-4, the new `gpt-4-1106-preview` (GPT-4-Turbo) model catches up on HumanEval with a striking 84.6 pass@1 score.
+* [2023/12/18] We updated the evaluation results of the latest OpenAI models `gpt-3.5-turbo-1106` and `gpt-4-1106-preview` (GPT-4 Turbo) in our main [table](#leaderboard). We observe that both models significantly regress on some benchmarks, such as DROP and BBH. Meanwhile, as revealed by our previous evaluations of the Web-based GPT-4, the new `gpt-4-1106-preview` (GPT-4 Turbo) model catches up on HumanEval with a striking 84.6 pass@1 score.
 
 * [2023/11/20] We updated the evaluation results of the entire LLaMA and Llama 2 family, including models of various sizes. Refer to the [table](#llama-family) below for complete results.
 
@@ -273,8 +273,8 @@ We pre-processed the benchmark datasets either from their official source or [Hu
 - [ ] More leading LLMs
   - [x] Support evaluation of `gpt-3.5-turbo-instruct`
   - [x] LLaMA and Llama 2 models of various model sizes
-  - [ ] Support evaluation of `gpt-3.5-turbo-1106`
-  - [ ] Support evaluation of `gpt-4-1106-preview` (GPT-4 Turbo)
+  - [x] Support evaluation of `gpt-3.5-turbo-1106`
+  - [x] Support evaluation of `gpt-4-1106-preview` (GPT-4 Turbo)
 
 
 <a name="acknowledgements"></a>
