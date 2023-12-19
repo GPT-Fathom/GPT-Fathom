@@ -31,7 +31,7 @@ Currently, the community is eager to know how GPT-3 progressively improves to GP
 ## 🚀 Updates <a href="#updates"><img width="35" height="20" src="https://user-images.githubusercontent.com/12782558/212848161-5e783dd6-11e8-4fe0-bbba-39ffb77730be.png"></a>
 * [2023/10/23] We updated the evaluation results of the latest OpenAI model `gpt-3.5-turbo-instruct-0914`, which slightly outperforms `gpt-3.5-turbo-0613` on most benchmarks (except for some "Coding" and "Safety" tasks). [[Twitter](https://twitter.com/shen_zheng25741/status/1717265146051957227)]
 <p align="center">
-<img src="assets/figures/radar_turbo_instruct.png" width=50%>
+<img src="assets/figures/radar_gpt-3.5-turbo-instruct-0914.png" width=50%>
 </p>
 
 * [2023/11/20] We updated the evaluation results of the entire LLaMA and Llama 2 family, including models of various sizes. Refer to this [table](#llama-family) for the complete results.
