@@ -89,11 +89,11 @@ As claimed in OpenAI's [model index](https://platform.openai.com/docs/model-inde
 **SFT**
   - `davinci` (GPT-3) + SFT -> `text-davinci-001`: SFT significantly improves performance on most benchmarks.
   - `code-davinci-002` + SFT -> `text-davinci-002`: SFT on stronger base model shows the opposite effect, which underperforms the base model on most benchmarks (except for coding tasks, which is further discussed below).
-  - A similar trend is observed on open-source models: SFT boosts the performance of LLaMA-65B on MMLU (refer to reported performance of SFT model LLaMA-I in the original [paper](https://arxiv.org/abs/2302.13971)), however, all SFT models on top of Llama2-70B in [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) show only marginal improvements on MMLU.
+  - A similar trend is observed on open-source models: SFT boosts the performance of LLaMA-65B on MMLU (refer to reported performance of SFT model LLaMA-I in the original [paper](https://arxiv.org/abs/2302.13971)), however, all SFT models on top of Llama 2-70B in [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) show only marginal improvements on MMLU.
 
 **RLHF**
   - `text-davinci-002` + [PPO](https://arxiv.org/abs/1707.06347) -> `text-davinci-003`: RLHF model has comparable or slightly worse performance on most benchmarks compared to the base model `code-davinci-002` (except for coding tasks).
-  - A similar trend is observed on open-source models: the official RLHF version of Llama2-70B performs slightly worse than its base model on MMLU, HellaSwag and ARC-c, as reported in [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
+  - A similar trend is observed on open-source models: the official RLHF version of Llama 2-70B performs slightly worse than its base model on MMLU, HellaSwag and ARC-c, as reported in [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
 
 **SFT / RLHF impacts on coding capabilities**
 
