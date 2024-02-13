@@ -184,7 +184,7 @@ oaieval text-davinci-001 gsm8k-8shotCoT --azure_eval True
 ```
 - To evaluate models from LLaMA or Llama 2 family, first configure the model following HuggingFace's documents for [LLaMA](https://huggingface.co/docs/transformers/main/model_doc/llama) and [Llama 2](https://huggingface.co/docs/transformers/main/model_doc/llama2). We evaluate LLaMA and Llama 2 models on a single machine with 8 A100 GPUs (80GB) using [tensor parallel](https://github.com/BlackSamorez/tensor_parallel) for acceleration. Run evaluation with flag `--eval_in_batch True`, for example:
 ```sh
-oaieval llama gsm8k-8shotCoT --eval_in_batch True
+oaieval llama2 gsm8k-8shotCoT --eval_in_batch True
 ```
 
 For more one-line quick evaluations, refer to [quick-evals.md](docs/quick-evals.md).
