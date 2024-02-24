@@ -114,15 +114,15 @@ class LLAMACompletion(CompletionFn):
                         do_sample=kwargs.get("do_sample", 0.0),
                         top_p=kwargs.get("top_p", 0.95),
                     )
+            
+            prompt_length = inputs["input_ids"].shape[1]
+            ans_ids = generate_ids[:, prompt_length:]
             result = tokenizer.batch_decode(
-                generate_ids,
+                ans_ids,
                 skip_special_tokens=True,
                 clean_up_tokenization_spaces=False,
             )
             res.extend(result)
-
-        for i in range(len(res)):
-            res[i] = res[i][len(text[i]) :]
 
         return res
 
@@ -194,14 +194,14 @@ class LLAMA2Completion(CompletionFn):
                     max_new_tokens=kwargs["max_tokens"],
                     temperature=kwargs.get("temperature", 0.0),
                 )
+        
+            prompt_length = inputs["input_ids"].shape[1]
+            ans_ids = generate_ids[:, prompt_length:]
             result = tokenizer.batch_decode(
-                generate_ids,
+                ans_ids,
                 skip_special_tokens=True,
                 clean_up_tokenization_spaces=False,
             )
             res.extend(result)
-
-        for i in range(len(res)):
-            res[i] = res[i][len(text[i]) :]
 
         return res
