@@ -5,6 +5,7 @@ import time
 
 import backoff
 import openai
+import litellm
 
 EVALS_THREAD_TIMEOUT = float(os.environ.get("EVALS_THREAD_TIMEOUT", "40"))
 SLEEP_TIME = float(
@@ -75,7 +76,7 @@ def azure_chat_completion_create_retrying(GPT_4: bool = False,
     """
     openai.api_base = "API-BASE"
     openai.api_key = "API-KEY"
-    result = request_with_timeout(openai.ChatCompletion.create, *args, **kwargs)
+    result = request_with_timeout(litellm.completion, *args, **kwargs)
     time.sleep(SLEEP_TIME)
     if "error" in result:
         logging.warning(result)
